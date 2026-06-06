@@ -13,7 +13,7 @@
     (comment 3 "")
     (comment 4 ""))
   (lib_symbols
-    (symbol "Connector:Conn_01x02_Pin"
+    (symbol "Device:Battery_Cell"
       (pin_numbers
         (hide yes))
       (pin_names
@@ -21,12 +21,12 @@
       (exclude_from_sim no)
       (in_bom yes)
       (on_board yes)
-      (property "Reference" "J"
+      (property "Reference" "BT"
         (at 2.032 0 90)
         (effects
           (font
             (size 1.27 1.27))))
-      (property "Value" "Conn_01x02_Pin"
+      (property "Value" "Battery_Cell"
         (at 0 0 90)
         (effects
           (font
@@ -43,51 +43,122 @@
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Description" "Generic connector, single row, 01x02, script generated"
+      (property "Description" "Single-cell battery"
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (symbol "Conn_01x02_Pin_1_1"
+      (symbol "Battery_Cell_0_1"
         (rectangle
-          (start 0.8636 0.127)
-          (end 0 -0.127)
+          (start -2.286 1.778)
+          (end 2.286 1.524)
           (stroke
-            (width 0.1524)
+            (width 0)
             (type default))
           (fill
             (type outline)))
         (rectangle
-          (start 0.8636 -2.413)
-          (end 0 -2.667)
+          (start -1.524 1.016)
+          (end 1.524 0.508)
           (stroke
-            (width 0.1524)
+            (width 0)
             (type default))
           (fill
             (type outline)))
         (polyline
           (pts
-            (xy 1.27 0)
-            (xy 0.8636 0))
+            (xy 0 1.778)
+            (xy 0 2.54))
           (stroke
-            (width 0.1524)
+            (width 0)
             (type default))
           (fill
             (type none)))
         (polyline
           (pts
-            (xy 1.27 -2.54)
-            (xy 0.8636 -2.54))
+            (xy 0 0.762)
+            (xy 0 0))
           (stroke
-            (width 0.1524)
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 3.048)
+            (xy 1.778 3.048))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 3.556)
+            (xy 1.27 2.54))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "Battery_Cell_1_1"
+        (rectangle
+          (start -2.286 1.778)
+          (end 2.286 1.524)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (rectangle
+          (start -1.524 1.016)
+          (end 1.524 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0 1.778)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0.762)
+            (xy 0 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 3.048)
+            (xy 1.778 3.048))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 3.556)
+            (xy 1.27 2.54))
+          (stroke
+            (width 0.254)
             (type default))
           (fill
             (type none)))
         (pin passive line
-          (at 5.08 0 180)
-          (length 3.81)
-          (name "Pin_1"
+          (at 0 5.08 270)
+          (length 2.54)
+          (name "+"
             (effects
               (font
                 (size 1.27 1.27))))
@@ -96,9 +167,9 @@
               (font
                 (size 1.27 1.27)))))
         (pin passive line
-          (at 5.08 -2.54 180)
-          (length 3.81)
-          (name "Pin_2"
+          (at 0 -2.54 90)
+          (length 2.54)
+          (name "-"
             (effects
               (font
                 (size 1.27 1.27))))
@@ -316,57 +387,57 @@
                 (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
-    (lib_id "Connector:Conn_01x02_Pin")
-    (at 120.65 96.52 0)
+    (lib_id "Device:Battery_Cell")
+    (at 140.97 109.22 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 168f90af-abe9-5780-b9d6-f9667f24a998)
-    (property "Reference" "J1"
-      (at 120.65 93.97999999999999 0)
+    (uuid 7af9c5c2-d3b4-58d0-abb4-572b740d60ef)
+    (property "Reference" "BT1"
+      (at 140.97 106.67999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "Conn_01x02_Pin"
-      (at 120.65 99.06 0)
+    (property "Value" "3xAAA"
+      (at 140.97 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-      (at 120.65 96.52 0)
+    (property "Footprint" "Battery:BatteryHolder_Keystone_2479_3xAAA"
+      (at 140.97 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 120.65 96.52 0)
+      (at 140.97 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Description" "Generic connector, single row, 01x02, script generated"
-      (at 120.65 96.52 0)
+    (property "Description" "Single-cell battery"
+      (at 140.97 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 72696fbb-c911-5fdf-bb63-f2fdfc06c50a))
+      (uuid d97ebde5-cc1a-5445-b44f-b146c76a2531))
     (pin "2"
-      (uuid 3ba4ff9b-ae08-586c-bdbc-1880fb25f3d6))
+      (uuid dad8ad7a-5222-5681-8144-e4cb2388ed3d))
     (instances
       (project "SKiDL-Generated"
-        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/03671d4a-ac20-566d-905c-67c4fdfb4153"
-          (reference "J1")
+        (path "/c54bc202-1033-459e-91ab-edbb4354316b/03671d4a-ac20-566d-905c-67c4fdfb4153"
+          (reference "BT1")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 137.16 107.95 0)
+    (at 127.0 107.95 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -375,31 +446,31 @@
     (fields_autoplaced yes)
     (uuid f746a4b9-4099-5f67-bded-e23037d1186b)
     (property "Reference" "C1"
-      (at 137.16 105.41 0)
+      (at 127.0 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "10uF"
-      (at 137.16 110.49000000000001 0)
+      (at 127.0 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-      (at 137.16 107.95 0)
+      (at 127.0 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 137.16 107.95 0)
+      (at 127.0 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 137.16 107.95 0)
+      (at 127.0 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -410,12 +481,12 @@
       (uuid 205d9f8e-3e19-5f43-bc45-c6a2c8476b28))
     (instances
       (project "SKiDL-Generated"
-        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/c54bc202-1033-459e-91ab-edbb4354316b/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C1")
           (unit 1)))))
   (symbol
     (lib_id "/usr/share/kicad/symbols/Regulator_Linear:AP2112K-3.3")
-    (at 168.91 99.06 0)
+    (at 165.1 99.06 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -424,31 +495,31 @@
     (fields_autoplaced yes)
     (uuid cdccff22-f577-5440-8cc8-52dd22d030c5)
     (property "Reference" "U1"
-      (at 168.91 96.52 0)
+      (at 165.1 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "AP2112K-3.3"
-      (at 168.91 101.60000000000001 0)
+      (at 165.1 101.60000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-      (at 168.91 99.06 0)
+      (at 165.1 99.06 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-      (at 168.91 99.06 0)
+      (at 165.1 99.06 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-      (at 168.91 99.06 0)
+      (at 165.1 99.06 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -465,12 +536,12 @@
       (uuid 428f1198-15e2-5fbb-974e-9fbcd8b16bf6))
     (instances
       (project "SKiDL-Generated"
-        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/c54bc202-1033-459e-91ab-edbb4354316b/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "U1")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 143.51 107.95 0)
+    (at 133.35 107.95 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -479,31 +550,31 @@
     (fields_autoplaced yes)
     (uuid f7010c41-71d2-5a3a-abdd-355f3eb3d9c9)
     (property "Reference" "C2"
-      (at 143.51 105.41 0)
+      (at 133.35 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 143.51 110.49000000000001 0)
+      (at 133.35 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 143.51 107.95 0)
+      (at 133.35 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 143.51 107.95 0)
+      (at 133.35 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 143.51 107.95 0)
+      (at 133.35 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -514,12 +585,12 @@
       (uuid 1d159584-7c7a-5587-8624-9d7d6ce1cdef))
     (instances
       (project "SKiDL-Generated"
-        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/c54bc202-1033-459e-91ab-edbb4354316b/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C2")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 149.86 106.68 0)
+    (at 120.65 106.68 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -528,31 +599,31 @@
     (fields_autoplaced yes)
     (uuid e64004ad-9add-508d-ab58-2425e1cd34b8)
     (property "Reference" "C3"
-      (at 149.86 104.14 0)
+      (at 120.65 104.14 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 149.86 109.22000000000001 0)
+      (at 120.65 109.22000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 149.86 106.68 0)
+      (at 120.65 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 149.86 106.68 0)
+      (at 120.65 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 149.86 106.68 0)
+      (at 120.65 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -563,52 +634,52 @@
       (uuid 4fe71945-e7ae-502f-8101-aaf2a9958feb))
     (instances
       (project "SKiDL-Generated"
-        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/c54bc202-1033-459e-91ab-edbb4354316b/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C3")
           (unit 1)))))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 125.73 96.52 0)
+    (at 140.97 104.14 90)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid bf8b01ce-a53f-5f12-86c5-b4b80141c456))
+    (uuid 5e9840b3-9196-5cb8-9bac-d4894e6fe80f))
   (symbol
     (lib_id "power:GND")
-    (at 125.73 99.06 0)
+    (at 140.97 111.76 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 9b2175cf-f2d7-5958-a32e-130d904d383d)
+    (uuid aef652c8-7ac5-56a9-b1cb-1cea89ece2c9)
     (property "Reference" "#PWR001"
-      (at 125.73 97.79 0)
+      (at 140.97 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 125.73 95.25 0)
+      (at 140.97 107.95 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 125.73 99.06 0)
+      (at 140.97 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 125.73 99.06 0)
+      (at 140.97 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 862d4a3e-ca1d-5e27-b15b-ab837760d506))
+      (uuid fd57195f-432b-5610-b6a8-ba02f656d187))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -616,47 +687,47 @@
           (unit 1)))))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 137.16 104.14 90)
+    (at 127.0 104.14 90)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid b5a7e604-a852-5c34-96cd-48b73c863baf))
+    (uuid ac24e5bb-ad48-5a28-a9c9-b44c21a88f48))
   (symbol
     (lib_id "power:GND")
-    (at 137.16 111.76 0)
+    (at 127.0 111.76 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 4eecbcc6-33ae-508e-86b6-bd3b98cff44a)
+    (uuid 97671f09-3fe9-5d86-b520-997f9bd8fef4)
     (property "Reference" "#PWR002"
-      (at 137.16 110.49000000000001 0)
+      (at 127.0 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 137.16 107.95 0)
+      (at 127.0 107.95 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 137.16 111.76 0)
+      (at 127.0 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 137.16 111.76 0)
+      (at 127.0 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 2d461458-75cc-5e05-9e0e-44b1f309a3a0))
+      (uuid 2a115b9e-cee9-583b-9d0d-3732d577c8eb))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -664,55 +735,55 @@
           (unit 1)))))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 161.29 96.52 180)
+    (at 157.48 96.52 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid ae0ef7b5-7164-5edd-a542-11f5368d13dd))
+    (uuid 81b49d96-19f7-5a94-866d-7abd0ab9126c))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 161.29 99.06 180)
+    (at 157.48 99.06 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 80b3da97-c682-5254-a57d-9dc3396c5cad))
+    (uuid 39902f2d-22c9-55af-858f-e70420c54a50))
   (symbol
     (lib_id "power:GND")
-    (at 168.91 106.68 0)
+    (at 165.1 106.68 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 5def0d19-77da-57b3-a289-43dfbcc706e2)
+    (uuid a1f5dc51-15a5-5c6d-8833-199d01bbb75d)
     (property "Reference" "#PWR003"
-      (at 168.91 105.41000000000001 0)
+      (at 165.1 105.41000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 168.91 102.87 0)
+      (at 165.1 102.87 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 168.91 106.68 0)
+      (at 165.1 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 168.91 106.68 0)
+      (at 165.1 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid e26b0b13-ef54-5022-abcc-8c0c7f64de36))
+      (uuid 54e08788-420d-56d6-bfbc-fb7ff07e2628))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -720,39 +791,39 @@
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 176.53 96.52 0)
+    (at 172.72 96.52 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid c183fc6c-d5d8-5036-b384-378a95ea88ae)
+    (uuid e8c91c4e-31da-5c40-997a-d932c65a5077)
     (property "Reference" "#PWR004"
-      (at 176.53 95.25 0)
+      (at 172.72 95.25 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 176.53 92.71 0)
+      (at 172.72 92.71 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 176.53 96.52 0)
+      (at 172.72 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 176.53 96.52 0)
+      (at 172.72 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 2f08d58d-8aac-537f-9196-82b71d938c89))
+      (uuid 2d5472df-9744-5dd7-9a8b-65c9eaf214c6))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -760,47 +831,47 @@
           (unit 1)))))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 143.51 104.14 90)
+    (at 133.35 104.14 90)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 257945fe-e193-5741-beb9-4c1060e3c515))
+    (uuid c4ab9498-d5ba-5064-80c2-150ebf157883))
   (symbol
     (lib_id "power:GND")
-    (at 143.51 111.76 0)
+    (at 133.35 111.76 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 0928a6a8-d48f-593e-904e-598415dd7365)
+    (uuid 1addc2e8-5e9c-55cc-8e33-68801fe0d1e3)
     (property "Reference" "#PWR005"
-      (at 143.51 110.49000000000001 0)
+      (at 133.35 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 143.51 107.95 0)
+      (at 133.35 107.95 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 143.51 111.76 0)
+      (at 133.35 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 143.51 111.76 0)
+      (at 133.35 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 068a6556-7b30-5007-b99a-cbcae4bfbf46))
+      (uuid 26967a8f-fe06-5d5e-b3a7-f5f90e6b423a))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -808,39 +879,39 @@
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 149.86 102.87 0)
+    (at 120.65 102.87 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid e18ed029-058f-5d83-9b17-3f5a94fbdb37)
+    (uuid 4c361808-2867-5e3d-b2a6-aa949f2d5b6e)
     (property "Reference" "#PWR006"
-      (at 149.86 101.60000000000001 0)
+      (at 120.65 101.60000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 149.86 99.06 0)
+      (at 120.65 99.06 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 149.86 102.87 0)
+      (at 120.65 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 149.86 102.87 0)
+      (at 120.65 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 568dcbe1-d741-54d5-b12b-c977564641ba))
+      (uuid c554d4b9-ec58-5e0e-8a12-f9ca4cb5579d))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -848,39 +919,39 @@
           (unit 1)))))
   (symbol
     (lib_id "power:GND")
-    (at 149.86 110.49 0)
+    (at 120.65 110.49 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 3727427a-f732-51ed-8797-17948f4c795e)
+    (uuid 7058307c-f080-5e92-a791-c09d06e5da02)
     (property "Reference" "#PWR007"
-      (at 149.86 109.22 0)
+      (at 120.65 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 149.86 106.67999999999999 0)
+      (at 120.65 106.67999999999999 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 149.86 110.49 0)
+      (at 120.65 110.49 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 149.86 110.49 0)
+      (at 120.65 110.49 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 5b19eb5c-72c1-5617-9694-e59656a3e2c1))
+      (uuid 53a6fb72-5b74-516f-9b03-c7d8cd149e88))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"

@@ -23,8 +23,8 @@ FP_MUX = "Package_SO:TSSOP-16_4.4x5mm_P0.65mm"
 FP_IMU = "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
 FP_LDO = "Package_TO_SOT_SMD:SOT-23-5"
 FP_SW = "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x"
-FP_BAT = "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-FP_OLED = "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+FP_BAT = "Battery:BatteryHolder_Keystone_2479_3xAAA"
+FP_OLED = "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal"
 FP_TAG = "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
 
 
@@ -32,9 +32,9 @@ FP_TAG = "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
 
 @subcircuit
 def power_supply(vbat, vcc, gnd):
-    bat = Part("Connector", "Conn_01x02_Pin", footprint=FP_BAT)
-    bat[1] += vbat
-    bat[2] += gnd
+    bat = Part("Device", "Battery_Cell", value="3xAAA", footprint=FP_BAT)
+    bat[1] += vbat   # +
+    bat[2] += gnd    # -
 
     c_bat = Part("Device", "C", value="10uF", footprint=FP_C_BULK)
     c_bat[1] += vbat
@@ -52,6 +52,8 @@ def power_supply(vbat, vcc, gnd):
     c_out = Part("Device", "C", value="100nF", footprint=FP_C)
     c_out[1] += vcc
     c_out[2] += gnd
+
+    return bat
 
 
 # ── ESP32-C6 MCU ────────────────────────────────────────────────────────────
@@ -211,14 +213,18 @@ def oled_connector(vcc, gnd, sda, scl):
 
 @subcircuit
 def user_interface(vcc, gnd, btn_up, btn_down):
+    switches = []
     for btn_net in [btn_up, btn_down]:
         sw = Part("Switch", "SW_Push", footprint=FP_SW)
         sw[1] += btn_net
         sw[2] += gnd
+        switches.append(sw)
 
         r = Part("Device", "R", value="10K", footprint=FP_R)
         r[1] += vcc
         r[2] += btn_net
+
+    return switches
 
 
 # ── Debug: Tag-Connect TC2030-FP ────────────────────────────────────────────
@@ -258,13 +264,13 @@ for net in [sda, scl]:
     r[1] += vcc
     r[2] += net
 
-power_supply(vbat, vcc, gnd)
+bat_holder = power_supply(vbat, vcc, gnd)
 mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
             en_net, boot_net)
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 oled_connector(vcc, gnd, sda, scl)
-user_interface(vcc, gnd, btn_up, btn_down)
+sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
 
 
@@ -301,6 +307,13 @@ for i, sensor_part in enumerate(sensors):
     # search to succeed (rows 0-2 caps stay near sensors via fallback)
     if row == 3:
         sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
+
+# Battery holder across the bottom of the board
+sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
+
+# Switches flanking the electronics cluster
+sensor_fixed.append(FixedPosition(sw_up.ref, 20.0, 155.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_down.ref, 100.0, 155.0, 0.0))
 
 # Keepout: everything above the electronics zone (sensors only)
 # Electronics zone is below the film area: y=140 to y=185
