@@ -5,9 +5,9 @@
 <text x="300.0" y="85.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
 <line x1="0" y1="700.0" x2="600.0" y2="700.0" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
 <text x="300.0" y="715.0" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>
-<rect x="167.5" y="755.0" width="265.0" height="190.0" fill="#d4956a" stroke="#3a3530" rx="2" opacity="0.85"/>
-<text x="300.0" y="853.0" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif">3xAAA Keystone 2479</text>
-<text x="300.0" y="864.0" text-anchor="middle" font-size="7" fill="white" opacity="0.7" font-family="sans-serif">53 x 38mm</text>
+<rect x="167.5" y="755.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
+<text x="300.0" y="853.0" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
+<text x="300.0" y="864.0" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>
 <circle cx="112.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="112.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
 <circle cx="237.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
@@ -44,10 +44,10 @@
 <circle cx="487.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="487.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
 <rect x="483.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="70.0" y="745.0" width="60.0" height="60.0" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="100.0" y="778.0" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">SW</text>
-<rect x="470.0" y="745.0" width="60.0" height="60.0" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="500.0" y="778.0" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">SW</text>
+<rect x="70.0" y="745.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="100.0" y="778.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="470.0" y="745.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="500.0" y="778.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
 <rect x="334.8168329828885" y="701.3925438123044" width="15.0" height="15.0" fill="#c49452" stroke="#3a3530" rx="1"/>
 <text x="342.3168329828885" y="710.8925438123044" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">LDO</text>
 <rect x="265.7489277563943" y="701.2471014997037" width="66.0" height="62.5" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
@@ -88,21 +88,21 @@
 <rect x="253.13761429859807" y="747.5036630619439" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="312.340136111925" y="772.0935809578822" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <text x="300.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 57 parts | to-scale footprints</text>
+<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 57 parts | to-scale | dashed = back side</text>
 <rect x="50" y="965.0" width="10" height="10" fill="#c44e52" rx="2"/>
 <text x="64" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
 <rect x="120" y="965.0" width="10" height="10" fill="#4a6b5a" rx="2"/>
 <text x="134" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">ESP32-C6</text>
 <rect x="190" y="965.0" width="10" height="10" fill="#d4956a" rx="2"/>
-<text x="204" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">MUX/BAT</text>
+<text x="204" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">MUX</text>
 <rect x="260" y="965.0" width="10" height="10" fill="#6b8fa3" rx="2"/>
 <text x="274" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">IMU</text>
 <rect x="330" y="965.0" width="10" height="10" fill="#8b6b4a" rx="2"/>
 <text x="344" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">TC2030</text>
 <rect x="400" y="965.0" width="10" height="10" fill="#6b5a7a" rx="2"/>
 <text x="414" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OLED FPC</text>
-<rect x="470" y="965.0" width="10" height="10" fill="#7a6b5a" rx="2"/>
-<text x="484" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">Switch</text>
-<rect x="540" y="965.0" width="10" height="10" fill="#c49452" rx="2"/>
-<text x="554" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">LDO</text>
+<rect x="470" y="965.0" width="10" height="10" fill="#c49452" rx="2"/>
+<text x="484" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">LDO</text>
+<rect x="540" y="965.0" width="10" height="10" fill="#b0a898" rx="2"/>
+<text x="554" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">Passive</text>
 </svg>
