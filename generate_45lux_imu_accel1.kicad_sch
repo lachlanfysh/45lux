@@ -639,7 +639,7 @@
       (uuid 1a984aa4-fff3-5f21-aa22-1ddd627c43ca))
     (instances
       (project "SKiDL-Generated"
-        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/74848e2a-f7cf-5dc4-a017-daec31636fc2"
+        (path "/6d0e759d-3d5c-4db5-9c2c-66272e13e56a/74848e2a-f7cf-5dc4-a017-daec31636fc2"
           (reference "U23")
           (unit 1)))))
   (symbol
@@ -688,7 +688,7 @@
       (uuid fab2074f-b7bf-5c15-89dc-7c39f6214b0e))
     (instances
       (project "SKiDL-Generated"
-        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/74848e2a-f7cf-5dc4-a017-daec31636fc2"
+        (path "/6d0e759d-3d5c-4db5-9c2c-66272e13e56a/74848e2a-f7cf-5dc4-a017-daec31636fc2"
           (reference "C27")
           (unit 1)))))
   (global_label "IMU_INT1_NC"
@@ -698,7 +698,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid e70c55f5-9049-5981-84e7-5e94cf1a607b))
+    (uuid 4a7603dc-5bfd-5c13-95e2-15c1fd417532))
   (global_label "IMU_INT2_NC"
     (shape bidirectional)
     (at 161.29 95.25 180)
@@ -706,39 +706,55 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 4329dc6f-e722-5539-8e91-e20a1d459003))
+    (uuid 2971127f-9c78-52a7-8530-ef2e74776402))
   (wire
     (pts
-      (xy 152.4 90.17)
+      (xy 153.67 90.17)
       (xy 161.29 90.17))
     (stroke
       (width 0)
       (type default))
-    (uuid 372ff977-c95a-5601-9169-d3f08aa3d096))
+    (uuid 030c03ae-0326-5b9d-a624-39d3da33510c))
   (wire
     (pts
       (xy 152.4 91.44)
-      (xy 152.4 90.17))
+      (xy 153.67 91.44))
     (stroke
       (width 0)
       (type default))
-    (uuid ceb1ef3c-61e3-5285-bbe1-eed035edc7bc))
+    (uuid 4842be44-cb66-5317-96cc-8bc6577bad3a))
   (wire
     (pts
-      (xy 152.4 95.25)
+      (xy 153.67 91.44)
+      (xy 153.67 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 9af577a0-5f3c-55b3-8d88-a8972eedfd55))
+  (wire
+    (pts
+      (xy 152.4 93.98)
+      (xy 153.67 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid c480f9f9-0b24-5b78-ba5c-4331a80705a3))
+  (wire
+    (pts
+      (xy 153.67 95.25)
       (xy 161.29 95.25))
     (stroke
       (width 0)
       (type default))
-    (uuid 2858a8a5-bb33-535c-a319-078cd6ec0a8f))
+    (uuid fbff381c-bebf-5e8f-aaeb-49d4b2c77798))
   (wire
     (pts
-      (xy 152.4 95.25)
-      (xy 152.4 93.98))
+      (xy 153.67 95.25)
+      (xy 153.67 93.98))
     (stroke
       (width 0)
       (type default))
-    (uuid 71b867a1-ffa3-5581-ad25-b7daa1dc13f9))
+    (uuid 72403de6-0962-5d93-9cf5-c6d6e4925b2c))
   (symbol
     (lib_id "power:VCC")
     (at 129.54 88.9 0)
@@ -786,7 +802,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 34895193-62fb-53be-b195-ce9bfa007a49))
+    (uuid 93081ec6-962e-535b-87f7-408198fa8aa5))
   (symbol
     (lib_id "power:GND")
     (at 129.54 93.98 0)
@@ -834,7 +850,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid ba008770-c89f-5d1d-ad15-4bb9adc81f6b))
+    (uuid c02a1995-4b20-5095-9f6c-9f0f6238e361))
   (symbol
     (lib_id "power:VCC")
     (at 139.7 81.28 0)

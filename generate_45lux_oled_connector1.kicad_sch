@@ -457,7 +457,7 @@
       (uuid 71cf36e4-54c0-5d91-8c6d-aaf55583559f))
     (instances
       (project "SKiDL-Generated"
-        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd"
+        (path "/6d0e759d-3d5c-4db5-9c2c-66272e13e56a/1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd"
           (reference "J3")
           (unit 1)))))
   (symbol
@@ -547,7 +547,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 8088c4ca-4d97-5d9a-9de8-896b7b0fd45a))
+    (uuid 00a76800-9d16-511a-b5ae-a1a0ec71bb53))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 148.59 109.22 0)
@@ -555,4 +555,4 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid c63c10b2-7bab-50b8-b9a8-d4a0cbe1df6a)))
+    (uuid 350510d2-d0e6-500b-9ed7-d13f0c5ce803)))
