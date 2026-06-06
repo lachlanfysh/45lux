@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 63da636d-867d-5034-b6dd-5325b42a244c)
+  (uuid 1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -159,92 +159,6 @@
               (font
                 (size 1.27 1.27))))
           (number "4"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
-    (symbol "power:VBUS"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "VBUS"
-        (at 0 3.556 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"VBUS\""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "VBUS_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "VBUS_1_1"
-        (pin power_in line
-          (at 0 0 90)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
             (effects
               (font
                 (size 1.27 1.27))))))
@@ -406,6 +320,92 @@
             (effects
               (font
                 (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:VBUS"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "VBUS"
+        (at 0 3.556 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"VBUS\""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "VBUS_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "VBUS_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "Connector:Conn_01x04_Pin")
@@ -429,7 +429,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
       (at 143.51 104.14 0)
       (effects
         (font
@@ -457,7 +457,7 @@
       (uuid 71cf36e4-54c0-5d91-8c6d-aaf55583559f))
     (instances
       (project "SKiDL-Generated"
-        (path "/db63eedc-b1a4-4f09-8fd2-33baa462ab53/63da636d-867d-5034-b6dd-5325b42a244c"
+        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd"
           (reference "J3")
           (unit 1)))))
   (symbol
@@ -547,7 +547,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 82435204-b31c-5361-97ad-7416c6457a1c))
+    (uuid 8088c4ca-4d97-5d9a-9de8-896b7b0fd45a))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 148.59 109.22 0)

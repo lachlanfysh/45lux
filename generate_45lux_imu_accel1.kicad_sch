@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 9e3fff42-fecd-53f8-af98-4115409516db)
+  (uuid 74848e2a-f7cf-5dc4-a017-daec31636fc2)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -325,92 +325,6 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "power:VBUS"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "VBUS"
-        (at 0 3.556 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"VBUS\""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "VBUS_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "VBUS_1_1"
-        (pin power_in line
-          (at 0 0 90)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -568,6 +482,92 @@
             (effects
               (font
                 (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:VBUS"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "VBUS"
+        (at 0 3.556 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"VBUS\""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "VBUS_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "VBUS_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "/usr/share/kicad/symbols/Sensor_Motion:LIS2DH")
@@ -591,7 +591,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" "Package_LGA:LGA-14_2x2mm_P0.35mm_LayoutBorder3x4y"
+    (property "Footprint" "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
       (at 139.7 93.98 0)
       (effects
         (font
@@ -639,7 +639,7 @@
       (uuid 1a984aa4-fff3-5f21-aa22-1ddd627c43ca))
     (instances
       (project "SKiDL-Generated"
-        (path "/db63eedc-b1a4-4f09-8fd2-33baa462ab53/9e3fff42-fecd-53f8-af98-4115409516db"
+        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/74848e2a-f7cf-5dc4-a017-daec31636fc2"
           (reference "U23")
           (unit 1)))))
   (symbol
@@ -664,7 +664,7 @@
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" ""
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
       (at 148.59 125.73 0)
       (effects
         (font
@@ -688,17 +688,9 @@
       (uuid fab2074f-b7bf-5c15-89dc-7c39f6214b0e))
     (instances
       (project "SKiDL-Generated"
-        (path "/db63eedc-b1a4-4f09-8fd2-33baa462ab53/9e3fff42-fecd-53f8-af98-4115409516db"
+        (path "/6dcf6958-c948-4a8f-bc9e-dc767fc7f8c2/74848e2a-f7cf-5dc4-a017-daec31636fc2"
           (reference "C27")
           (unit 1)))))
-  (global_label "IMU_INT2_NC"
-    (shape bidirectional)
-    (at 161.29 95.25 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid 4329dc6f-e722-5539-8e91-e20a1d459003))
   (global_label "IMU_INT1_NC"
     (shape bidirectional)
     (at 161.29 90.17 180)
@@ -707,6 +699,14 @@
         (size 1.27 1.27))
       (justify right))
     (uuid e70c55f5-9049-5981-84e7-5e94cf1a607b))
+  (global_label "IMU_INT2_NC"
+    (shape bidirectional)
+    (at 161.29 95.25 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 4329dc6f-e722-5539-8e91-e20a1d459003))
   (wire
     (pts
       (xy 152.4 90.17)

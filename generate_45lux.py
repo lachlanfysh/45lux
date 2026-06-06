@@ -12,40 +12,50 @@ os.environ["KICAD9_SYMBOL_DIR"] = "/usr/share/kicad/symbols"
 from skidl import *
 set_default_tool(KICAD9)
 
+# Footprint constants
+FP_R = "Resistor_SMD:R_0603_1608Metric"
+FP_C = "Capacitor_SMD:C_0603_1608Metric"
+FP_C_BULK = "Capacitor_SMD:C_0805_2012Metric"
+FP_LED = "LED_SMD:LED_0805_2012Metric"
+FP_ESP32 = "RF_Module:ESP32-S3-WROOM-1"
+FP_TSL = "OptoDevice:AMS_TSL25911FN"
+FP_MUX = "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm"
+FP_IMU = "Package_LGA:Bosch_LGA-14_3x2.5mm_P0.5mm"
+FP_CHRG = "Package_TO_SOT_SMD:SOT-23-5"
+FP_LDO = "Package_TO_SOT_SMD:SOT-23-5"
+FP_TVS = "Package_TO_SOT_SMD:SOT-23-6"
+FP_USB = "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
+FP_SW = "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x"
+FP_JST = "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
+FP_OLED = "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+
 
 # ── USB-C + MCP73831 LiPo Charger ──────────────────────────────────────────
 
 @subcircuit
 def usb_charger(vbus, vbat, gnd, usb_dp, usb_dm):
-    """USB-C with CC pull-downs, ESD protection, MCP73831 charger, status LED."""
-
-    usb = Part("Connector", "USB_C_Receptacle_USB2.0_16P")
+    usb = Part("Connector", "USB_C_Receptacle_USB2.0_16P", footprint=FP_USB)
     for p in ["A1", "A12", "B1", "B12"]:
         usb[p] += gnd
     for p in ["A4", "A9", "B4", "B9"]:
         usb[p] += vbus
     usb["S1"] += gnd
 
-    # CC pull-downs for UFP/sink role
     for cc_pin in ["A5", "B5"]:
         cc = Net()
         usb[cc_pin] += cc
-        r = Part("Device", "R", value="5.1K")
+        r = Part("Device", "R", value="5.1K", footprint=FP_R)
         r[1] += cc
         r[2] += gnd
 
-    # USB 2.0 data (tie A/B pairs)
     usb["A6"] += usb_dp
     usb["B6"] += usb_dp
     usb["A7"] += usb_dm
     usb["B7"] += usb_dm
-
-    # SBU pins unused
     usb["A8"] += Net("SBU1_NC")
     usb["B8"] += Net("SBU2_NC")
 
-    # ESD protection on USB data lines
-    tvs = Part("Power_Protection", "USBLC6-2SC6")
+    tvs = Part("Power_Protection", "USBLC6-2SC6", footprint=FP_TVS)
     tvs[1] += usb_dp
     tvs[6] += usb_dp
     tvs[3] += usb_dm
@@ -53,27 +63,23 @@ def usb_charger(vbus, vbat, gnd, usb_dp, usb_dm):
     tvs[5] += vbus
     tvs[2] += gnd
 
-    # Input decoupling
-    c_in = Part("Device", "C", value="4.7uF")
+    c_in = Part("Device", "C", value="4.7uF", footprint=FP_C_BULK)
     c_in[1] += vbus
     c_in[2] += gnd
 
-    # MCP73831: 1=STAT, 2=VSS, 3=VBAT, 4=VDD, 5=PROG
-    chrg = Part("Battery_Management", "MCP73831-2-OT")
+    chrg = Part("Battery_Management", "MCP73831-2-OT", footprint=FP_CHRG)
     chrg[4] += vbus
     chrg[2] += gnd
     chrg[3] += vbat
 
-    # Charge current: 2K → 500mA
-    r_prog = Part("Device", "R", value="2K")
+    r_prog = Part("Device", "R", value="2K", footprint=FP_R)
     r_prog[1] += chrg[5]
     r_prog[2] += gnd
 
-    # Charge status LED (active-low STAT output)
     stat = Net("CHG_STAT")
     chrg[1] += stat
-    r_led = Part("Device", "R", value="1K")
-    led = Part("Device", "LED")
+    r_led = Part("Device", "R", value="1K", footprint=FP_R)
+    led = Part("Device", "LED", footprint=FP_LED)
     r_led[1] += vbus
     r_led[2] += led[1]
     led[2] += stat
@@ -83,28 +89,24 @@ def usb_charger(vbus, vbat, gnd, usb_dp, usb_dm):
 
 @subcircuit
 def power_supply(vbat, vcc, gnd):
-    """AP2112K-3.3 LDO with JST-PH battery connector."""
-
-    bat = Part("Connector", "Conn_01x02_Pin")
+    bat = Part("Connector", "Conn_01x02_Pin", footprint=FP_JST)
     bat[1] += vbat
     bat[2] += gnd
 
-    c_bat = Part("Device", "C", value="10uF")
+    c_bat = Part("Device", "C", value="10uF", footprint=FP_C_BULK)
     c_bat[1] += vbat
     c_bat[2] += gnd
 
-    # AP2112K: 1=VIN, 2=GND, 3=EN, 4=NC, 5=VOUT
-    ldo = Part("Regulator_Linear", "AP2112K-3.3")
+    ldo = Part("Regulator_Linear", "AP2112K-3.3", footprint=FP_LDO)
     ldo[1] += vbat
     ldo[2] += gnd
-    ldo[3] += vbat  # EN tied high = always on
+    ldo[3] += vbat
     ldo[5] += vcc
 
-    c_in = Part("Device", "C", value="1uF")
+    c_in = Part("Device", "C", value="100nF", footprint=FP_C)
     c_in[1] += vbat
     c_in[2] += gnd
-
-    c_out = Part("Device", "C", value="1uF")
+    c_out = Part("Device", "C", value="100nF", footprint=FP_C)
     c_out[1] += vcc
     c_out[2] += gnd
 
@@ -113,49 +115,38 @@ def power_supply(vbat, vcc, gnd):
 
 @subcircuit
 def mcu_esp32s3(vcc, gnd, usb_dp, usb_dm, sda, scl, btn_up, btn_down):
-    """ESP32-S3-WROOM-1 with boot/reset circuit and decoupling."""
-
-    esp = Part("RF_Module", "ESP32-S3-WROOM-1")
+    esp = Part("RF_Module", "ESP32-S3-WROOM-1", footprint=FP_ESP32)
     esp[2] += vcc
     esp[1] += gnd
     esp[40] += gnd
     esp[41] += gnd
 
-    # EN reset circuit
-    r_en = Part("Device", "R", value="10K")
+    r_en = Part("Device", "R", value="10K", footprint=FP_R)
     r_en[1] += vcc
     r_en[2] += esp[3]
-    c_en = Part("Device", "C", value="100nF")
+    c_en = Part("Device", "C", value="100nF", footprint=FP_C)
     c_en[1] += esp[3]
     c_en[2] += gnd
 
-    # Native USB (IO19=D-, IO20=D+)
     esp[14] += usb_dp
     esp[13] += usb_dm
-
-    # I2C (IO4=SDA, IO5=SCL)
     esp[4] += sda
     esp[5] += scl
-
-    # Buttons (IO6=UP, IO7=DOWN)
     esp[6] += btn_up
     esp[7] += btn_down
 
-    # IO0 boot strapping pull-up
-    r_boot = Part("Device", "R", value="10K")
+    r_boot = Part("Device", "R", value="10K", footprint=FP_R)
     r_boot[1] += vcc
     r_boot[2] += esp[27]
 
-    # Decoupling
     for _ in range(2):
-        c = Part("Device", "C", value="100nF")
+        c = Part("Device", "C", value="100nF", footprint=FP_C)
         c[1] += vcc
         c[2] += gnd
-    c_bulk = Part("Device", "C", value="10uF")
+    c_bulk = Part("Device", "C", value="10uF", footprint=FP_C_BULK)
     c_bulk[1] += vcc
     c_bulk[2] += gnd
 
-    # Unused GPIO → NC nets
     unused_pins = [
         8, 9, 10, 11, 12, 15, 16, 17, 18, 19, 20, 21, 22,
         23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39,
@@ -164,80 +155,81 @@ def mcu_esp32s3(vcc, gnd, usb_dp, usb_dm, sda, scl, btn_up, btn_down):
         esp[p] += Net(f"ESP_P{p}_NC")
 
 
-# ── Sensor Bank: TCA9548A mux + 8x TSL25911FN ──────────────────────────────
+# ── Sensor Array: 2x TCA9548A + 16x TSL25911FN ─────────────────────────────
 
 @subcircuit
-def sensor_bank(vcc, gnd, sda, scl, bank_id):
-    """One I2C mux driving 8 HDR lux sensors. bank_id: 0→0x70, 1→0x71."""
+def sensor_array(vcc, gnd, sda, scl):
+    """Both I2C muxes and all 16 HDR lux sensors in one group."""
 
-    mux = Part("Interface_Expansion", "TCA9548APWR")
-    mux[24] += vcc
-    mux[12] += gnd
-    mux[22] += scl
-    mux[23] += sda
+    sensor_refs = []
 
-    # Address pins: bank 0 = all low (0x70), bank 1 = A0 high (0x71)
-    if bank_id == 0:
-        mux[1] += gnd   # A0
-    else:
-        mux[1] += vcc   # A0
-    mux[2] += gnd       # A1
-    mux[21] += gnd      # A2
+    for bank in range(2):
+        mux = Part("Interface_Expansion", "TCA9548APWR", footprint=FP_MUX)
+        mux[24] += vcc
+        mux[12] += gnd
+        mux[22] += scl
+        mux[23] += sda
 
-    # ~RESET pull-up (active low, hold high for normal operation)
-    r_rst = Part("Device", "R", value="10K")
-    r_rst[1] += vcc
-    r_rst[2] += mux[3]
+        if bank == 0:
+            mux[1] += gnd   # A0 low → 0x70
+        else:
+            mux[1] += vcc   # A0 high → 0x71
+        mux[2] += gnd       # A1
+        mux[21] += gnd      # A2
 
-    c_mux = Part("Device", "C", value="100nF")
-    c_mux[1] += vcc
-    c_mux[2] += gnd
+        r_rst = Part("Device", "R", value="10K", footprint=FP_R)
+        r_rst[1] += vcc
+        r_rst[2] += mux[3]
 
-    # Channel data/clock pin pairs on the TCA9548A
-    sd_pins = [4, 6, 8, 10, 13, 15, 17, 19]
-    sc_pins = [5, 7, 9, 11, 14, 16, 18, 20]
+        c_mux = Part("Device", "C", value="100nF", footprint=FP_C)
+        c_mux[1] += vcc
+        c_mux[2] += gnd
 
-    for ch in range(8):
-        ch_sda = Net(f"MUX{bank_id}_CH{ch}_SDA")
-        ch_scl = Net(f"MUX{bank_id}_CH{ch}_SCL")
-        mux[sd_pins[ch]] += ch_sda
-        mux[sc_pins[ch]] += ch_scl
+        sd_pins = [4, 6, 8, 10, 13, 15, 17, 19]
+        sc_pins = [5, 7, 9, 11, 14, 16, 18, 20]
 
-        # TSL25911FN: 1=SCL, 2=INT, 3=GND, 4=NC, 5=VDD, 6=SDA
-        sensor = Part("Sensor_Optical", "TSL25911FN")
-        sensor[1] += ch_scl
-        sensor[6] += ch_sda
-        sensor[5] += vcc
-        sensor[3] += gnd
-        sensor[2] += Net(f"MUX{bank_id}_INT{ch}_NC")
-        sensor[4] += Net(f"MUX{bank_id}_SNC{ch}")
+        for ch in range(8):
+            ch_sda = Net(f"MUX{bank}_CH{ch}_SDA")
+            ch_scl = Net(f"MUX{bank}_CH{ch}_SCL")
+            mux[sd_pins[ch]] += ch_sda
+            mux[sc_pins[ch]] += ch_scl
 
-        c_s = Part("Device", "C", value="100nF")
-        c_s[1] += vcc
-        c_s[2] += gnd
+            sensor = Part("Sensor_Optical", "TSL25911FN", footprint=FP_TSL)
+            sensor[1] += ch_scl
+            sensor[6] += ch_sda
+            sensor[5] += vcc
+            sensor[3] += gnd
+            sensor[2] += Net(f"MUX{bank}_INT{ch}_NC")
+            sensor[4] += Net(f"MUX{bank}_SNC{ch}")
+
+            sensor_refs.append(sensor)
+
+            c_s = Part("Device", "C", value="100nF", footprint=FP_C)
+            c_s[1] += vcc
+            c_s[2] += gnd
+
+    return sensor_refs
 
 
 # ── IMU: LIS2DH ────────────────────────────────────────────────────────────
 
 @subcircuit
 def imu_accel(vcc, gnd, sda, scl):
-    """LIS2DH accelerometer for screen rotation and digital level."""
-
-    imu = Part("Sensor_Motion", "LIS2DH")
-    imu[8] += vcc       # Vdd
-    imu[7] += vcc       # Vdd_IO
+    imu = Part("Sensor_Motion", "LIS2DH", footprint=FP_IMU)
+    imu[8] += vcc
+    imu[7] += vcc
     for p in [9, 10, 11, 12, 13, 14]:
         imu[p] += gnd
 
-    imu[1] += scl       # SCL
-    imu[2] += sda       # SDA
-    imu[4] += vcc       # ~CS high → I2C mode
-    imu[3] += gnd       # SDO/SA0 low → address 0x18
+    imu[1] += scl
+    imu[2] += sda
+    imu[4] += vcc   # ~CS high → I2C mode
+    imu[3] += gnd   # SDO/SA0 low → address 0x18
 
     imu[5] += Net("IMU_INT2_NC")
     imu[6] += Net("IMU_INT1_NC")
 
-    c_imu = Part("Device", "C", value="100nF")
+    c_imu = Part("Device", "C", value="100nF", footprint=FP_C)
     c_imu[1] += vcc
     c_imu[2] += gnd
 
@@ -246,9 +238,7 @@ def imu_accel(vcc, gnd, sda, scl):
 
 @subcircuit
 def oled_connector(vcc, gnd, sda, scl):
-    """4-pin FPC connector for SSD1327 128x128 I2C OLED."""
-
-    conn = Part("Connector", "Conn_01x04_Pin")
+    conn = Part("Connector", "Conn_01x04_Pin", footprint=FP_OLED)
     conn[1] += gnd
     conn[2] += vcc
     conn[3] += scl
@@ -259,20 +249,18 @@ def oled_connector(vcc, gnd, sda, scl):
 
 @subcircuit
 def user_interface(vcc, gnd, btn_up, btn_down):
-    """Two THT tactile switches with pull-ups for aperture control."""
-
     for btn_net in [btn_up, btn_down]:
-        sw = Part("Switch", "SW_Push")
+        sw = Part("Switch", "SW_Push", footprint=FP_SW)
         sw[1] += btn_net
         sw[2] += gnd
 
-        r = Part("Device", "R", value="10K")
+        r = Part("Device", "R", value="10K", footprint=FP_R)
         r[1] += vcc
         r[2] += btn_net
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# Top level: define nets, wire subcircuits
+# Top level
 # ═══════════════════════════════════════════════════════════════════════════
 
 vbus = Net("VBUS")
@@ -287,23 +275,78 @@ scl = Net("I2C_SCL")
 btn_up = Net("BTN_UP")
 btn_down = Net("BTN_DOWN")
 
-# I2C bus pull-ups (one set on the main bus)
+# I2C bus pull-ups
 for net in [sda, scl]:
-    r = Part("Device", "R", value="4.7K")
+    r = Part("Device", "R", value="4.7K", footprint=FP_R)
     r[1] += vcc
     r[2] += net
 
 usb_charger(vbus, vbat, gnd, usb_dp, usb_dm)
 power_supply(vbat, vcc, gnd)
 mcu_esp32s3(vcc, gnd, usb_dp, usb_dm, sda, scl, btn_up, btn_down)
-sensor_bank(vcc, gnd, sda, scl, 0)   # TCA9548A @ 0x70
-sensor_bank(vcc, gnd, sda, scl, 1)   # TCA9548A @ 0x71
+sensors = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 oled_connector(vcc, gnd, sda, scl)
 user_interface(vcc, gnd, btn_up, btn_down)
+
+
+# ── Generate Schematic ──────────────────────────────────────────────────────
 
 generate_schematic(
     auto_stub=True,
     auto_stub_fanout=3,
     erc_max_iterations=8,
 )
+
+
+# ── Generate PCB Layout ────────────────────────────────────────────────────
+
+from skidl.layout import (
+    extract_groups, place_parts, write_kicad_pcb, validate,
+    LayoutConstraints, BoardOutline, FixedPosition, derive_outline,
+    load_footprint_bboxes,
+)
+
+# Board outline: 4x5 film holder interior (~120mm x 160mm)
+outline = BoardOutline(120.0, 160.0)
+
+# Fix the 16 sensors in a 4x4 grid across the film area
+# Film area ~95mm x 120mm, centered on board
+sensor_fixed = []
+for i, sensor_part in enumerate(sensors):
+    row, col = divmod(i, 4)
+    x = 15.0 + col * 30.0   # 4 columns across 90mm
+    y = 20.0 + row * 37.3   # 4 rows across ~112mm
+    sensor_fixed.append(FixedPosition(sensor_part.ref, x, y, 0.0))
+
+constraints = LayoutConstraints(
+    fixed=sensor_fixed,
+    outline=outline,
+)
+
+# Collect footprint names and load bounding boxes
+ckt = default_circuit
+fp_names = set()
+for p in ckt.parts:
+    fp = getattr(p, "footprint", None)
+    if fp:
+        # SKiDL stores footprint as "Lib:Name" or just the value
+        fp_str = str(fp)
+        if ":" in fp_str:
+            fp_names.add(fp_str)
+
+fp_lib_dirs = ["/usr/share/kicad/footprints"]
+fp_bboxes = load_footprint_bboxes(fp_names, fp_lib_dirs)
+
+placed = place_parts(extract_groups(ckt), constraints, fp_bboxes)
+
+result = validate(placed, ckt, fp_bboxes, outline=outline)
+print(result.summary())
+
+write_kicad_pcb(
+    placed, ckt, fp_lib_dirs,
+    output_path="45lux.kicad_pcb",
+    outline=outline,
+)
+
+print(f"PCB written to 45lux.kicad_pcb")
