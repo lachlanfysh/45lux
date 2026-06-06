@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 5a60bbff-1d03-5cdb-8094-e7f9d0de40a5)
+  (uuid a63ea3da-de4d-59c0-bcee-96b524551a9e)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -13,7 +13,7 @@
     (comment 3 "")
     (comment 4 ""))
   (lib_symbols
-    (symbol "Connector:Conn_01x04_Pin"
+    (symbol "Connector_Generic:Conn_02x03_Odd_Even"
       (pin_numbers
         (hide yes))
       (pin_names
@@ -26,7 +26,7 @@
         (effects
           (font
             (size 1.27 1.27))))
-      (property "Value" "Conn_01x04_Pin"
+      (property "Value" "Conn_02x03_Odd_Even"
         (at 0 0 90)
         (effects
           (font
@@ -43,83 +43,71 @@
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Description" "Generic connector, single row, 01x04, script generated"
+      (property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
         (at 0 0 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (symbol "Conn_01x04_Pin_1_1"
+      (symbol "Conn_02x03_Odd_Even_1_1"
         (rectangle
-          (start 0.8636 2.667)
+          (start -1.27 3.81)
+          (end 3.81 -3.81)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -1.27 2.667)
           (end 0 2.413)
           (stroke
             (width 0.1524)
             (type default))
           (fill
-            (type outline)))
+            (type none)))
         (rectangle
-          (start 0.8636 0.127)
+          (start -1.27 0.127)
           (end 0 -0.127)
           (stroke
             (width 0.1524)
             (type default))
           (fill
-            (type outline)))
+            (type none)))
         (rectangle
-          (start 0.8636 -2.413)
+          (start -1.27 -2.413)
           (end 0 -2.667)
           (stroke
             (width 0.1524)
             (type default))
           (fill
-            (type outline)))
+            (type none)))
         (rectangle
-          (start 0.8636 -4.953)
-          (end 0 -5.207)
-          (stroke
-            (width 0.1524)
-            (type default))
-          (fill
-            (type outline)))
-        (polyline
-          (pts
-            (xy 1.27 2.54)
-            (xy 0.8636 2.54))
+          (start 3.81 2.667)
+          (end 2.54 2.413)
           (stroke
             (width 0.1524)
             (type default))
           (fill
             (type none)))
-        (polyline
-          (pts
-            (xy 1.27 0)
-            (xy 0.8636 0))
+        (rectangle
+          (start 3.81 0.127)
+          (end 2.54 -0.127)
           (stroke
             (width 0.1524)
             (type default))
           (fill
             (type none)))
-        (polyline
-          (pts
-            (xy 1.27 -2.54)
-            (xy 0.8636 -2.54))
-          (stroke
-            (width 0.1524)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 1.27 -5.08)
-            (xy 0.8636 -5.08))
+        (rectangle
+          (start 3.81 -2.413)
+          (end 2.54 -2.667)
           (stroke
             (width 0.1524)
             (type default))
           (fill
             (type none)))
         (pin passive line
-          (at 5.08 2.54 180)
+          (at -5.08 2.54 0)
           (length 3.81)
           (name "Pin_1"
             (effects
@@ -130,18 +118,7 @@
               (font
                 (size 1.27 1.27)))))
         (pin passive line
-          (at 5.08 0 180)
-          (length 3.81)
-          (name "Pin_2"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "2"
-            (effects
-              (font
-                (size 1.27 1.27)))))
-        (pin passive line
-          (at 5.08 -2.54 180)
+          (at -5.08 0 0)
           (length 3.81)
           (name "Pin_3"
             (effects
@@ -152,13 +129,46 @@
               (font
                 (size 1.27 1.27)))))
         (pin passive line
-          (at 5.08 -5.08 180)
+          (at -5.08 -2.54 0)
+          (length 3.81)
+          (name "Pin_5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 2.54 180)
+          (length 3.81)
+          (name "Pin_2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 0 180)
           (length 3.81)
           (name "Pin_4"
             (effects
               (font
                 (size 1.27 1.27))))
           (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 7.62 -2.54 180)
+          (length 3.81)
+          (name "Pin_6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
             (effects
               (font
                 (size 1.27 1.27))))))
@@ -322,151 +332,203 @@
                 (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
-    (lib_id "Connector:Conn_01x04_Pin")
-    (at 143.51 104.14 0)
+    (lib_id "Connector_Generic:Conn_02x03_Odd_Even")
+    (at 146.05 105.41 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid e4092a8f-8989-5cda-8e23-698706675ff3)
-    (property "Reference" "J2"
-      (at 143.51 101.6 0)
+    (uuid bcbdb757-c45a-51c7-9906-71952a692cf1)
+    (property "Reference" "J3"
+      (at 146.05 102.86999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Value" "Conn_01x04_Pin"
-      (at 143.51 106.68 0)
+    (property "Value" "Conn_02x03_Odd_Even"
+      (at 146.05 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
-    (property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-      (at 143.51 104.14 0)
+    (property "Footprint" "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+      (at 146.05 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 143.51 104.14 0)
+      (at 146.05 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Description" "Generic connector, single row, 01x04, script generated"
-      (at 143.51 104.14 0)
+    (property "Description" "Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+      (at 146.05 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 34993bb6-4abc-5b49-b344-e07ed3d4d807))
-    (pin "2"
-      (uuid 99d22730-c164-5dc3-9d48-d9641cd5cc0f))
+      (uuid 90fd9061-0c87-5bf0-aae6-35fc6ba8f22d))
     (pin "3"
-      (uuid 50fa621c-959b-5c3f-a2af-8bed5fa68e48))
+      (uuid e644936d-5f8e-50b6-afbf-f3dc942f794c))
+    (pin "5"
+      (uuid d1f88441-3e8c-578e-adcb-65ea2bb4d21e))
+    (pin "2"
+      (uuid 6a9480a5-0624-5675-8e4e-63360671a465))
     (pin "4"
-      (uuid 43b324e1-fd6c-5df8-8870-df7bd57cf04b))
+      (uuid 2e3089e3-555a-58a4-9b21-f6fb7c84a10a))
+    (pin "6"
+      (uuid 3bec7e75-5e66-5089-a3a0-b81d6699fdc5))
     (instances
       (project "SKiDL-Generated"
-        (path "/8d355a40-cb5a-4ec8-8cb4-7ccfad94636a/5a60bbff-1d03-5cdb-8094-e7f9d0de40a5"
-          (reference "J2")
+        (path "/8d355a40-cb5a-4ec8-8cb4-7ccfad94636a/a63ea3da-de4d-59c0-bcee-96b524551a9e"
+          (reference "J3")
           (unit 1)))))
-  (symbol
-    (lib_id "power:GND")
-    (at 148.59 101.6 0)
-    (unit 1)
-    (exclude_from_sim yes)
-    (in_bom no)
-    (on_board yes)
-    (dnp no)
-    (fields_autoplaced yes)
-    (uuid 87f20575-c87a-5247-a071-7de3ddf68fa9)
-    (property "Reference" "#PWR132"
-      (at 148.59 100.33 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 148.59 97.78999999999999 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 148.59 101.6 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 148.59 101.6 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid 5628bdc6-b6c7-5181-9f82-9caf916dbd99))
-    (instances
-      (project "SKiDL-Generated"
-        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR132")
-          (unit 1)))))
+  (global_label "UART_TX"
+    (shape bidirectional)
+    (at 172.72 102.87 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 023708e5-1b11-5138-be11-32989bf8c843))
+  (global_label "UART_RX"
+    (shape bidirectional)
+    (at 124.46 105.41 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid 7dd63d7d-ed52-5d94-aff4-1b867622488f))
+  (wire
+    (pts
+      (xy 124.46 105.41)
+      (xy 140.97 105.41))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 303d521a-f1bb-5d45-8b3e-46d353639f56))
+  (wire
+    (pts
+      (xy 153.67 102.87)
+      (xy 172.72 102.87))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 7cfa6a04-29c4-5b4c-9095-44acd35a4e43))
   (symbol
     (lib_id "power:VCC")
-    (at 148.59 104.14 0)
+    (at 140.97 102.87 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 78d9990f-5be6-5aba-b723-b0c338e5e5da)
-    (property "Reference" "#PWR133"
-      (at 148.59 102.87 0)
+    (uuid 60ddd7bd-03d5-510e-a336-7acba596bb50)
+    (property "Reference" "#PWR138"
+      (at 140.97 101.60000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 148.59 100.33 0)
+      (at 140.97 99.06 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 148.59 104.14 0)
+      (at 140.97 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 148.59 104.14 0)
+      (at 140.97 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid b09132b7-ae8f-5cd3-bb40-e2217eb3c72f))
+      (uuid b92eae99-7773-5b4a-ba3c-87f8e8452980))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR133")
+          (reference "#PWR138")
           (unit 1)))))
-  (global_label "I2C_SCL"
+  (global_label "ESP_EN"
     (shape bidirectional)
-    (at 148.59 106.68 0)
+    (at 140.97 107.95 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 9121b1e3-e8eb-52bb-8d21-0e6503bfbc62))
+  (symbol
+    (lib_id "power:GND")
+    (at 153.67 105.41 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid d262c561-ff5c-574b-b3a6-ce48c74fe5dd)
+    (property "Reference" "#PWR139"
+      (at 153.67 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 153.67 101.6 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 153.67 105.41 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 153.67 105.41 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid 8954d675-75a9-5543-9018-26db55e88f35))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
+          (reference "#PWR139")
+          (unit 1)))))
+  (global_label "ESP_BOOT"
+    (shape bidirectional)
+    (at 153.67 107.95 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid f5318f86-4460-5c2f-84b3-ca8c7e1c611d))
-  (global_label "I2C_SDA"
+    (uuid 3bac682c-9f93-556d-a6c6-fb371f4156f3))
+  (hierarchical_label "UART_RX"
     (shape bidirectional)
-    (at 148.59 109.22 0)
+    (at 5.0 10.0 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 350510d2-d0e6-500b-9ed7-d13f0c5ce803)))
+    (uuid 64347ef5-a48c-54af-ad7e-cbe0c36fc927))
+  (hierarchical_label "UART_TX"
+    (shape bidirectional)
+    (at 5.0 12.54 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid a636d24e-5423-5812-820a-5bb003a0f51b)))

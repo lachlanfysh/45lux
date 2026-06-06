@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 74848e2a-f7cf-5dc4-a017-daec31636fc2)
+  (uuid 69729ca3-0715-5722-891b-3ea0410a6701)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -325,78 +325,6 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "power:GND"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -6.35 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "GND"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "GND_1_1"
-        (pin power_in line
-          (at 0 0 270)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -483,7 +411,7 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "power:VBUS"
+    (symbol "power:GND"
       (power)
       (pin_numbers
         (hide yes))
@@ -494,13 +422,13 @@
       (in_bom yes)
       (on_board yes)
       (property "Reference" "#PWR"
-        (at 0 -3.81 0)
+        (at 0 -6.35 0)
         (effects
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Value" "VBUS"
-        (at 0 3.556 0)
+      (property "Value" "GND"
+        (at 0 -3.81 0)
         (effects
           (font
             (size 1.27 1.27))))
@@ -516,7 +444,7 @@
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"VBUS\""
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
         (at 0 0 0)
         (effects
           (font
@@ -528,37 +456,23 @@
           (font
             (size 1.27 1.27))
           (hide yes)))
-      (symbol "VBUS_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none)))
+      (symbol "GND_0_1"
         (polyline
           (pts
             (xy 0 0)
-            (xy 0 2.54))
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
           (stroke
             (width 0)
             (type default))
           (fill
             (type none))))
-      (symbol "VBUS_1_1"
+      (symbol "GND_1_1"
         (pin power_in line
-          (at 0 0 90)
+          (at 0 0 270)
           (length 0)
           (name "~"
             (effects
@@ -578,8 +492,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 5a0ccd35-9dd2-5f4d-a37e-9b6554b0b373)
-    (property "Reference" "U23"
+    (uuid 6239f8e0-afe6-5c84-8a56-781c9b22ec0b)
+    (property "Reference" "U20"
       (at 139.7 91.44 0)
       (effects
         (font
@@ -610,37 +524,37 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "4"
-      (uuid b62acc0d-f846-534c-bbfb-d933aa9aab4f))
+      (uuid ec82f11f-1979-563a-b8b7-30874a2a600d))
     (pin "2"
-      (uuid 8a32a171-edc6-542e-9b3a-17a08614e5a7))
+      (uuid 42009e6a-6136-5ddd-9467-394f876eb6ab))
     (pin "3"
-      (uuid c03567b4-5e2c-5a34-9789-aa86099dc884))
+      (uuid cd0f6989-705c-5d1c-891a-e91df548197c))
     (pin "1"
-      (uuid b6687533-1ff2-5026-a3c5-a10af503ab7f))
+      (uuid 9f2b4404-ab3e-5d61-928e-e0fa12ac4124))
     (pin "8"
-      (uuid 9268d056-e8dd-5290-b1d8-89876e1ca5f0))
+      (uuid 76b29247-7f00-5f8c-84de-0ffb912f2987))
     (pin "10"
-      (uuid 44b56bb9-5de8-53f1-9949-bfe548777378))
+      (uuid a428ccc6-8754-501b-bc26-65672a475a44))
     (pin "11"
-      (uuid f4d0abf4-0721-511f-ad8c-c2322a6331ec))
+      (uuid e74b599c-59ca-5f2c-970b-098e206106c5))
     (pin "12"
-      (uuid d767c3a6-72db-5914-a7a7-7fc3e47e5fba))
+      (uuid 4911286e-0aa4-5b12-9060-c51966726f31))
     (pin "13"
-      (uuid ae768f8a-0582-54db-a732-4820fdd4bf86))
+      (uuid 0ec5f8c1-ac3e-57cc-8c45-b980a939c546))
     (pin "14"
-      (uuid b59675ad-b66b-5c01-b474-ef755fdf76ec))
+      (uuid 96dbbc1a-bf0d-52d2-b5b8-a82378fa6c47))
     (pin "9"
-      (uuid 5c33a898-4dd0-5a98-8caa-92e8f3dd2159))
+      (uuid 594eb474-3d65-5979-a8c3-59cc37b0c7b9))
     (pin "7"
-      (uuid 28345777-0790-5186-b83c-35a6d99b3f56))
+      (uuid d89fa2dc-f8ed-57f8-af82-dfb019e74a80))
     (pin "6"
-      (uuid 8db1d1b3-cd15-5c1a-ac15-e449b72d7ccb))
+      (uuid c6e3adcc-4012-5fbc-894f-3c54a17287e3))
     (pin "5"
-      (uuid 1a984aa4-fff3-5f21-aa22-1ddd627c43ca))
+      (uuid 0b756652-dadb-5978-930d-5056935fb5d3))
     (instances
       (project "SKiDL-Generated"
-        (path "/6d9d068f-5b2a-49c0-a500-e9b98509a792/74848e2a-f7cf-5dc4-a017-daec31636fc2"
-          (reference "U23")
+        (path "/8d355a40-cb5a-4ec8-8cb4-7ccfad94636a/69729ca3-0715-5722-891b-3ea0410a6701"
+          (reference "U20")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
@@ -651,8 +565,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid e9e0ab02-9c00-507f-8306-eae432b9b57c)
-    (property "Reference" "C27"
+    (uuid 9790d6a5-dba9-56d1-82a7-46fb72438381)
+    (property "Reference" "C25"
       (at 148.59 123.19 0)
       (effects
         (font
@@ -683,22 +597,14 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid c99b7f44-493c-5d72-b979-1c9f13fb5c09))
+      (uuid 8d8e9198-5a31-5468-b8bb-e2cd74b7c1ff))
     (pin "2"
-      (uuid fab2074f-b7bf-5c15-89dc-7c39f6214b0e))
+      (uuid 24816251-29f3-51d7-a23d-b850f97f10c4))
     (instances
       (project "SKiDL-Generated"
-        (path "/6d9d068f-5b2a-49c0-a500-e9b98509a792/74848e2a-f7cf-5dc4-a017-daec31636fc2"
-          (reference "C27")
+        (path "/8d355a40-cb5a-4ec8-8cb4-7ccfad94636a/69729ca3-0715-5722-891b-3ea0410a6701"
+          (reference "C25")
           (unit 1)))))
-  (global_label "IMU_INT1_NC"
-    (shape bidirectional)
-    (at 161.29 90.17 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid 1f195ec8-f6a8-5bae-bf9d-0eb7628f3cfe))
   (global_label "IMU_INT2_NC"
     (shape bidirectional)
     (at 161.29 95.25 180)
@@ -706,47 +612,63 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 5d2b0409-b9d0-5141-845b-2b7f35af83c0))
+    (uuid 2971127f-9c78-52a7-8530-ef2e74776402))
+  (global_label "IMU_INT1_NC"
+    (shape bidirectional)
+    (at 161.29 90.17 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 4a7603dc-5bfd-5c13-95e2-15c1fd417532))
   (wire
     (pts
-      (xy 157.48 90.17)
+      (xy 152.4 91.44)
+      (xy 153.67 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 4842be44-cb66-5317-96cc-8bc6577bad3a))
+  (wire
+    (pts
+      (xy 153.67 90.17)
       (xy 161.29 90.17))
     (stroke
       (width 0)
       (type default))
-    (uuid 477263cf-1e4e-55e5-aef0-95856bc07685))
+    (uuid 030c03ae-0326-5b9d-a624-39d3da33510c))
   (wire
     (pts
-      (xy 152.4 91.44)
-      (xy 157.48 91.44))
+      (xy 153.67 91.44)
+      (xy 153.67 90.17))
     (stroke
       (width 0)
       (type default))
-    (uuid 46cd24e5-7bb0-5335-8c59-cc62ec946f55))
+    (uuid 9af577a0-5f3c-55b3-8d88-a8972eedfd55))
   (wire
     (pts
-      (xy 157.48 91.44)
-      (xy 157.48 90.17))
+      (xy 152.4 93.98)
+      (xy 153.67 93.98))
     (stroke
       (width 0)
       (type default))
-    (uuid c50c9d68-d1da-5289-b7d2-c6c1066d192d))
+    (uuid c480f9f9-0b24-5b78-ba5c-4331a80705a3))
   (wire
     (pts
-      (xy 152.4 95.25)
+      (xy 153.67 95.25)
       (xy 161.29 95.25))
     (stroke
       (width 0)
       (type default))
-    (uuid 2858a8a5-bb33-535c-a319-078cd6ec0a8f))
+    (uuid fbff381c-bebf-5e8f-aaeb-49d4b2c77798))
   (wire
     (pts
-      (xy 152.4 95.25)
-      (xy 152.4 93.98))
+      (xy 153.67 95.25)
+      (xy 153.67 93.98))
     (stroke
       (width 0)
       (type default))
-    (uuid 71b867a1-ffa3-5581-ad25-b7daa1dc13f9))
+    (uuid 72403de6-0962-5d93-9cf5-c6d6e4925b2c))
   (symbol
     (lib_id "power:VCC")
     (at 129.54 88.9 0)
@@ -794,7 +716,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid ad5a147f-a3e3-5b40-a5c8-5f3c88d3040e))
+    (uuid 93081ec6-962e-535b-87f7-408198fa8aa5))
   (symbol
     (lib_id "power:GND")
     (at 129.54 93.98 0)
