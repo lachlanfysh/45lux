@@ -5,8 +5,9 @@
 <text x="300.0" y="85.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
 <line x1="0" y1="700.0" x2="600.0" y2="700.0" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
 <text x="300.0" y="715.0" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>
-<rect x="270.0" y="841.0" width="60" height="18" fill="#d4956a" stroke="#3a3530" rx="2"/>
-<text x="300.0" y="853.0" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">3xAAA Keystone 2479</text>
+<rect x="167.5" y="755.0" width="265.0" height="190.0" fill="#d4956a" stroke="#3a3530" rx="2" opacity="0.85"/>
+<text x="300.0" y="853.0" text-anchor="middle" font-size="9" fill="white" font-family="sans-serif">3xAAA Keystone 2479</text>
+<text x="300.0" y="864.0" text-anchor="middle" font-size="7" fill="white" opacity="0.7" font-family="sans-serif">53 x 38mm</text>
 <circle cx="112.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="112.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
 <circle cx="237.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
@@ -33,61 +34,61 @@
 <circle cx="487.5" cy="483.5" r="2" fill="white" opacity="0.4"/>
 <circle cx="112.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="112.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="110.5" y="664.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="108.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <circle cx="237.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="237.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="235.5" y="664.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="233.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <circle cx="362.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="362.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="360.5" y="664.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="358.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <circle cx="487.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="487.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="485.5" y="664.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="94.0" y="769.0" width="12" height="12" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="100.0" y="778.0" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">SW</text>
-<rect x="494.0" y="769.0" width="12" height="12" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="500.0" y="778.0" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">SW</text>
-<rect x="339.3168329828885" y="705.8925438123044" width="6" height="6" fill="#c49452" stroke="#3a3530" rx="1"/>
+<rect x="483.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="70.0" y="745.0" width="60.0" height="60.0" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
+<text x="100.0" y="778.0" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">SW</text>
+<rect x="470.0" y="745.0" width="60.0" height="60.0" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
+<text x="500.0" y="778.0" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">SW</text>
+<rect x="334.8168329828885" y="701.3925438123044" width="15.0" height="15.0" fill="#c49452" stroke="#3a3530" rx="1"/>
 <text x="342.3168329828885" y="710.8925438123044" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">LDO</text>
-<rect x="284.7489277563943" y="726.4971014997037" width="28" height="12" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
+<rect x="265.7489277563943" y="701.2471014997037" width="66.0" height="62.5" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
 <text x="298.7489277563943" y="735.4971014997037" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32-C6</text>
-<rect x="236.84270272143908" y="712.639593454591" width="12" height="7" fill="#d4956a" stroke="#3a3530" rx="1"/>
+<rect x="231.84270272143908" y="703.639593454591" width="22.0" height="25.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
 <text x="242.84270272143908" y="718.139593454591" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">MUX</text>
-<rect x="376.29699271713923" y="704.4631530717677" width="10" height="10" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
+<rect x="373.79699271713923" y="703.2131530717677" width="15.0" height="12.5" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
 <text x="381.29699271713923" y="711.4631530717677" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
-<rect x="363.71828820292586" y="728.5320329018172" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="197.41280322864682" y="721.039868344312" width="16" height="10" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
+<rect x="361.71828820292586" y="727.5320329018172" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="183.16280322864682" y="711.789868344312" width="44.5" height="28.5" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
 <text x="205.41280322864682" y="728.039868344312" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
-<rect x="360.19183298288846" y="707.8925438123044" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="296.7489277563943" y="765.3721014997037" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="110.5" y="160.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="363.71828820292586" y="745.5320329018173" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="235.5" y="327.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="244.59629115734276" y="732.7012615204101" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="495.56035296689174" y="704.2460807701962" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="360.5" y="494.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="397.460287556976" y="704.5475554793413" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="485.5" y="327.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="235.5" y="160.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="120.56035296689177" y="704.2460807701962" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="485.5" y="494.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="110.5" y="494.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="110.5" y="327.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="360.5" y="327.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="396.5211656940314" y="712.4579727524958" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="176.90710388733126" y="705.8145118194518" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="298.0512890888963" y="772.7581596472953" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="245.88110414608792" y="740.106642899787" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="345.32355399690556" y="744.7034218363954" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="203.41280322864682" y="751.052118344312" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="281.7489277563943" y="772.6221014997036" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="175.71042613362295" y="713.1686983377367" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="110.5" y="161.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="229.56968447756114" y="734.2825133846648" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="255.13761429859807" y="748.5036630619439" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="314.340136111925" y="773.0935809578822" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="358.19183298288846" y="706.8925438123044" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="294.7489277563943" y="764.3721014997037" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="108.5" y="159.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="361.71828820292586" y="744.5320329018173" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="233.5" y="326.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="242.59629115734276" y="731.7012615204101" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="493.56035296689174" y="703.2460807701962" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="358.5" y="493.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="395.460287556976" y="703.5475554793413" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="483.5" y="326.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="233.5" y="159.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="118.56035296689177" y="703.2460807701962" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="483.5" y="493.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="108.5" y="493.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="108.5" y="326.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="358.5" y="326.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="394.5211656940314" y="711.4579727524958" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="174.90710388733126" y="704.8145118194518" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="296.0512890888963" y="771.7581596472953" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="243.88110414608792" y="739.106642899787" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="343.32355399690556" y="743.7034218363954" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="201.41280322864682" y="750.052118344312" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="279.7489277563943" y="771.6221014997036" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="173.71042613362295" y="712.1686983377367" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="108.5" y="160.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="227.56968447756114" y="733.2825133846648" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="253.13761429859807" y="747.5036630619439" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="312.340136111925" y="772.0935809578822" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <text x="300.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120x185mm | 57 parts | Keystone 2479 3xAAA | Molex FPC OLED</text>
+<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 57 parts | to-scale footprints</text>
 <rect x="50" y="965.0" width="10" height="10" fill="#c44e52" rx="2"/>
 <text x="64" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
 <rect x="120" y="965.0" width="10" height="10" fill="#4a6b5a" rx="2"/>
@@ -95,7 +96,7 @@
 <rect x="190" y="965.0" width="10" height="10" fill="#d4956a" rx="2"/>
 <text x="204" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">MUX/BAT</text>
 <rect x="260" y="965.0" width="10" height="10" fill="#6b8fa3" rx="2"/>
-<text x="274" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">LIS2DH</text>
+<text x="274" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">IMU</text>
 <rect x="330" y="965.0" width="10" height="10" fill="#8b6b4a" rx="2"/>
 <text x="344" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">TC2030</text>
 <rect x="400" y="965.0" width="10" height="10" fill="#6b5a7a" rx="2"/>
