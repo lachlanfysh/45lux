@@ -1,0 +1,494 @@
+(kicad_sch
+  (version 20230409)
+  (generator "skidl")
+  (generator_version "2.2.3")
+  (uuid db63eedc-b1a4-4f09-8fd2-33baa462ab53)
+  (paper "A4")
+  (title_block
+    (title "SKiDL-Generated Schematic")
+    (date "2026-06-06")
+    (company "")
+    (comment 1 "Generated with SKiDL")
+    (comment 2 "")
+    (comment 3 "")
+    (comment 4 ""))
+  (lib_symbols
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (sheet
+    (at 142.75 39.37)
+    (size 24.38 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid 93aa77fa-cfd2-51e3-9d10-6a23c9f2cd4c)
+    (property "Sheetname" "usb_charger1"
+      (at 142.75 38.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_usb_charger1.kicad_sch"
+      (at 142.75 57.73 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 142.24 107.95)
+    (size 25.4 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid bbc57ba4-637c-5618-af47-a989f19a771a)
+    (property "Sheetname" "power_supply1"
+      (at 142.24 107.24 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_power_supply1.kicad_sch"
+      (at 142.24 126.31 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 142.24 130.81)
+    (size 25.4 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid ee976800-f69c-55e9-b1ff-77ebd6d2a4ab)
+    (property "Sheetname" "mcu_esp32s3_1"
+      (at 142.24 130.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_mcu_esp32s3_1.kicad_sch"
+      (at 142.24 149.17 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 142.75 62.23)
+    (size 24.38 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid c088b4f4-f815-55b7-bf26-ffac82a430bb)
+    (property "Sheetname" "sensor_bank1"
+      (at 142.75 61.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_sensor_bank1.kicad_sch"
+      (at 142.75 80.59 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 142.75 85.09)
+    (size 24.38 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid 01bbd23c-a76d-55a1-ac0d-b12bfb80fb4b)
+    (property "Sheetname" "sensor_bank2"
+      (at 142.75 84.38 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_sensor_bank2.kicad_sch"
+      (at 142.75 103.45 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 143.51 16.51)
+    (size 22.86 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid 9e3fff42-fecd-53f8-af98-4115409516db)
+    (property "Sheetname" "imu_accel1"
+      (at 143.51 15.8 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_imu_accel1.kicad_sch"
+      (at 143.51 34.87 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 141.22 176.53)
+    (size 27.43 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid 63da636d-867d-5034-b6dd-5325b42a244c)
+    (property "Sheetname" "oled_connector1"
+      (at 141.22 175.82 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_oled_connector1.kicad_sch"
+      (at 141.22 194.89 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (sheet
+    (at 141.22 153.67)
+    (size 27.43 17.78)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid aaa6d537-c35f-55e8-9c89-3a2fec3c56ce)
+    (property "Sheetname" "user_interface1"
+      (at 141.22 152.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "generate_45lux_user_interface1.kicad_sch"
+      (at 141.22 172.03 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top))))
+  (symbol
+    (lib_id "Device:R")
+    (at 134.62 97.79 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 91628e47-8f83-5ba1-abed-4cb134d83eea)
+    (property "Reference" "R1"
+      (at 134.62 95.25 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4.7K"
+      (at 134.62 100.33000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" ""
+      (at 134.62 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 134.62 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "Resistor"
+      (at 134.62 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid a6935952-da4d-541a-895a-668252bfbd0d))
+    (pin "2"
+      (uuid af1579b0-1060-540f-a855-b50b54978d21))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/db63eedc-b1a4-4f09-8fd2-33baa462ab53"
+          (reference "R1")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 129.54 97.79 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 91c587b0-c855-58aa-84a9-2ba4ce88549e)
+    (property "Reference" "R2"
+      (at 129.54 95.25 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "4.7K"
+      (at 129.54 100.33000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" ""
+      (at 129.54 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 129.54 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" "Resistor"
+      (at 129.54 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid d35ad559-b677-5643-a89c-af29d787f459))
+    (pin "2"
+      (uuid 195394c9-7ce9-58ed-99fb-76306ffc3957))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/db63eedc-b1a4-4f09-8fd2-33baa462ab53"
+          (reference "R2")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:VCC")
+    (at 134.62 93.98 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 9f2720ce-417e-53f6-a9b5-f371e51c11fd)
+    (property "Reference" "#PWR138"
+      (at 134.62 92.71000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "VCC"
+      (at 134.62 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 134.62 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 134.62 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid 58c99711-c609-5364-850c-a60f7a201054))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
+          (reference "#PWR138")
+          (unit 1)))))
+  (global_label "I2C_SDA"
+    (shape bidirectional)
+    (at 134.62 101.6 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid aaed8c86-89e7-5ebd-881b-ed438a3cd3a2))
+  (symbol
+    (lib_id "power:VCC")
+    (at 129.54 93.98 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 55612b68-fa8b-5b58-8fbd-76aa62e4956a)
+    (property "Reference" "#PWR139"
+      (at 129.54 92.71000000000001 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "VCC"
+      (at 129.54 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 129.54 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 129.54 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid 232139c6-d3af-506e-a2df-07abe809e6d8))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
+          (reference "#PWR139")
+          (unit 1)))))
+  (global_label "I2C_SCL"
+    (shape bidirectional)
+    (at 129.54 101.6 270)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 505e733e-7b01-554c-8543-b5040560e842)))
