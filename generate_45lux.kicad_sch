@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 6d0e759d-3d5c-4db5-9c2c-66272e13e56a)
+  (uuid 6d9d068f-5b2a-49c0-a500-e9b98509a792)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -91,7 +91,7 @@
                 (size 1.27 1.27))))))
       (embedded_fonts no)))
   (sheet
-    (at 130.05 27.94)
+    (at 130.05 73.66)
     (size 24.38 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -105,19 +105,19 @@
       (color 0 0 0 0.0))
     (uuid 93aa77fa-cfd2-51e3-9d10-6a23c9f2cd4c)
     (property "Sheetname" "usb_charger1"
-      (at 130.05 27.23 0)
+      (at 130.05 72.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_usb_charger1.kicad_sch"
-      (at 130.05 46.3 0)
+      (at 130.05 92.02 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 128.27 119.38)
+    (at 129.54 96.52)
     (size 25.4 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -131,19 +131,19 @@
       (color 0 0 0 0.0))
     (uuid bbc57ba4-637c-5618-af47-a989f19a771a)
     (property "Sheetname" "power_supply1"
-      (at 128.27 118.67 0)
+      (at 129.54 95.81 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_power_supply1.kicad_sch"
-      (at 128.27 137.74 0)
+      (at 129.54 114.88 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 128.27 165.1)
+    (at 129.54 50.8)
     (size 25.4 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -157,19 +157,19 @@
       (color 0 0 0 0.0))
     (uuid ee976800-f69c-55e9-b1ff-77ebd6d2a4ab)
     (property "Sheetname" "mcu_esp32s3_1"
-      (at 128.27 164.39 0)
+      (at 129.54 50.09 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_mcu_esp32s3_1.kicad_sch"
-      (at 128.27 183.46 0)
+      (at 129.54 69.16 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 128.27 50.8)
+    (at 129.54 142.24)
     (size 25.4 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -183,19 +183,19 @@
       (color 0 0 0 0.0))
     (uuid f88929e1-dc5c-5331-a2f2-4229281ee085)
     (property "Sheetname" "sensor_array1"
-      (at 128.27 50.09 0)
+      (at 129.54 141.53 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_sensor_array1.kicad_sch"
-      (at 128.27 69.16 0)
+      (at 129.54 160.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 130.81 96.52)
+    (at 132.08 165.1)
     (size 22.86 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -209,19 +209,19 @@
       (color 0 0 0 0.0))
     (uuid 74848e2a-f7cf-5dc4-a017-daec31636fc2)
     (property "Sheetname" "imu_accel1"
-      (at 130.81 95.81 0)
+      (at 132.08 164.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_imu_accel1.kicad_sch"
-      (at 130.81 114.88 0)
+      (at 132.08 183.46 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 127.25 73.66)
+    (at 128.52 27.94)
     (size 27.43 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -235,19 +235,19 @@
       (color 0 0 0 0.0))
     (uuid 1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd)
     (property "Sheetname" "oled_connector1"
-      (at 127.25 72.95 0)
+      (at 128.52 27.23 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_oled_connector1.kicad_sch"
-      (at 127.25 92.02 0)
+      (at 128.52 46.3 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (sheet
-    (at 127.25 142.24)
+    (at 128.52 119.38)
     (size 27.43 17.78)
     (exclude_from_sim no)
     (in_bom yes)
@@ -261,20 +261,20 @@
       (color 0 0 0 0.0))
     (uuid b77d5191-aac2-5cc5-8b6a-450284aaf84a)
     (property "Sheetname" "user_interface1"
-      (at 127.25 141.53 0)
+      (at 128.52 118.67 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "generate_45lux_user_interface1.kicad_sch"
-      (at 127.25 160.6 0)
+      (at 128.52 137.74 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top))))
   (symbol
     (lib_id "Device:R")
-    (at 166.37 100.33 0)
+    (at 161.29 101.6 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -283,31 +283,31 @@
     (fields_autoplaced yes)
     (uuid 91628e47-8f83-5ba1-abed-4cb134d83eea)
     (property "Reference" "R1"
-      (at 166.37 97.78999999999999 0)
+      (at 161.29 99.05999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "4.7K"
-      (at 166.37 102.87 0)
+      (at 161.29 104.14 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 166.37 100.33 0)
+      (at 161.29 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 166.37 100.33 0)
+      (at 161.29 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Resistor"
-      (at 166.37 100.33 0)
+      (at 161.29 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -318,12 +318,12 @@
       (uuid af1579b0-1060-540f-a855-b50b54978d21))
     (instances
       (project "SKiDL-Generated"
-        (path "/6d0e759d-3d5c-4db5-9c2c-66272e13e56a"
+        (path "/6d9d068f-5b2a-49c0-a500-e9b98509a792"
           (reference "R1")
           (unit 1)))))
   (symbol
     (lib_id "Device:R")
-    (at 160.02 100.33 0)
+    (at 166.37 101.6 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -332,31 +332,31 @@
     (fields_autoplaced yes)
     (uuid 91c587b0-c855-58aa-84a9-2ba4ce88549e)
     (property "Reference" "R2"
-      (at 160.02 97.78999999999999 0)
+      (at 166.37 99.05999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "4.7K"
-      (at 160.02 102.87 0)
+      (at 166.37 104.14 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 160.02 100.33 0)
+      (at 166.37 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 160.02 100.33 0)
+      (at 166.37 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Resistor"
-      (at 160.02 100.33 0)
+      (at 166.37 101.6 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -367,44 +367,44 @@
       (uuid 195394c9-7ce9-58ed-99fb-76306ffc3957))
     (instances
       (project "SKiDL-Generated"
-        (path "/6d0e759d-3d5c-4db5-9c2c-66272e13e56a"
+        (path "/6d9d068f-5b2a-49c0-a500-e9b98509a792"
           (reference "R2")
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 166.37 96.52 0)
+    (at 161.29 97.79 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid f5409c6c-ed38-5a51-a105-8f7cb16e9365)
+    (uuid 792899ab-c9d0-58eb-8736-5d5a4be5fb54)
     (property "Reference" "#PWR138"
-      (at 166.37 95.25 0)
+      (at 161.29 96.52000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 166.37 92.71 0)
+      (at 161.29 93.98 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 166.37 96.52 0)
+      (at 161.29 97.79 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 166.37 96.52 0)
+      (at 161.29 97.79 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 1977cb94-c542-5b97-9a6f-60cb9c56f05b))
+      (uuid 5645dc6f-f355-56ff-9faf-aa34f10958b8))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -412,47 +412,47 @@
           (unit 1)))))
   (global_label "I2C_SDA"
     (shape bidirectional)
-    (at 166.37 104.14 270)
+    (at 161.29 105.41 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid ea903cf6-a149-576f-a99f-547ad0d86d65))
+    (uuid d5a6398a-6066-5188-8bab-d30b9e907e01))
   (symbol
     (lib_id "power:VCC")
-    (at 160.02 96.52 0)
+    (at 166.37 97.79 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 53e4f907-29a9-5a47-a83d-c6ef4be7a3cf)
+    (uuid 29c46385-94bc-5950-871b-62783682b32e)
     (property "Reference" "#PWR139"
-      (at 160.02 95.25 0)
+      (at 166.37 96.52000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 160.02 92.71 0)
+      (at 166.37 93.98 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 160.02 96.52 0)
+      (at 166.37 97.79 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 160.02 96.52 0)
+      (at 166.37 97.79 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid c3f87a56-e4fd-5797-ad0c-8fd42185f07e))
+      (uuid 5654fa92-dd4e-5104-862d-c88296fadcfb))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -460,9 +460,9 @@
           (unit 1)))))
   (global_label "I2C_SCL"
     (shape bidirectional)
-    (at 160.02 104.14 270)
+    (at 166.37 105.41 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid e391cc95-dc89-55e6-ae81-17bcc886e041)))
+    (uuid 66473dc7-f335-5cf1-af34-8f4494cbe325)))

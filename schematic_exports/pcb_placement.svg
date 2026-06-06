@@ -2,98 +2,82 @@
 <rect width="600" height="800" fill="#f0ece6"/>
 <rect x="45.0" y="60.0" width="510.0" height="680.0" fill="none" stroke="#3a3530" stroke-width="2"/>
 <rect x="98.125" y="145.0" width="403.75" height="510.0" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="6,3"/>
-<text x="106.625" y="140.0" font-size="10" fill="#4a6b5a" font-family="sans-serif">4×5 Film Area (95×120mm)</text>
-<circle cx="121.5" cy="166.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="121.5" y="169.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="257.5" cy="166.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="257.5" y="169.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="342.5" cy="166.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="342.5" y="169.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="478.5" cy="166.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="478.5" y="169.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="121.5" cy="344.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="121.5" y="347.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="257.5" cy="344.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="257.5" y="347.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="342.5" cy="344.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="342.5" y="347.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="478.5" cy="344.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="478.5" y="347.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="121.5" cy="455.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="121.5" y="458.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="257.5" cy="455.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="257.5" y="458.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="342.5" cy="455.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="342.5" y="458.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="478.5" cy="455.25" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="478.5" y="458.25" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="121.5" cy="633.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="121.5" y="636.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="257.5" cy="633.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="257.5" y="636.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="342.5" cy="633.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="342.5" y="636.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<circle cx="478.5" cy="633.75" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<text x="478.5" y="636.75" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">?</text>
-<rect x="293.0" y="397.0" width="14" height="6" fill="#3a3530" stroke="#3a3530" rx="1"/>
+<text x="106.625" y="140.0" font-size="10" fill="#4a6b5a" font-family="sans-serif">4x5 Film Area (95x120mm)</text>
+<circle cx="140.625" cy="187.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="246.875" cy="187.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="353.125" cy="187.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="459.375" cy="187.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="140.625" cy="329.025" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="246.875" cy="329.025" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="353.125" cy="329.025" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="459.375" cy="329.025" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="140.625" cy="470.975" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="246.875" cy="470.975" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="353.125" cy="470.975" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="459.375" cy="470.975" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="140.625" cy="612.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="246.875" cy="612.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="353.125" cy="612.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="459.375" cy="612.5" r="6" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<rect x="293.0" y="397.0" width="14" height="6" fill="#3a3530" rx="1"/>
 <text x="300.0" y="403.0" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">USB-C</text>
 <rect x="259.365" y="398.0" width="8" height="4" fill="#8a8070" stroke="none" rx="1"/>
 <rect x="264.61828890437414" y="414.1679607770176" width="8" height="4" fill="#8a8070" stroke="none" rx="1"/>
 <rect x="299.21784027197225" y="419.0049518919723" width="8" height="4" fill="#8a8070" stroke="none" rx="1"/>
-<rect x="348.75" y="393.0" width="30" height="14" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
-<text x="363.75" y="404.0" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32-S3</text>
-<rect x="281.39704088168696" y="421.457928929255" width="10" height="10" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
-<text x="286.39704088168696" y="429.457928929255" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
-<rect x="307.63317411978517" y="355.896462615705" width="10" height="16" fill="#6b5a7a" stroke="#3a3530" rx="1"/>
-<text x="312.63317411978517" y="366.896462615705" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">OLED</text>
-<rect x="313.210842315366" y="435.38701178389465" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="356.65" y="454.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="325.82692411978513" y="354.396462615705" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="135.65" y="454.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="492.65" y="165.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="492.65" y="454.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="321.7549088142042" y="346.73684563783934" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="271.65" y="454.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="135.65" y="165.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="269.948305880754" y="387.23571722187165" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="492.65" y="343.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="356.65" y="343.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="271.65" y="343.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="492.65" y="632.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="356.65" y="632.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="135.65" y="343.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="356.65" y="165.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="413.70624999999995" y="399.0" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="135.65" y="632.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="271.65" y="632.75" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="298.528290881687" y="432.8191448614227" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="271.65" y="165.25" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="360.9" y="461.61121593216774" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="294.9775522507915" y="344.91951450665005" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="253.4934221912518" y="388.9765784459648" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="296.9237051621774" y="439.7302257773848" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="284.24671109562587" y="436.787349288972" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="249.38391908497968" y="416.0045068274023" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="266.61828890437414" y="426.7492107770176" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="251.59793335023303" y="427.0642920235034" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="266.61828890437414" y="437.90546077701765" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="309.61030693813626" y="441.92350269276005" width="12" height="8" fill="#d4956a" stroke="#3a3530" rx="1"/>
-<text x="315.61030693813626" y="448.92350269276005" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">BAT</text>
-<rect x="296.96784027197225" y="450.4224178241401" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="361.75" y="444.92125" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="370.25" y="453.20875" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="366.0" y="468.85746593216777" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="340.5" y="465.19374999999997" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="245.86339968802076" y="405.81926554973285" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="244.14342219125177" y="396.3377943781325" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="359.75" y="544.8774999999999" width="8" height="8" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="363.75" y="551.8774999999999" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">SW</text>
-<rect x="361.75" y="478.07124999999996" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="359.75" y="606.0775" width="8" height="8" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
-<text x="363.75" y="613.0775" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">SW</text>
-<rect x="361.75" y="494.64625" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
-<text x="300.0" y="25" text-anchor="middle" font-size="16" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux — Center-Weighted Sensor Grid</text>
-<text x="300.0" y="42" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">Board: 120×160mm | Film: 95×120mm | 68 parts, 0 overlaps</text>
+<rect x="281.78749820269616" y="337.84347425551243" width="30" height="14" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
+<text x="296.78749820269616" y="348.84347425551243" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32-S3</text>
+<rect x="278.4039469787534" y="429.46205919726754" width="10" height="10" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
+<text x="283.4039469787534" y="437.46205919726754" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
+<rect x="244.40215023296165" y="398.3919949117795" width="10" height="16" fill="#6b5a7a" stroke="#3a3530" rx="1"/>
+<text x="249.40215023296165" y="409.3919949117795" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">OLED</text>
+<rect x="322.57409027197224" y="423.6855598580562" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="259.41041788500434" y="388.69311164939177" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="261.025" y="611.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="367.275" y="469.975" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="261.025" y="469.975" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="473.525" y="186.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="362.8907420284165" y="403.28264121095157" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="154.775" y="186.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="334.44347464941217" y="444.4259187627652" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="154.775" y="328.025" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="367.275" y="611.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="473.525" y="328.025" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="473.525" y="611.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="346.7437482026961" y="343.84347425551243" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="367.275" y="186.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="154.775" y="611.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="367.275" y="328.025" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="261.025" y="186.5" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="244.9013898927782" y="341.8666652578472" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="154.775" y="469.975" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="286.0319080743793" y="423.4697099082955" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="473.525" y="469.975" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="265.8137405049339" y="426.39694680375186" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="247.40215023296165" y="431.46574491177944" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="336.00949202841656" y="425.59514121095157" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="284.39704088168696" y="444.9654289292549" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="284.24671109562587" y="416.8026507110279" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="262.4472506815018" y="437.12077363821936" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="269.8361291763464" y="447.7541626689899" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="255.7820810786464" y="448.135435904206" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="270.86828890437414" y="455.4666767091854" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="303.5888049678869" y="463.68396841674775" width="12" height="8" fill="#d4956a" stroke="#3a3530" rx="1"/>
+<text x="309.5888049678869" y="470.68396841674775" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">BAT</text>
+<rect x="289.7376447791216" y="465.8308112747863" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="244.9019705652721" y="379.16122802380664" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="331.96489820118813" y="432.96412665787557" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="344.1607015805647" y="381.5435695494369" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="244.875" y="622.4437499999999" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="344.50949202841656" y="433.88264121095153" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="307.5622246494122" y="475.2384187627652" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="292.78749820269616" y="489.7209742555124" width="8" height="8" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
+<text x="296.78749820269616" y="496.7209742555124" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">SW</text>
+<rect x="284.280920393948" y="455.2506458095476" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="292.78749820269616" y="550.9209742555124" width="8" height="8" fill="#7a6b5a" stroke="#3a3530" rx="1"/>
+<text x="296.78749820269616" y="557.9209742555124" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">SW</text>
+<rect x="292.6526205386995" y="473.4226330220737" width="4" height="2" fill="#b0a898" stroke="none" rx="0.5"/>
+<text x="300.0" y="25" text-anchor="middle" font-size="16" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux — Uniform Sensor Grid</text>
+<text x="300.0" y="42" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">Board: 120x160mm | Film: 95x120mm | 10mm margin | 68 parts, 0 overlaps</text>
 <rect x="60" y="764" width="10" height="10" fill="#c44e52" rx="1"/>
 <text x="74" y="773" font-size="9" fill="#3a3530" font-family="sans-serif">Sensor</text>
 <rect x="140" y="764" width="10" height="10" fill="#4a6b5a" rx="1"/>

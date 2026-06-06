@@ -310,11 +310,10 @@ from skidl.layout import (
 # Board outline: 4x5 film holder interior (~120mm x 160mm)
 outline = BoardOutline(120.0, 160.0)
 
-# Fix the 16 sensors in a center-weighted 4x4 grid inside the film window
-# Film area ~95x120mm on 120x160mm board, 5mm inset from film edge
-# Inner gaps 60% of outer gaps for center weighting
-grid_x = [18.0, 50.0, 70.0, 102.0]   # center pair 20mm apart, outer 32mm
-grid_y = [25.0, 67.0, 93.0, 135.0]   # center pair 26mm apart, outer 42mm
+# Fix the 16 sensors in a uniform 4x4 grid inside the film window
+# Film area ~95x120mm on 120x160mm board, 10mm inset from film edge
+grid_x = [22.5, 47.5, 72.5, 97.5]    # 25mm spacing, centered on film area
+grid_y = [30.0, 63.3, 96.7, 130.0]   # 33.3mm spacing, centered on film area
 sensor_fixed = []
 for i, sensor_part in enumerate(sensors):
     row, col = divmod(i, 4)
