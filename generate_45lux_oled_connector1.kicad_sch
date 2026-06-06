@@ -6,7 +6,7 @@
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
-    (date "2026-06-06")
+    (date "2026-06-07")
     (company "")
     (comment 1 "Generated with SKiDL")
     (comment 2 "")
@@ -163,6 +163,78 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
+    (symbol "power:GND"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -248,78 +320,6 @@
             (effects
               (font
                 (size 1.27 1.27))))))
-      (embedded_fonts no))
-    (symbol "power:GND"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -6.35 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "GND"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "GND_1_1"
-        (pin power_in line
-          (at 0 0 270)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "Connector:Conn_01x04_Pin")
@@ -371,7 +371,7 @@
       (uuid 43b324e1-fd6c-5df8-8870-df7bd57cf04b))
     (instances
       (project "SKiDL-Generated"
-        (path "/8d355a40-cb5a-4ec8-8cb4-7ccfad94636a/5a60bbff-1d03-5cdb-8094-e7f9d0de40a5"
+        (path "/438c2c64-082d-480f-a808-1f38ec6bb677/5a60bbff-1d03-5cdb-8094-e7f9d0de40a5"
           (reference "J2")
           (unit 1)))))
   (symbol
@@ -461,7 +461,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid f5318f86-4460-5c2f-84b3-ca8c7e1c611d))
+    (uuid 8088c4ca-4d97-5d9a-9de8-896b7b0fd45a))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 148.59 109.22 0)
@@ -469,4 +469,4 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 350510d2-d0e6-500b-9ed7-d13f0c5ce803)))
+    (uuid 988e0cf4-4010-5dce-85b2-d66db6bb8bd2)))

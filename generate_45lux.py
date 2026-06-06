@@ -295,12 +295,13 @@ for i, sensor_part in enumerate(sensors):
     row, col = divmod(i, 4)
     sensor_fixed.append(FixedPosition(sensor_part.ref, grid_x[col], grid_y[row], 0.0))
 
-# Film area keepout: only sensors allowed inside
-film_keepout = KeepOut(x_min=12.5, y_min=20.0, x_max=107.5, y_max=140.0)
+# Keepout: everything above the electronics zone (sensors only)
+# Electronics zone is below the film area: y=140 to y=185
+top_keepout = KeepOut(x_min=0.0, y_min=0.0, x_max=120.0, y_max=140.0)
 
 constraints = LayoutConstraints(
     fixed=sensor_fixed,
-    keepouts=[film_keepout],
+    keepouts=[top_keepout],
     outline=outline,
 )
 

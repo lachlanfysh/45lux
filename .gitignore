@@ -1,0 +1,4 @@
+*.erc
+*.log
+skidl_REPL*
+__pycache__/
