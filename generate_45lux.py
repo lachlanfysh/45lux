@@ -118,6 +118,7 @@ def sensor_array(vcc, gnd, sda, scl):
     """4-channel mux, 4 OPT3004 per channel (4 I2C addresses each)."""
 
     sensor_refs = []
+    cap_refs = []
 
     mux = Part("Interface_Expansion", "TCA9546APW", footprint=FP_MUX)
     mux[16] += vcc     # VCC
@@ -167,8 +168,9 @@ def sensor_array(vcc, gnd, sda, scl):
             c_s = Part("Device", "C", value="100nF", footprint=FP_C)
             c_s[1] += vcc
             c_s[2] += gnd
+            cap_refs.append(c_s)
 
-    return sensor_refs
+    return sensor_refs, cap_refs
 
 
 # ── IMU: LIS2DH ────────────────────────────────────────────────────────────
@@ -259,7 +261,7 @@ for net in [sda, scl]:
 power_supply(vbat, vcc, gnd)
 mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
             en_net, boot_net)
-sensors = sensor_array(vcc, gnd, sda, scl)
+sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 oled_connector(vcc, gnd, sda, scl)
 user_interface(vcc, gnd, btn_up, btn_down)
@@ -294,6 +296,11 @@ sensor_fixed = []
 for i, sensor_part in enumerate(sensors):
     row, col = divmod(i, 4)
     sensor_fixed.append(FixedPosition(sensor_part.ref, grid_x[col], grid_y[row], 0.0))
+    # Bottom row caps need explicit fixing — placer pushes them to electronics
+    # zone because they're close enough to the keepout boundary for the spiral
+    # search to succeed (rows 0-2 caps stay near sensors via fallback)
+    if row == 3:
+        sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
 
 # Keepout: everything above the electronics zone (sensors only)
 # Electronics zone is below the film area: y=140 to y=185
