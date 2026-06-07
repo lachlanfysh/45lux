@@ -272,6 +272,8 @@ def flash_detect(vcc, gnd, flash_out):
     c_comp[1] += vcc
     c_comp[2] += gnd
 
+    return pd
+
 
 # ── OLED Display Connector ─────────────────────────────────────────────────
 
@@ -346,7 +348,7 @@ mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 spectral, spectral_cap = color_temp_sensor(vcc, gnd, sda, scl)
-flash_detect(vcc, gnd, flash_det)
+flash_pd = flash_detect(vcc, gnd, flash_det)
 oled_connector(vcc, gnd, sda, scl)
 sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
@@ -372,19 +374,22 @@ from skidl.layout import (
 # Board: 120mm wide, 185mm tall (45mm below film area for electronics)
 outline = BoardOutline(120.0, 185.0)
 
-# Fix 16 sensors in uniform 4x4 grid inside film window
-# Film area ~95x120mm on board, 10mm inset from film edge
-grid_x = [22.5, 47.5, 72.5, 97.5]
-grid_y = [30.0, 63.3, 96.7, 130.0]
+# 4x4 sensor grid centered in 95x120mm film window (x=12.5..107.5, y=12..132)
+# 19mm horizontal spacing, 24mm vertical spacing
+grid_x = [31.5, 50.5, 69.5, 88.5]
+grid_y = [36.0, 60.0, 84.0, 108.0]
 sensor_fixed = []
 for i, sensor_part in enumerate(sensors):
     row, col = divmod(i, 4)
     sensor_fixed.append(FixedPosition(sensor_part.ref, grid_x[col], grid_y[row], 0.0))
     sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
 
-# AS7343 spectral sensor + decoupling cap at center of film area
-sensor_fixed.append(FixedPosition(spectral.ref, 60.0, 80.0, 0.0))
-sensor_fixed.append(FixedPosition(spectral_cap.ref, 60.0, 83.0, 0.0))
+# AS7343 on fat strip (y=60, 8mm wide) offset from sensor at (50.5, 60)
+sensor_fixed.append(FixedPosition(spectral.ref, 50.5, 57.0, 0.0))
+sensor_fixed.append(FixedPosition(spectral_cap.ref, 53.5, 57.0, 0.0))
+
+# BPW34 photodiode in solid top border (12mm of FR4 above film window)
+sensor_fixed.append(FixedPosition(flash_pd.ref, 60.0, 5.0, 0.0))
 
 # Battery holder across the bottom of the board
 sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
@@ -393,9 +398,9 @@ sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
 sensor_fixed.append(FixedPosition(sw_up.ref, 20.0, 155.0, 0.0))
 sensor_fixed.append(FixedPosition(sw_down.ref, 100.0, 155.0, 0.0))
 
-# Keepout: everything above the electronics zone (sensors only)
-# Electronics zone is below the film area: y=140 to y=185
-top_keepout = KeepOut(x_min=0.0, y_min=0.0, x_max=120.0, y_max=140.0)
+# Keepout: film window area (sensors + passives only, no ICs)
+# Electronics zone: y=132 to y=185 (below film window)
+top_keepout = KeepOut(x_min=0.0, y_min=0.0, x_max=120.0, y_max=132.0)
 
 constraints = LayoutConstraints(
     fixed=sensor_fixed,
