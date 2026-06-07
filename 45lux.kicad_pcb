@@ -70,74 +70,74 @@
       (scaleselection 1)
       (outputdirectory "")))
   (net 0 "")
-  (net 1 "ESP_P22_NC")
+  (net 1 "AS7343_GPIO_NC")
   (net 2 "OPT_CH2_0_INT")
-  (net 3 "UART_RX")
-  (net 4 "OPT_CH3_0_INT")
-  (net 5 "OPT_CH1_3_INT")
-  (net 6 "MUX_CH0_SCL")
-  (net 7 "FLASH_THRESH")
-  (net 8 "OPT_CH1_2_INT")
-  (net 9 "ESP_P29_NC")
-  (net 10 "OPT_CH2_2_INT")
-  (net 11 "VBAT")
-  (net 12 "MUX_CH3_SDA")
-  (net 13 "OPT_CH0_2_INT")
-  (net 14 "FLASH_SENSE")
-  (net 15 "OPT_CH0_3_INT")
-  (net 16 "MUX_CH2_SDA")
-  (net 17 "OPT_CH3_1_INT")
-  (net 18 "ESP_EN")
+  (net 3 "ESP_P22_NC")
+  (net 4 "ESP_P29_NC")
+  (net 5 "OPT_CH3_3_INT")
+  (net 6 "ESP_P27_NC")
+  (net 7 "ESP_P28_NC")
+  (net 8 "OPT_CH3_0_INT")
+  (net 9 "OPT_CH1_2_INT")
+  (net 10 "MUX_CH1_SCL")
+  (net 11 "FLASH_THRESH")
+  (net 12 "ESP_P34_NC")
+  (net 13 "OPT_CH2_3_INT")
+  (net 14 "OPT_CH1_3_INT")
+  (net 15 "MUX_CH3_SDA")
+  (net 16 "FLASH_SENSE")
+  (net 17 "BTN_RIGHT")
+  (net 18 "VBAT")
   (net 19 "ESP_P32_NC")
-  (net 20 "ESP_P34_NC")
+  (net 20 "OPT_CH3_1_INT")
   (net 21 "ESP_P33_NC")
-  (net 22 "IMU_INT1_NC")
-  (net 23 "MUX_CH3_SCL")
-  (net 24 "COMP2_NC")
-  (net 25 "VCC")
-  (net 26 "ESP_BOOT")
-  (net 27 "I2C_SCL")
-  (net 28 "I2C_SDA")
-  (net 29 "ESP_P35_NC")
-  (net 30 "IMU_INT2_NC")
-  (net 31 "BTN_UP")
-  (net 32 "OPT_CH2_3_INT")
-  (net 33 "OPT_CH1_1_INT")
-  (net 34 "BTN_DOWN")
-  (net 35 "N$1")
-  (net 36 "FLASH_DET")
-  (net 37 "AS7343_INT_NC")
-  (net 38 "BTN_LEFT")
-  (net 39 "ESP_P4_NC")
-  (net 40 "ESP_P6_NC")
-  (net 41 "ESP_P7_NC")
-  (net 42 "BTN_RIGHT")
-  (net 43 "AS7343_GPIO_NC")
-  (net 44 "OPT_CH3_2_INT")
-  (net 45 "ESP_P25_NC")
-  (net 46 "MUX_CH0_SDA")
-  (net 47 "GND")
-  (net 48 "ESP_P12_NC")
-  (net 49 "ESP_P13_NC")
+  (net 22 "IMU_INT2_NC")
+  (net 23 "ESP_P35_NC")
+  (net 24 "OPT_CH1_0_INT")
+  (net 25 "MUX_CH3_SCL")
+  (net 26 "UART_TX")
+  (net 27 "GND")
+  (net 28 "ESP_P6_NC")
+  (net 29 "I2C_SCL")
+  (net 30 "ESP_P5_NC")
+  (net 31 "ESP_P4_NC")
+  (net 32 "MUX_CH0_SCL")
+  (net 33 "BTN_UP")
+  (net 34 "VCC")
+  (net 35 "BTN_DOWN")
+  (net 36 "UART_RX")
+  (net 37 "N$1")
+  (net 38 "AS7343_INT_NC")
+  (net 39 "ESP_EN")
+  (net 40 "ESP_P7_NC")
+  (net 41 "OPT_CH0_1_INT")
+  (net 42 "OPT_CH3_2_INT")
+  (net 43 "IMU_INT1_NC")
+  (net 44 "ESP_P26_NC")
+  (net 45 "ESP_BOOT")
+  (net 46 "ESP_P12_NC")
+  (net 47 "MUX_CH0_SDA")
+  (net 48 "ESP_P20_NC")
+  (net 49 "OPT_CH2_1_INT")
   (net 50 "AS7343_LDR_NC")
-  (net 51 "ESP_P20_NC")
-  (net 52 "ESP_P27_NC")
-  (net 53 "OPT_CH0_1_INT")
-  (net 54 "OPT_CH2_1_INT")
-  (net 55 "UART_TX")
-  (net 56 "ESP_P5_NC")
-  (net 57 "MUX_CH1_SCL")
-  (net 58 "ESP_P21_NC")
-  (net 59 "OPT_CH0_0_INT")
-  (net 60 "MUX_CH2_SCL")
-  (net 61 "ESP_P24_NC")
-  (net 62 "ESP_P26_NC")
-  (net 63 "OPT_CH1_0_INT")
-  (net 64 "OPT_CH3_3_INT")
-  (net 65 "MUX_CH1_SDA")
-  (net 66 "ESP_P28_NC")
+  (net 51 "FLASH_DET")
+  (net 52 "COMP2_NC")
+  (net 53 "OPT_CH2_2_INT")
+  (net 54 "OPT_CH0_0_INT")
+  (net 55 "OPT_CH1_1_INT")
+  (net 56 "I2C_SDA")
+  (net 57 "ESP_P24_NC")
+  (net 58 "OPT_CH0_2_INT")
+  (net 59 "ESP_P21_NC")
+  (net 60 "ESP_P25_NC")
+  (net 61 "MUX_CH1_SDA")
+  (net 62 "MUX_CH2_SCL")
+  (net 63 "ESP_P13_NC")
+  (net 64 "BTN_LEFT")
+  (net 65 "OPT_CH0_3_INT")
+  (net 66 "MUX_CH2_SDA")
   (footprint "BatteryHolder_Keystone_2479_3xAAA"
-    (at 60.0 170.0)
+    (at 20.0 175.0)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -238,7 +238,7 @@
       (remove_unused_layers no)
       (roundrect_rratio 0.083333)
       (uuid "6b98171e-a756-502d-9d0a-2210e9b9b9b4")
-      (net 11 "VBAT"))
+      (net 18 "VBAT"))
     (pad "2" thru_hole circle
       (at 0 12.7)
       (size 3 3)
@@ -246,7 +246,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "9b623dbb-90f3-5ed1-9e51-fe69e90f208f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_2479_3xAAA.step"
       (offset
@@ -424,37 +424,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 59 "OPT_CH0_0_INT"))
+      (net 54 "OPT_CH0_0_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -536,14 +536,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "55505380-d621-59e3-875f-7e7f3f630b59")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "36bb2b3c-ca88-5b16-9da5-e875bece1e18")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -721,37 +721,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 53 "OPT_CH0_1_INT"))
+      (net 41 "OPT_CH0_1_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -833,14 +833,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "cb0ec8a0-31f2-5840-8109-94588e2ee873")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "18f29552-f8b4-529d-a575-6266b2e1a633")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -1018,37 +1018,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 13 "OPT_CH0_2_INT"))
+      (net 58 "OPT_CH0_2_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -1130,14 +1130,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5aff1a1b-903f-5660-aaa9-4ea305babdb1")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "7d49fb82-aabe-5ee5-bd9a-3fd2896e167a")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -1315,37 +1315,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 15 "OPT_CH0_3_INT"))
+      (net 65 "OPT_CH0_3_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -1427,14 +1427,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "65d75753-46e8-56f4-a65a-60374371136e")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "0db81ddb-93a3-5512-87e6-83855bed577d")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -1612,37 +1612,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 63 "OPT_CH1_0_INT"))
+      (net 24 "OPT_CH1_0_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -1724,14 +1724,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "6541b194-9c42-5708-a6cc-07f6b2b9a031")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "cc49f514-93dd-5699-98e5-c1952c924d33")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -1909,37 +1909,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 33 "OPT_CH1_1_INT"))
+      (net 55 "OPT_CH1_1_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -2021,14 +2021,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "079adcb7-d322-5998-8d2e-52d8fe210f36")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "36e85df9-0d89-567d-8fb5-fef6deeab155")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -2206,37 +2206,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 8 "OPT_CH1_2_INT"))
+      (net 9 "OPT_CH1_2_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -2318,14 +2318,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "01d6b2e3-e286-588e-b2cd-5d99bb0e24c2")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "14c5ca9f-14db-59be-b8b5-830cf7231b78")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -2503,37 +2503,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 5 "OPT_CH1_3_INT"))
+      (net 14 "OPT_CH1_3_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -2615,14 +2615,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "e90bc9a0-ad93-5ac5-bfcf-1b71f720f23f")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "520f0c1f-c6ec-577e-b0ef-98f1ac03aca8")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -2800,25 +2800,25 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
@@ -2830,7 +2830,7 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -2912,14 +2912,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "653723ec-b72b-54f7-afb5-ff792db536d1")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "c7fff364-2b06-538c-80c9-a4bab126f531")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -3097,37 +3097,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 54 "OPT_CH2_1_INT"))
+      (net 49 "OPT_CH2_1_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -3209,14 +3209,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "43ebdfcd-8098-5cc9-9d52-24e0fe6df60f")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "f8b09f9e-48ad-53b9-9aa1-0f6de50623c6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -3394,37 +3394,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 10 "OPT_CH2_2_INT"))
+      (net 53 "OPT_CH2_2_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -3506,14 +3506,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "900bdcec-c2e8-5d09-bb67-4152e89aa533")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5752487e-a30c-5304-8ac9-d0133abed123")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -3691,37 +3691,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 32 "OPT_CH2_3_INT"))
+      (net 13 "OPT_CH2_3_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -3803,14 +3803,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "362ca833-bd3f-5f72-8bc4-b2a8856ca2c3")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "e99ba93a-a6b8-543a-821b-dff33ac47032")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -3988,37 +3988,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 4 "OPT_CH3_0_INT"))
+      (net 8 "OPT_CH3_0_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -4100,14 +4100,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "23787d52-b7cd-5126-931e-64a3f46fcde3")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "564307a7-815f-5517-8e03-820d90e96fda")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -4285,37 +4285,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 17 "OPT_CH3_1_INT"))
+      (net 20 "OPT_CH3_1_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -4397,14 +4397,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "a1dcce87-24bd-5e90-9db0-b2a538eb094d")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "c235df5c-cf0f-5a7b-830e-1dda049460a1")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -4582,37 +4582,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 44 "OPT_CH3_2_INT"))
+      (net 42 "OPT_CH3_2_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -4694,14 +4694,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "01477d8b-9c95-5a4a-a8d5-cfa93505f438")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5fd5d92f-c30e-573b-bba5-ed73b3596cac")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -4879,37 +4879,37 @@
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "8728970f-ba2f-4f5e-b7df-4b2c3d22f3b4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "08254e9f-53a9-4f88-9040-3df2887c72d6")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "3" smd rect
       (at -1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "c525bf95-a00b-45cf-a8ee-e0d3d66a223f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at 1.05 0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c9fb058-bf1e-4dfe-acc7-e3f840f6a43f")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "5" smd rect
       (at 1.05 0)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9b4a3009-383f-44e9-bca5-334351c1239c")
-      (net 64 "OPT_CH3_3_INT"))
+      (net 5 "OPT_CH3_3_INT"))
     (pad "6" smd rect
       (at 1.05 -0.65)
       (size 0.65 0.35)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "66467480-f5aa-48da-9880-f691a0bbb225")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "7" smd rect
       (at 0 0)
       (size 1 1.6)
@@ -4991,14 +4991,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "35063653-246d-5368-a091-e3b4e4e873d7")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "54557aa8-00f4-5a74-a3f8-caa8677629e6")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -5178,19 +5178,19 @@
       (chamfer_ratio 0.3625)
       (chamfer bottom_right)
       (uuid "9b2b79c5-79c9-4ad8-8677-857be06c5247")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd rect
       (at -0.638 -0.4)
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "57787bb9-67b0-4094-aab6-238e171ec77e")
-      (net 27 "I2C_SCL"))
+      (net 29 "I2C_SCL"))
     (pad "3" smd rect
       (at -0.638 0.4)
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "30064471-ffc7-4996-ba50-7e16671d47c8")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at -0.638 1.2)
       (size 0.575 0.488)
@@ -5202,25 +5202,25 @@
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "7cb56179-7f23-48d5-ac6e-a90d7e04b978")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "6" smd rect
       (at 0.638 0.4)
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "12a4f236-bd17-45e2-a9ea-b72375b8834a")
-      (net 43 "AS7343_GPIO_NC"))
+      (net 1 "AS7343_GPIO_NC"))
     (pad "7" smd rect
       (at 0.638 -0.4)
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "374689ef-3506-463a-be74-7d3815f24261")
-      (net 37 "AS7343_INT_NC"))
+      (net 38 "AS7343_INT_NC"))
     (pad "8" smd rect
       (at 0.638 -1.2)
       (size 0.575 0.488)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "9c45da80-e696-4e50-98d7-33bd8b14f5e3")
-      (net 28 "I2C_SDA"))
+      (net 56 "I2C_SDA"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/AMS_OLGA-8_2x3.1mm_P0.8mm.step"
       (offset
@@ -5297,14 +5297,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "24f2bc1f-5e30-5933-8847-01cf291b9f23")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "9231ec8b-afab-5770-9a52-98b6a1e30437")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -5630,14 +5630,14 @@
       (layers "F.Cu" "F.Mask")
       (roundrect_rratio 0.125)
       (uuid "43b1e3ac-bcfd-4b21-a9f7-b7204596768c")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 3.05 0 180)
       (size 1.4 1.2)
       (layers "F.Cu" "F.Mask")
       (roundrect_rratio 0.125)
       (uuid "28a27834-8643-4d36-8c7a-697464f2b973")
-      (net 14 "FLASH_SENSE"))
+      (net 16 "FLASH_SENSE"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/OptoDevice.3dshapes/Osram_BPW34S-SMD.step"
       (offset
@@ -5647,8 +5647,300 @@
       (rotate
         (xyz 0 0 0)))
     (uuid "1ecdecb1-d0af-50eb-8bb5-9211ddb41784"))
+  (footprint "Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal"
+    (at 105.0 140.0)
+    (version 20241229)
+    (generator "kicad-footprint-generator")
+    (layer "F.Cu")
+    (descr "Molex Molex 1.00mm Pitch Easy-On BackFlip, Right-Angle, Bottom Contact FFC/FPC, 200528-0040, 4 Circuits (https://www.molex.com/pdm_docs/sd/2005280040_sd.pdf), generated with kicad-footprint-generator")
+    (tags "connector Molex  horizontal")
+    (property "Reference" "J1"
+      (at 0 -2.61 0)
+      (layer "F.SilkS")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)))
+      (uuid "8c3b5e27-192f-538f-b872-efc84d466a57"))
+    (property "Value" "Conn_01x04_Pin"
+      (at 0 5.39 0)
+      (layer "F.Fab")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15)))
+      (uuid "57ca2c3b-b969-5b09-aff0-7543650854a0"))
+    (attr smd)
+    (fp_line
+      (start -4.71 -1.17)
+      (end -4.71 0.88)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -4.71 2.7)
+      (end -4.71 3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -4.71 3)
+      (end -3.91 3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -3.94 -1.17)
+      (end -4.71 -1.17)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -3.94 -0.82)
+      (end -3.94 -1.17)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -3.91 3)
+      (end -3.91 4.3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -3.91 4.3)
+      (end 3.91 4.3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -1.96 -1.41)
+      (end -1.96 -0.82)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start -1.96 -0.82)
+      (end -3.94 -0.82)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 3.91 3)
+      (end 4.71 3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 3.91 4.3)
+      (end 3.91 3)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 3.94 -1.17)
+      (end 3.94 -0.82)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 3.94 -0.82)
+      (end 1.96 -0.82)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 4.71 -1.17)
+      (end 3.94 -1.17)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 4.71 0.88)
+      (end 4.71 -1.17)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_line
+      (start 4.71 3)
+      (end 4.71 2.7)
+      (stroke
+        (width 0.12)
+        (type solid))
+      (layer "F.SilkS"))
+    (fp_rect
+      (start -5.8 -1.91)
+      (end 5.8 4.69)
+      (stroke
+        (width 0.05)
+        (type solid))
+      (fill no)
+      (layer "F.CrtYd"))
+    (fp_line
+      (start -4.6 -1.06)
+      (end -4.6 2.89)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -4.6 2.89)
+      (end 4.6 2.89)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -4.05 -1.06)
+      (end -4.6 -1.06)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -4.05 -0.71)
+      (end -4.05 -1.06)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -3.8 0.19)
+      (end -3.8 4.19)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -3.8 4.19)
+      (end 3.8 4.19)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -2 -0.71)
+      (end -1.5 0.04)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start -1.5 0.04)
+      (end -1 -0.71)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 3.8 0.19)
+      (end -3.8 0.19)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 3.8 4.19)
+      (end 3.8 0.19)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 4.05 -1.06)
+      (end 4.05 -0.71)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 4.05 -0.71)
+      (end -4.05 -0.71)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 4.6 -1.06)
+      (end 4.05 -1.06)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_line
+      (start 4.6 2.89)
+      (end 4.6 -1.06)
+      (stroke
+        (width 0.1)
+        (type solid))
+      (layer "F.Fab"))
+    (fp_text user ${REFERENCE}
+      (at 0 1.39 0)
+      (layer "F.Fab")
+      (effects
+        (font
+          (size 1 1)
+          (thickness 0.15))))
+    (pad "1" smd rect
+      (at -1.5 -0.91)
+      (size 0.4 1)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "31ff1a9c-3179-5be9-bdc4-92c91ca4bc01")
+      (net 27 "GND"))
+    (pad "2" smd rect
+      (at -0.5 -0.91)
+      (size 0.4 1)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "a0328acf-bfaa-5d6c-af5f-7149ce702d38")
+      (net 34 "VCC"))
+    (pad "3" smd rect
+      (at 0.5 -0.91)
+      (size 0.4 1)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "4685fd56-a238-5f15-b40b-d1b5d1b3626d")
+      (net 29 "I2C_SCL"))
+    (pad "4" smd rect
+      (at 1.5 -0.91)
+      (size 0.4 1)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "95a730ea-49e9-520e-9531-8424c36fc641")
+      (net 56 "I2C_SDA"))
+    (pad "MP" smd rect
+      (at -4.3 1.79)
+      (size 2 1.3)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "823ba8da-d266-5a2a-bba7-c464354f2ff1"))
+    (pad "MP" smd rect
+      (at 4.3 1.79)
+      (size 2 1.3)
+      (layers "F.Cu" "F.Mask" "F.Paste")
+      (uuid "823ba8da-d266-5a2a-bba7-c464354f2ff1"))
+    (embedded_fonts no)
+    (model "${KICAD9_3DMODEL_DIR}/Connector_FFC-FPC.3dshapes/Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal.step"
+      (offset
+        (xyz 0 0 0))
+      (scale
+        (xyz 1 1 1))
+      (rotate
+        (xyz 0 0 0)))
+    (uuid "3e973261-8790-5df3-99e0-90474e5eb59b"))
   (footprint "SW_TH_Tactile_Omron_B3F-106x"
-    (at 15.0 155.0)
+    (at 60.0 145.0)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -5813,7 +6105,7 @@
       (remove_unused_layers no)
       (thermal_bridge_angle 90)
       (uuid "ee1616be-3af4-4d1d-96b5-541d19557273")
-      (net 31 "BTN_UP"))
+      (net 33 "BTN_UP"))
     (pad "1" thru_hole circle
       (at 6.5 0)
       (size 1.7 1.7)
@@ -5821,7 +6113,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "130b9ada-7aba-4fd3-8830-5ad15b027dac")
-      (net 31 "BTN_UP"))
+      (net 33 "BTN_UP"))
     (pad "2" thru_hole circle
       (at 0 4.5)
       (size 1.7 1.7)
@@ -5829,7 +6121,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "daf085bd-70df-419e-a957-02914568e0f9")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "2" thru_hole circle
       (at 6.5 4.5)
       (size 1.7 1.7)
@@ -5837,7 +6129,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "65a424f4-9f68-4376-86e4-1cb03f2e6524")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-106x.step"
       (offset
@@ -5848,7 +6140,7 @@
         (xyz 0 0 0)))
     (uuid "38ea33e5-20f0-5462-95cd-676596a00e1b"))
   (footprint "SW_TH_Tactile_Omron_B3F-106x"
-    (at 105.0 155.0)
+    (at 60.0 161.0)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -6013,7 +6305,7 @@
       (remove_unused_layers no)
       (thermal_bridge_angle 90)
       (uuid "ee1616be-3af4-4d1d-96b5-541d19557273")
-      (net 34 "BTN_DOWN"))
+      (net 35 "BTN_DOWN"))
     (pad "1" thru_hole circle
       (at 6.5 0)
       (size 1.7 1.7)
@@ -6021,7 +6313,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "130b9ada-7aba-4fd3-8830-5ad15b027dac")
-      (net 34 "BTN_DOWN"))
+      (net 35 "BTN_DOWN"))
     (pad "2" thru_hole circle
       (at 0 4.5)
       (size 1.7 1.7)
@@ -6029,7 +6321,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "daf085bd-70df-419e-a957-02914568e0f9")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "2" thru_hole circle
       (at 6.5 4.5)
       (size 1.7 1.7)
@@ -6037,7 +6329,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "65a424f4-9f68-4376-86e4-1cb03f2e6524")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-106x.step"
       (offset
@@ -6048,7 +6340,7 @@
         (xyz 0 0 0)))
     (uuid "3904f2a7-6b64-5fc7-9883-150a44a15913"))
   (footprint "SW_TH_Tactile_Omron_B3F-106x"
-    (at 45.0 155.0)
+    (at 52.0 153.0)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -6213,7 +6505,7 @@
       (remove_unused_layers no)
       (thermal_bridge_angle 90)
       (uuid "ee1616be-3af4-4d1d-96b5-541d19557273")
-      (net 38 "BTN_LEFT"))
+      (net 64 "BTN_LEFT"))
     (pad "1" thru_hole circle
       (at 6.5 0)
       (size 1.7 1.7)
@@ -6221,7 +6513,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "130b9ada-7aba-4fd3-8830-5ad15b027dac")
-      (net 38 "BTN_LEFT"))
+      (net 64 "BTN_LEFT"))
     (pad "2" thru_hole circle
       (at 0 4.5)
       (size 1.7 1.7)
@@ -6229,7 +6521,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "daf085bd-70df-419e-a957-02914568e0f9")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "2" thru_hole circle
       (at 6.5 4.5)
       (size 1.7 1.7)
@@ -6237,7 +6529,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "65a424f4-9f68-4376-86e4-1cb03f2e6524")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-106x.step"
       (offset
@@ -6248,7 +6540,7 @@
         (xyz 0 0 0)))
     (uuid "81aad300-1eca-5525-96c7-8477d368302d"))
   (footprint "SW_TH_Tactile_Omron_B3F-106x"
-    (at 75.0 155.0)
+    (at 68.0 153.0)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -6413,7 +6705,7 @@
       (remove_unused_layers no)
       (thermal_bridge_angle 90)
       (uuid "ee1616be-3af4-4d1d-96b5-541d19557273")
-      (net 42 "BTN_RIGHT"))
+      (net 17 "BTN_RIGHT"))
     (pad "1" thru_hole circle
       (at 6.5 0)
       (size 1.7 1.7)
@@ -6421,7 +6713,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "130b9ada-7aba-4fd3-8830-5ad15b027dac")
-      (net 42 "BTN_RIGHT"))
+      (net 17 "BTN_RIGHT"))
     (pad "2" thru_hole circle
       (at 0 4.5)
       (size 1.7 1.7)
@@ -6429,7 +6721,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "daf085bd-70df-419e-a957-02914568e0f9")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "2" thru_hole circle
       (at 6.5 4.5)
       (size 1.7 1.7)
@@ -6437,7 +6729,7 @@
       (layers "*.Cu" "*.Mask")
       (remove_unused_layers no)
       (uuid "65a424f4-9f68-4376-86e4-1cb03f2e6524")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_TH_Tactile_Omron_B3F-106x.step"
       (offset
@@ -6667,21 +6959,21 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "25e0b2d4-d397-53b0-a437-b46be61fd86c")
-      (net 11 "VBAT"))
+      (net 18 "VBAT"))
     (pad "2" smd roundrect
       (at -1.1375 0)
       (size 1.325 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "6c18c825-2092-5e68-8592-43e0b333c753")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd roundrect
       (at -1.1375 0.95)
       (size 1.325 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "f9413de6-3c38-550d-8024-0900f6297669")
-      (net 11 "VBAT"))
+      (net 18 "VBAT"))
     (pad "4" smd roundrect
       (at 1.1375 0.95)
       (size 1.325 0.6)
@@ -6694,7 +6986,7 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "16d189fe-d6b7-5b60-90f7-f7517e426243")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
       (offset
@@ -6705,7 +6997,7 @@
         (xyz 0 0 0)))
     (uuid "0549b8b4-b167-57e2-9efe-49104b862bd0"))
   (footprint "ESP32-C6-MINI-1"
-      (at 58.25026160341895 138.4667098620679)
+      (at 48.84564510605761 138.15720498344137)
   	(version 20241229)
   	(generator "pcbnew")
   	(generator_version "9.0")
@@ -7429,7 +7721,7 @@
   )
 
   (footprint "TSSOP-16_4.4x5mm_P0.65mm"
-    (at 74.28663282032441 135.17191257322818)
+    (at 61.500678358207544 135.4738055618211)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -7585,112 +7877,112 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "acca0c1b-2cec-5ef1-839c-5aac7b11e082")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "2" smd roundrect
       (at -2.8625 -1.625)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "219b525f-2284-5b15-86d2-77a5bd629ef1")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "3" smd roundrect
       (at -2.8625 -0.975)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "fb1de7a9-16cf-5461-82d7-4a9dc25f6ce1")
-      (net 35 "N$1"))
+      (net 37 "N$1"))
     (pad "4" smd roundrect
       (at -2.8625 -0.325)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "580db4b5-12ca-5bc0-92c3-827e00a47027")
-      (net 46 "MUX_CH0_SDA"))
+      (net 47 "MUX_CH0_SDA"))
     (pad "5" smd roundrect
       (at -2.8625 0.325)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "1d711105-819a-5a3d-bb97-dba7465a7fde")
-      (net 6 "MUX_CH0_SCL"))
+      (net 32 "MUX_CH0_SCL"))
     (pad "6" smd roundrect
       (at -2.8625 0.975)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "10dd34a2-d81f-5a86-b6a6-6a0eac57ab7e")
-      (net 65 "MUX_CH1_SDA"))
+      (net 61 "MUX_CH1_SDA"))
     (pad "7" smd roundrect
       (at -2.8625 1.625)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "0eb57fd4-8155-5af9-b36c-a366d6e6c78f")
-      (net 57 "MUX_CH1_SCL"))
+      (net 10 "MUX_CH1_SCL"))
     (pad "8" smd roundrect
       (at -2.8625 2.275)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "3ee5a1e9-354e-5c70-9a05-ce4eb1b9a70d")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "9" smd roundrect
       (at 2.8625 2.275)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "a57b5c3d-4969-5da9-bde2-07a3e2d9a22b")
-      (net 16 "MUX_CH2_SDA"))
+      (net 66 "MUX_CH2_SDA"))
     (pad "10" smd roundrect
       (at 2.8625 1.625)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "530c73e2-ca7b-54fb-a836-7736676a05af")
-      (net 60 "MUX_CH2_SCL"))
+      (net 62 "MUX_CH2_SCL"))
     (pad "11" smd roundrect
       (at 2.8625 0.975)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "8a1d6405-e6ac-5cbd-af08-c58a237a97cc")
-      (net 12 "MUX_CH3_SDA"))
+      (net 15 "MUX_CH3_SDA"))
     (pad "12" smd roundrect
       (at 2.8625 0.325)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "e1c870bf-4987-57eb-a4e6-e7fda06576d5")
-      (net 23 "MUX_CH3_SCL"))
+      (net 25 "MUX_CH3_SCL"))
     (pad "13" smd roundrect
       (at 2.8625 -0.325)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "197ec38d-ce75-5afd-a6a9-7e69a985c4cf")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "14" smd roundrect
       (at 2.8625 -0.975)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "6bf9dc22-43e1-5602-8ad2-6aff2e990287")
-      (net 27 "I2C_SCL"))
+      (net 29 "I2C_SCL"))
     (pad "15" smd roundrect
       (at 2.8625 -1.625)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "36d7057d-738c-5357-a21b-c14813c3b92a")
-      (net 28 "I2C_SDA"))
+      (net 56 "I2C_SDA"))
     (pad "16" smd roundrect
       (at 2.8625 -2.275)
       (size 1.475 0.4)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "f920995b-0425-5565-af2e-3cc49f8929ba")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/TSSOP-16_4.4x5mm_P0.65mm.step"
       (offset
@@ -7701,7 +7993,7 @@
         (xyz 0 0 0)))
     (uuid "5457a414-93a6-5096-8057-28fe555d4e15"))
   (footprint "Bosch_LGA-14_3x2.5mm_P0.5mm"
-    (at 49.59735848921429 134.22271622986784)
+    (at 74.7347029355234 133.9594805732281)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -7898,85 +8190,85 @@
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "6e61f2d2-8930-47eb-929d-158729e9f800")
-      (net 27 "I2C_SCL"))
+      (net 29 "I2C_SCL"))
     (pad "2" smd rect
       (at -1.2625 -0.25)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "14c07e26-9e39-4424-ac8b-e643f57152db")
-      (net 28 "I2C_SDA"))
+      (net 56 "I2C_SDA"))
     (pad "3" smd rect
       (at -1.2625 0.25)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "68bca606-bea0-40a8-b7b7-a4ad5d0d24df")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "4" smd rect
       (at -1.2625 0.75)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "cb8f9a5a-786c-48ab-b494-0798f90fc6c4")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "5" smd rect
       (at -0.5 1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "0d56455c-cacd-4f76-87d6-32ee4552913d")
-      (net 30 "IMU_INT2_NC"))
+      (net 22 "IMU_INT2_NC"))
     (pad "6" smd rect
       (at 0 1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "5483b213-03ca-42a9-87d3-b4067412e216")
-      (net 22 "IMU_INT1_NC"))
+      (net 43 "IMU_INT1_NC"))
     (pad "7" smd rect
       (at 0.5 1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "24917984-f1b4-439e-b55b-fd98981e1a95")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "8" smd rect
       (at 1.2625 0.75)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "1d859865-9e5a-4e80-89d5-bdbb8c3fb6ab")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "9" smd rect
       (at 1.2625 0.25)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "2fac7a57-2ef5-4d8c-a7a5-363aa7e2c091")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "10" smd rect
       (at 1.2625 -0.25)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "47da7449-d931-4657-927d-85da4e871ec4")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "11" smd rect
       (at 1.2625 -0.75)
       (size 0.675 0.25)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "103def49-9bd8-4aba-b420-203c5d022c9a")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "12" smd rect
       (at 0.5 -1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "fda26ba8-5848-4fd1-9e33-4fd1b8883f65")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "13" smd rect
       (at 0 -1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "096ff4ff-57d8-4d9e-a966-b56fb3298dea")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "14" smd rect
       (at -0.5 -1.0125)
       (size 0.25 0.675)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (uuid "f5a4c9a1-164a-4d25-ba74-ab28290f581b")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-14_3x2.5mm_P0.5mm.step"
       (offset
@@ -7987,7 +8279,7 @@
         (xyz 0 0 0)))
     (uuid "5e267b45-4510-5a9e-a4f7-0bb2e4996631"))
   (footprint "SOIC-8_3.9x4.9mm_P1.27mm"
-    (at 43.61626711335852 135.48340722533734)
+    (at 71.63993807591125 138.0358303052547)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -8171,56 +8463,56 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "31bf9a71-5466-5c37-b3e6-9cf99d8b5d48")
-      (net 36 "FLASH_DET"))
+      (net 51 "FLASH_DET"))
     (pad "2" smd roundrect
       (at -2.475 -0.635)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "fbdae946-5d85-5e7c-98f9-0721d0652543")
-      (net 7 "FLASH_THRESH"))
+      (net 11 "FLASH_THRESH"))
     (pad "3" smd roundrect
       (at -2.475 0.635)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "54dfbac3-ebc1-5481-a626-a7197031599c")
-      (net 14 "FLASH_SENSE"))
+      (net 16 "FLASH_SENSE"))
     (pad "4" smd roundrect
       (at -2.475 1.905)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "7cf3854c-3e24-55e5-b9d0-fbbef96ec91e")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "5" smd roundrect
       (at 2.475 1.905)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "0642f8f7-e30d-58c0-b1d4-ab158273bdb9")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "6" smd roundrect
       (at 2.475 0.635)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "ce9d15ed-b7bc-5069-acf4-218d773649eb")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "7" smd roundrect
       (at 2.475 -0.635)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "d5b1edf5-65a4-5026-a241-7e2be519c307")
-      (net 24 "COMP2_NC"))
+      (net 52 "COMP2_NC"))
     (pad "8" smd roundrect
       (at 2.475 -1.905)
       (size 1.95 0.6)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "9e2f6435-1a58-543c-93cb-f2523a86fe41")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
       (offset
@@ -8230,300 +8522,8 @@
       (rotate
         (xyz 0 0 0)))
     (uuid "62a1203d-01a0-53de-9b65-b991117cee70"))
-  (footprint "Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal"
-    (at 84.64460664672296 134.85142693261113)
-    (version 20241229)
-    (generator "kicad-footprint-generator")
-    (layer "F.Cu")
-    (descr "Molex Molex 1.00mm Pitch Easy-On BackFlip, Right-Angle, Bottom Contact FFC/FPC, 200528-0040, 4 Circuits (https://www.molex.com/pdm_docs/sd/2005280040_sd.pdf), generated with kicad-footprint-generator")
-    (tags "connector Molex  horizontal")
-    (property "Reference" "J1"
-      (at 0 -2.61 0)
-      (layer "F.SilkS")
-      (effects
-        (font
-          (size 1 1)
-          (thickness 0.15)))
-      (uuid "8c3b5e27-192f-538f-b872-efc84d466a57"))
-    (property "Value" "Conn_01x04_Pin"
-      (at 0 5.39 0)
-      (layer "F.Fab")
-      (effects
-        (font
-          (size 1 1)
-          (thickness 0.15)))
-      (uuid "57ca2c3b-b969-5b09-aff0-7543650854a0"))
-    (attr smd)
-    (fp_line
-      (start -4.71 -1.17)
-      (end -4.71 0.88)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -4.71 2.7)
-      (end -4.71 3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -4.71 3)
-      (end -3.91 3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -3.94 -1.17)
-      (end -4.71 -1.17)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -3.94 -0.82)
-      (end -3.94 -1.17)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -3.91 3)
-      (end -3.91 4.3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -3.91 4.3)
-      (end 3.91 4.3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -1.96 -1.41)
-      (end -1.96 -0.82)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start -1.96 -0.82)
-      (end -3.94 -0.82)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 3.91 3)
-      (end 4.71 3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 3.91 4.3)
-      (end 3.91 3)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 3.94 -1.17)
-      (end 3.94 -0.82)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 3.94 -0.82)
-      (end 1.96 -0.82)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 4.71 -1.17)
-      (end 3.94 -1.17)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 4.71 0.88)
-      (end 4.71 -1.17)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_line
-      (start 4.71 3)
-      (end 4.71 2.7)
-      (stroke
-        (width 0.12)
-        (type solid))
-      (layer "F.SilkS"))
-    (fp_rect
-      (start -5.8 -1.91)
-      (end 5.8 4.69)
-      (stroke
-        (width 0.05)
-        (type solid))
-      (fill no)
-      (layer "F.CrtYd"))
-    (fp_line
-      (start -4.6 -1.06)
-      (end -4.6 2.89)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -4.6 2.89)
-      (end 4.6 2.89)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -4.05 -1.06)
-      (end -4.6 -1.06)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -4.05 -0.71)
-      (end -4.05 -1.06)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -3.8 0.19)
-      (end -3.8 4.19)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -3.8 4.19)
-      (end 3.8 4.19)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -2 -0.71)
-      (end -1.5 0.04)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start -1.5 0.04)
-      (end -1 -0.71)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 3.8 0.19)
-      (end -3.8 0.19)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 3.8 4.19)
-      (end 3.8 0.19)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 4.05 -1.06)
-      (end 4.05 -0.71)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 4.05 -0.71)
-      (end -4.05 -0.71)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 4.6 -1.06)
-      (end 4.05 -1.06)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_line
-      (start 4.6 2.89)
-      (end 4.6 -1.06)
-      (stroke
-        (width 0.1)
-        (type solid))
-      (layer "F.Fab"))
-    (fp_text user ${REFERENCE}
-      (at 0 1.39 0)
-      (layer "F.Fab")
-      (effects
-        (font
-          (size 1 1)
-          (thickness 0.15))))
-    (pad "1" smd rect
-      (at -1.5 -0.91)
-      (size 0.4 1)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "31ff1a9c-3179-5be9-bdc4-92c91ca4bc01")
-      (net 47 "GND"))
-    (pad "2" smd rect
-      (at -0.5 -0.91)
-      (size 0.4 1)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "a0328acf-bfaa-5d6c-af5f-7149ce702d38")
-      (net 25 "VCC"))
-    (pad "3" smd rect
-      (at 0.5 -0.91)
-      (size 0.4 1)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "4685fd56-a238-5f15-b40b-d1b5d1b3626d")
-      (net 27 "I2C_SCL"))
-    (pad "4" smd rect
-      (at 1.5 -0.91)
-      (size 0.4 1)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "95a730ea-49e9-520e-9531-8424c36fc641")
-      (net 28 "I2C_SDA"))
-    (pad "MP" smd rect
-      (at -4.3 1.79)
-      (size 2 1.3)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "823ba8da-d266-5a2a-bba7-c464354f2ff1"))
-    (pad "MP" smd rect
-      (at 4.3 1.79)
-      (size 2 1.3)
-      (layers "F.Cu" "F.Mask" "F.Paste")
-      (uuid "823ba8da-d266-5a2a-bba7-c464354f2ff1"))
-    (embedded_fonts no)
-    (model "${KICAD9_3DMODEL_DIR}/Connector_FFC-FPC.3dshapes/Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal.step"
-      (offset
-        (xyz 0 0 0))
-      (scale
-        (xyz 1 1 1))
-      (rotate
-        (xyz 0 0 0)))
-    (uuid "3e973261-8790-5df3-99e0-90474e5eb59b"))
   (footprint "Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
-    (at 71.90571355665118 142.0908659402815)
+    (at 81.99945742363278 136.28383118304941)
     (version 20241229)
     (generator "pcbnew")
     (generator_version "9.0")
@@ -8678,37 +8678,37 @@
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "2509f2e4-e8d1-4e64-a53b-26904e1cf4d7")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" connect circle
       (at -1.27 -0.635)
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "a166afca-da26-4e70-8eb4-033185f287c1")
-      (net 55 "UART_TX"))
+      (net 26 "UART_TX"))
     (pad "3" connect circle
       (at 0 0.635)
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "fc8656a2-a770-48d5-92be-2d7ab1d405c7")
-      (net 3 "UART_RX"))
+      (net 36 "UART_RX"))
     (pad "4" connect circle
       (at 0 -0.635)
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "6909bc0f-dc8d-41d1-8f1a-f628a3fa8e05")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (pad "5" connect circle
       (at 1.27 0.635)
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "dd51353d-2cf5-4a4f-9aab-f13c879361a9")
-      (net 18 "ESP_EN"))
+      (net 39 "ESP_EN"))
     (pad "6" connect circle
       (at 1.27 -0.635)
       (size 0.7874 0.7874)
       (layers "F.Cu" "F.Mask")
       (uuid "c6d7c4bf-8d40-4dd6-98ad-e2c5a2677c2e")
-      (net 26 "ESP_BOOT"))
+      (net 45 "ESP_BOOT"))
     (zone
       (net 0)
       (net_name "")
@@ -8740,7 +8740,7 @@
     (embedded_fonts no)
     (uuid "20370676-344a-5eba-9e3c-d3b16a0c523a"))
   (footprint "C_0603_1608Metric"
-    (at 66.78592598872936 137.14200497367085)
+    (at 71.25698388419241 133.78215625684527)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -8806,14 +8806,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5bd520ff-5d34-5b41-9478-04ced789324e")
-      (net 11 "VBAT"))
+      (net 18 "VBAT"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "cc47416d-57ff-506e-90dd-cf49de98810b")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -8824,7 +8824,7 @@
         (xyz 0 0 0)))
     (uuid "f0c9f122-fad8-5a95-9bda-1ea1df14c1c8"))
   (footprint "C_0603_1608Metric"
-    (at 49.628567875750335 137.47957864347896)
+    (at 60.1505 58.0)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -8890,14 +8890,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5d066ed9-dc3c-5c7c-b88d-79e5da419be9")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "231eb3c5-fa6b-5204-a6b5-2dbe99cc8479")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -8908,7 +8908,7 @@
         (xyz 0 0 0)))
     (uuid "a214e52c-f634-565c-a3a6-c7580ff75db2"))
   (footprint "C_0603_1608Metric"
-    (at 60.1505 58.0)
+    (at 88.5 104.95)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -8974,14 +8974,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "a409dcfb-a38e-5320-9fe0-369fe4e4a068")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "711d22a1-dae2-5199-9942-a95cb7724ec2")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -8992,7 +8992,7 @@
         (xyz 0 0 0)))
     (uuid "d3bb9bd7-3435-5f9d-89ec-b68f10757952"))
   (footprint "C_0603_1608Metric"
-    (at 31.5 39.05)
+    (at 88.5 39.05)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9058,14 +9058,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "245e2b45-920a-5295-8519-a2a1a8b9940a")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "a99d7128-6ef4-5733-9bdb-d171289eee21")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -9076,7 +9076,7 @@
         (xyz 0 0 0)))
     (uuid "77dd3e08-69c3-5887-92ad-cd7f821afc54"))
   (footprint "C_0603_1608Metric"
-    (at 31.5 63.05)
+    (at 76.89308242363278 137.14985658683386)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9142,14 +9142,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "d9115808-96a6-5098-b46f-665fda21fd81")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "2f840c6a-9d2a-59bf-9c00-86eb531d80ab")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -9160,7 +9160,7 @@
         (xyz 0 0 0)))
     (uuid "d6935707-2380-54d8-8d0c-d27de74d96c6"))
   (footprint "C_0603_1608Metric"
-    (at 58.25026160341895 145.9917098620679)
+    (at 31.5 63.05)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9226,14 +9226,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "bde83d3d-dd4d-5c35-9dce-828df17f4a44")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "b489a988-49ba-50e9-b68f-5702af35c9f4")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -9244,7 +9244,7 @@
         (xyz 0 0 0)))
     (uuid "2e06e967-9894-5a36-81ea-5bc3219ab980"))
   (footprint "C_0603_1608Metric"
-    (at 88.5 87.05)
+    (at 69.5 111.05)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9310,14 +9310,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "7793d92a-1e14-5b13-ad09-0dc548f35cdc")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "e6ae1b27-d676-523c-8db9-d396afd4fb32")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -9328,7 +9328,7 @@
         (xyz 0 0 0)))
     (uuid "1e76ef7b-8894-573e-9632-b9b79e06ffcd"))
   (footprint "R_0603_1608Metric"
-    (at 49.59735848921429 139.79771622986783)
+    (at 60.1505 58.0)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9394,14 +9394,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "7a33c219-c89f-5a99-a619-e410c4089be7")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "973b80db-86f0-5600-a200-2109e24cb855")
-      (net 28 "I2C_SDA"))
+      (net 56 "I2C_SDA"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -9412,7 +9412,7 @@
         (xyz 0 0 0)))
     (uuid "fbafe2e7-6f2d-5015-bbe7-36c04e64582a"))
   (footprint "R_0603_1608Metric"
-    (at 60.1505 58.0)
+    (at 76.8780101154394 140.91179227523614)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9478,14 +9478,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "3af7a606-5c3a-58ad-84ce-0dbf714c3709")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "ac45f930-e68d-5343-83ee-ce5e0b23eeca")
-      (net 27 "I2C_SCL"))
+      (net 29 "I2C_SCL"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -9496,7 +9496,7 @@
         (xyz 0 0 0)))
     (uuid "06825f00-e25b-5a3a-aa74-313ac9441771"))
   (footprint "C_0805_2012Metric"
-    (at 77.5417083132192 140.0706149280595)
+    (at 66.21770610914663 139.96683950012638)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9562,14 +9562,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "c7c37597-2519-581b-9470-42cbb7e6762b")
-      (net 11 "VBAT"))
+      (net 18 "VBAT"))
     (pad "2" smd roundrect
       (at 0.95 0)
       (size 1 1.45)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "bed9cebb-5447-5061-a410-b74ac4db148f")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
       (offset
@@ -9580,7 +9580,7 @@
         (xyz 0 0 0)))
     (uuid "66cc378f-eb1c-5cb7-bc1d-665699476ee6"))
   (footprint "R_0603_1608Metric"
-    (at 66.29933855665118 142.0908659402815)
+    (at 87.60583242363278 136.28383118304941)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9646,14 +9646,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "b91cb3a9-0696-5bde-9bbd-164963ef7ad2")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "1328aa85-2e9b-5e87-8c56-e2c0ebdbcbf8")
-      (net 18 "ESP_EN"))
+      (net 39 "ESP_EN"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -9664,7 +9664,7 @@
         (xyz 0 0 0)))
     (uuid "6bae1803-5cf6-57fa-8a23-d40c849aa1ec"))
   (footprint "C_0603_1608Metric"
-    (at 66.27982887972524 139.8594477677966)
+    (at 48.84564510605761 145.68220498344138)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9730,14 +9730,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "197ab5a2-8628-5e98-ab27-cea9a643f6a6")
-      (net 18 "ESP_EN"))
+      (net 39 "ESP_EN"))
     (pad "2" smd roundrect
       (at 0.775 0)
       (size 0.9 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "fa95512f-f1be-59a8-a853-2abf60c97df3")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step"
       (offset
@@ -9748,7 +9748,7 @@
         (xyz 0 0 0)))
     (uuid "9d7117c1-eb2c-53d8-8a1d-5a71d67e31cb"))
   (footprint "R_0603_1608Metric"
-    (at 50.04279415699629 142.8792038793937)
+    (at 88.3634184543117 133.74534221372835)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9814,14 +9814,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "84363816-7bb1-5b44-8224-2d8d6da49440")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "b3741041-1451-58be-8d99-51fd8d527708")
-      (net 26 "ESP_BOOT"))
+      (net 45 "ESP_BOOT"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -9832,7 +9832,7 @@
         (xyz 0 0 0)))
     (uuid "9ad547cf-964c-5d59-8044-f81825c86066"))
   (footprint "C_0805_2012Metric"
-    (at 31.5 39.275)
+    (at 88.5 104.725)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9898,14 +9898,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "107a9070-3ca4-5cb3-904e-0ee5327af3d7")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.95 0)
       (size 1 1.45)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "375cc162-fba4-50c1-b6d9-11add8a3cb66")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0805_2012Metric.step"
       (offset
@@ -9916,7 +9916,7 @@
         (xyz 0 0 0)))
     (uuid "fd3bcd96-3e47-57ab-aeb1-04eeb0cfbc5a"))
   (footprint "R_0603_1608Metric"
-    (at 77.20250733001006 142.61010099694292)
+    (at 62.50835864313731 139.7172154508603)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -9982,14 +9982,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "a80fbad8-8e4f-50da-8f16-33f9e8d08f2c")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "29ee6cbc-2e96-553c-abd0-4450cc7c264f")
-      (net 35 "N$1"))
+      (net 37 "N$1"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10000,7 +10000,7 @@
         (xyz 0 0 0)))
     (uuid "1d169b76-2480-5d46-af43-77c1120df00c"))
   (footprint "R_0603_1608Metric"
-    (at 43.61626711335852 139.91340722533735)
+    (at 72.89493386993233 142.01267189749308)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10066,14 +10066,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "b3c55abc-22cf-59f5-92ab-b260b377af67")
-      (net 14 "FLASH_SENSE"))
+      (net 16 "FLASH_SENSE"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "5f8c95c8-07b4-5b05-baaa-445043a2344e")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10084,7 +10084,7 @@
         (xyz 0 0 0)))
     (uuid "a59f3f21-37d5-574f-b417-725c4cd1ec8f"))
   (footprint "R_0603_1608Metric"
-    (at 38.26052044291397 134.7038600584407)
+    (at 69.64298403274155 141.9811194648951)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10150,14 +10150,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "cd9b65ac-47f3-5287-8676-8c57b01f4417")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "7ac777fa-daf2-5f43-97e6-173f1bc29616")
-      (net 7 "FLASH_THRESH"))
+      (net 11 "FLASH_THRESH"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10168,7 +10168,7 @@
         (xyz 0 0 0)))
     (uuid "80af52de-69f2-5e1a-8dd6-0778925e743d"))
   (footprint "R_0603_1608Metric"
-    (at 35.22030702719813 133.727079380931)
+    (at 80.03478923316239 141.91063491663883)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10234,14 +10234,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "c0919e43-8ed6-5e60-9142-ee4ab78a5063")
-      (net 7 "FLASH_THRESH"))
+      (net 11 "FLASH_THRESH"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "d7a14b7c-b0cc-5131-86c1-84ecaea5b8a7")
-      (net 47 "GND"))
+      (net 27 "GND"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10252,7 +10252,7 @@
         (xyz 0 0 0)))
     (uuid "4e71566d-2983-57b2-9ec4-bed52b590d91"))
   (footprint "R_0603_1608Metric"
-    (at 46.644339465776675 139.4927702920449)
+    (at 40.350966665120666 133.85395013251235)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10318,14 +10318,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "9c7744f3-990b-5881-809a-61ad92faf8fb")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "fba751f9-add0-5438-9ca1-be632a657138")
-      (net 36 "FLASH_DET"))
+      (net 51 "FLASH_DET"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10336,7 +10336,7 @@
         (xyz 0 0 0)))
     (uuid "04883227-c841-5c61-bb0c-92f55826ae2c"))
   (footprint "R_0603_1608Metric"
-    (at 46.750261603418956 142.01029414910997)
+    (at 40.20172406675384 136.37405316430517)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10402,14 +10402,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "4a3c3850-c9eb-5da5-acfa-392a7df1facd")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "0f08fc8d-8798-552f-80e0-437f993f7365")
-      (net 31 "BTN_UP"))
+      (net 33 "BTN_UP"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10420,7 +10420,7 @@
         (xyz 0 0 0)))
     (uuid "3a9b1130-c6fb-50c8-877a-8c75ac975e45"))
   (footprint "R_0603_1608Metric"
-    (at 57.47143833457185 154.3794621694315)
+    (at 37.11089242887761 134.76471551127906)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10486,14 +10486,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "c95758d7-240b-5e20-9184-256595d3a0c0")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "419b7b3a-03d8-5edb-a5d2-52c6ff5e3ba0")
-      (net 34 "BTN_DOWN"))
+      (net 35 "BTN_DOWN"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10504,7 +10504,7 @@
         (xyz 0 0 0)))
     (uuid "17ccdfd7-f675-5696-b34d-61671ec3def3"))
   (footprint "R_0603_1608Metric"
-    (at 60.98799464685004 154.2992865770838)
+    (at 34.085696278643894 133.77020721306124)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10570,14 +10570,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "f6e7cc47-60af-5de1-b02e-9a9841b451f8")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "4e9a9435-bac9-50b0-9ba9-0e4bc43586cf")
-      (net 38 "BTN_LEFT"))
+      (net 64 "BTN_LEFT"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset
@@ -10588,7 +10588,7 @@
         (xyz 0 0 0)))
     (uuid "2c0e9a34-ed53-5bde-8c97-41d8dc9affcb"))
   (footprint "R_0603_1608Metric"
-    (at 53.59675037462691 154.279227020463)
+    (at 40.23023389432106 138.8174331194919)
     (version 20241229)
     (generator "kicad-footprint-generator")
     (layer "F.Cu")
@@ -10654,14 +10654,14 @@
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "d435de3b-1fda-5151-bccd-264c8d9b1f42")
-      (net 25 "VCC"))
+      (net 34 "VCC"))
     (pad "2" smd roundrect
       (at 0.825 0)
       (size 0.8 0.95)
       (layers "F.Cu" "F.Mask" "F.Paste")
       (roundrect_rratio 0.25)
       (uuid "381bdc92-d488-56c1-a91e-45df44df932d")
-      (net 42 "BTN_RIGHT"))
+      (net 17 "BTN_RIGHT"))
     (embedded_fonts no)
     (model "${KICAD9_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step"
       (offset

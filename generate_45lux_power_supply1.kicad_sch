@@ -388,7 +388,7 @@
       (embedded_fonts no)))
   (symbol
     (lib_id "Device:Battery_Cell")
-    (at 140.97 109.22 0)
+    (at 139.7 107.95 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -397,31 +397,31 @@
     (fields_autoplaced yes)
     (uuid 7af9c5c2-d3b4-58d0-abb4-572b740d60ef)
     (property "Reference" "BT1"
-      (at 140.97 106.67999999999999 0)
+      (at 139.7 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "3xAAA"
-      (at 140.97 111.76 0)
+      (at 139.7 110.49000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Battery:BatteryHolder_Keystone_2479_3xAAA"
-      (at 140.97 109.22 0)
+      (at 139.7 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 140.97 109.22 0)
+      (at 139.7 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Single-cell battery"
-      (at 140.97 109.22 0)
+      (at 139.7 107.95 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -432,7 +432,7 @@
       (uuid dad8ad7a-5222-5681-8144-e4cb2388ed3d))
     (instances
       (project "SKiDL-Generated"
-        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/b2ab2c06-045c-4700-8e42-d4285327c2c8/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "BT1")
           (unit 1)))))
   (symbol
@@ -481,7 +481,7 @@
       (uuid 205d9f8e-3e19-5f43-bc45-c6a2c8476b28))
     (instances
       (project "SKiDL-Generated"
-        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/b2ab2c06-045c-4700-8e42-d4285327c2c8/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C1")
           (unit 1)))))
   (symbol
@@ -536,7 +536,7 @@
       (uuid 428f1198-15e2-5fbb-974e-9fbcd8b16bf6))
     (instances
       (project "SKiDL-Generated"
-        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/b2ab2c06-045c-4700-8e42-d4285327c2c8/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "U1")
           (unit 1)))))
   (symbol
@@ -585,7 +585,7 @@
       (uuid 1d159584-7c7a-5587-8624-9d7d6ce1cdef))
     (instances
       (project "SKiDL-Generated"
-        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/b2ab2c06-045c-4700-8e42-d4285327c2c8/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C2")
           (unit 1)))))
   (symbol
@@ -634,52 +634,52 @@
       (uuid 4fe71945-e7ae-502f-8101-aaf2a9958feb))
     (instances
       (project "SKiDL-Generated"
-        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/03671d4a-ac20-566d-905c-67c4fdfb4153"
+        (path "/b2ab2c06-045c-4700-8e42-d4285327c2c8/03671d4a-ac20-566d-905c-67c4fdfb4153"
           (reference "C3")
           (unit 1)))))
   (global_label "VBAT"
     (shape bidirectional)
-    (at 140.97 104.14 90)
+    (at 139.7 102.87 90)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 5e9840b3-9196-5cb8-9bac-d4894e6fe80f))
+    (uuid 07e1f23c-3bc2-5e41-a6ed-6a9dd3e30a2a))
   (symbol
     (lib_id "power:GND")
-    (at 140.97 111.76 0)
+    (at 139.7 110.49 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid aef652c8-7ac5-56a9-b1cb-1cea89ece2c9)
+    (uuid a80c7710-df6d-5bc8-8ed2-306c3fac4205)
     (property "Reference" "#PWR001"
-      (at 140.97 110.49000000000001 0)
+      (at 139.7 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 140.97 107.95 0)
+      (at 139.7 106.67999999999999 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 140.97 111.76 0)
+      (at 139.7 110.49 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 140.97 111.76 0)
+      (at 139.7 110.49 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid fd57195f-432b-5610-b6a8-ba02f656d187))
+      (uuid f9dcf284-7fc0-5459-8204-b78f7a522872))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -692,7 +692,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 055ddfe9-c192-5f74-a66b-6c7ebf6014c8))
+    (uuid 6c2fe4f1-64e1-53c5-b0e4-747d5477fa43))
   (symbol
     (lib_id "power:GND")
     (at 120.65 111.76 0)
@@ -748,7 +748,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 1a243997-81d6-5293-b79d-c6f638440c80))
+    (uuid 7cdee03c-9fbd-5588-bae3-f276918a947f))
   (symbol
     (lib_id "power:GND")
     (at 165.1 106.68 0)
@@ -836,7 +836,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 762de7a8-6e6b-5a94-9424-4f1b4a307f2d))
+    (uuid cc290dfe-0a38-53d8-9a08-2a8805697e44))
   (symbol
     (lib_id "power:GND")
     (at 127.0 111.76 0)

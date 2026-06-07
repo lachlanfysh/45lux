@@ -286,6 +286,7 @@ def oled_connector(vcc, gnd, sda, scl):
     conn[2] += vcc
     conn[3] += scl
     conn[4] += sda
+    return conn
 
 
 # ── User Interface: Buttons ─────────────────────────────────────────────────
@@ -353,7 +354,7 @@ sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 spectral, spectral_cap = color_temp_sensor(vcc, gnd, sda, scl)
 flash_pd = flash_detect(vcc, gnd, flash_det)
-oled_connector(vcc, gnd, sda, scl)
+oled_conn = oled_connector(vcc, gnd, sda, scl)
 sw_up, sw_down, sw_left, sw_right = user_interface(vcc, gnd, btn_up, btn_down, btn_left, btn_right)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
 
@@ -394,14 +395,17 @@ sensor_fixed.append(FixedPosition(spectral.ref, 57.0, 58.0, 0.0))
 sensor_fixed.append(FixedPosition(spectral_cap.ref, 57.0, 61.0, 0.0))
 sensor_fixed.append(FixedPosition(flash_pd.ref, 62.0, 58.0, 0.0))
 
-# Battery holder across the bottom of the board
-sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
+# OLED connector — bottom-right corner of electronics zone
+sensor_fixed.append(FixedPosition(oled_conn.ref, 105.0, 140.0, 0.0))
 
-# 4 switches evenly spaced across bottom
-sensor_fixed.append(FixedPosition(sw_up.ref, 15.0, 155.0, 0.0))
-sensor_fixed.append(FixedPosition(sw_left.ref, 45.0, 155.0, 0.0))
-sensor_fixed.append(FixedPosition(sw_right.ref, 75.0, 155.0, 0.0))
-sensor_fixed.append(FixedPosition(sw_down.ref, 105.0, 155.0, 0.0))
+# Battery holder — bottom-left corner
+sensor_fixed.append(FixedPosition(bat_holder.ref, 20.0, 175.0, 0.0))
+
+# D-pad buttons — centered in electronics zone
+sensor_fixed.append(FixedPosition(sw_up.ref, 60.0, 145.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_down.ref, 60.0, 161.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_left.ref, 52.0, 153.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_right.ref, 68.0, 153.0, 0.0))
 
 # Keepout: film window area (sensors + passives only, no ICs)
 # Electronics zone: y=132 to y=185 (below film window)

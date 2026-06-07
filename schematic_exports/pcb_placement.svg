@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700.0" height="1085.0">
 <rect width="700.0" height="1085.0" fill="#f0ece6"/>
 <text x="350.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 70 parts | 11 overlaps | AS7343 spectral</text>
+<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 70 parts | 8 overlaps | AS7343 spectral</text>
 <rect x="50.0" y="80.0" width="600.0" height="925.0" fill="#e8e0d0" stroke="#3a3530" stroke-width="2.5" rx="2"/>
 <rect x="112.5" y="180.0" width="475.0" height="600.0" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="8,4"/>
 <text x="350.0" y="165.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
 <line x1="0.0" y1="780.0" x2="700.0" y2="780.0" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
 <text x="350.0" y="795.0" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>
-<rect x="217.5" y="835.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
-<text x="350.0" y="933.0" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
-<text x="350.0" y="944.0" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>
+<rect x="17.5" y="860.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
+<text x="150.0" y="958.0" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
+<text x="150.0" y="969.0" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>
 <circle cx="207.5" cy="260.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
 <circle cx="207.5" cy="260.0" r="2" fill="white" opacity="0.4"/>
 <rect x="202.5" y="272.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
@@ -63,50 +63,50 @@
 <text x="335.0" y="401.0" text-anchor="middle" font-size="6" fill="#7a6b5a" font-family="sans-serif">color temp</text>
 <rect x="330.0" y="382.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="355.0" y="367.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="95.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="125.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
-<rect x="545.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="575.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
-<rect x="245.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="275.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
-<rect x="395.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="425.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="570.0" y="777.5" width="10.0" height="5.0" fill="#6b5a7a" stroke="#3a3530" rx="1"/>
+<text x="575.0" y="782.5" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">OLED</text>
+<rect x="320.0" y="775.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="350.0" y="808.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="320.0" y="855.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="350.0" y="888.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="280.0" y="815.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="310.0" y="848.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="360.0" y="815.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="390.0" y="848.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
 <rect x="383.659919420962" y="746.4107812842263" width="10.0" height="5.0" fill="#c49452" stroke="#3a3530" rx="1"/>
 <text x="388.659919420962" y="751.4107812842263" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">LDO</text>
-<rect x="336.25130801709474" y="769.8335493103394" width="10.0" height="5.0" fill="#4a6b5a" stroke="#3a3530" rx="1"/>
-<text x="341.25130801709474" y="776.3335493103394" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32</text>
-<rect x="416.4331641016221" y="753.3595628661409" width="10.0" height="5.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
-<text x="421.4331641016221" y="758.8595628661409" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">MUX</text>
-<rect x="292.98679244607143" y="748.6135811493392" width="10.0" height="5.0" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
-<text x="297.98679244607143" y="754.1135811493392" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
-<rect x="263.0813355667926" y="754.9170361266868" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="468.22303323361484" y="751.7571346630557" width="10.0" height="5.0" fill="#6b5a7a" stroke="#3a3530" rx="1"/>
-<text x="473.22303323361484" y="756.7571346630557" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">OLED</text>
-<rect x="404.5285677832559" y="787.9543297014075" width="10.0" height="5.0" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
-<text x="409.5285677832559" y="792.9543297014075" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
-<rect x="378.9296299436468" y="763.2100248683543" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="293.14283937875166" y="764.8978932173948" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="289.22822553028806" y="768.2860249172069" width="10.0" height="5.0" fill="#4a6b5a" stroke="#3a3530" rx="1"/>
+<text x="294.22822553028806" y="774.7860249172069" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32</text>
+<rect x="352.5033917910377" y="754.8690278091055" width="10.0" height="5.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
+<text x="357.5033917910377" y="760.3690278091055" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">MUX</text>
+<rect x="418.673514677617" y="747.2974028661405" width="10.0" height="5.0" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
+<text x="423.673514677617" y="752.7974028661405" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
+<rect x="403.1996903795562" y="767.6791515262735" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="454.99728711816385" y="758.9191559152471" width="10.0" height="5.0" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
+<text x="459.99728711816385" y="763.9191559152471" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
+<rect x="401.28491942096207" y="746.4107812842263" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="345.7525" y="367.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="202.5" y="272.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="487.5" y="602.25" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="487.5" y="272.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="429.4654121181639" y="763.2492829341693" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="202.5" y="392.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="336.25130801709474" y="807.4585493103394" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="487.5" y="512.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="292.98679244607143" y="776.4885811493391" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="392.5" y="632.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="345.7525" y="367.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="432.708541566096" y="777.8530746402976" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="376.49669278325587" y="787.9543297014075" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="376.3991443986262" y="776.797238838983" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="295.2139707849814" y="791.8960193969685" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="202.5" y="273.875" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="431.0125366500503" y="790.5505049847146" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="263.0813355667926" y="777.0670361266867" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="236.30260221456984" y="751.0193002922035" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="221.10153513599067" y="746.135396904655" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="278.22169732888335" y="774.9638514602245" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="278.75130801709474" y="787.5514707455499" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="332.35719167285924" y="849.3973108471574" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="349.9399732342502" y="848.9964328854189" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="312.98375187313457" y="848.8961351023149" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="429.390050577197" y="782.0589613761807" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="376.0885305457332" y="777.334197500632" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="483.02916211816387" y="758.9191559152471" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="289.22822553028806" y="805.9110249172069" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="486.8170922715585" y="746.2267110686417" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="487.5" y="601.125" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="357.54179321568654" y="776.0860772543015" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="409.47466934966167" y="787.5633594874654" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="393.21492016370775" y="787.4055973244755" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="445.1739461658119" y="787.0531745831942" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="246.75483332560333" y="746.7697506625618" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="246.00862033376922" y="759.3702658215259" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="230.55446214438805" y="751.3235775563953" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="215.42848139321947" y="746.3510360653062" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="246.1511694716053" y="771.5871655974595" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="50" y="1055.0" width="10" height="10" fill="#c44e52" rx="2"/>
 <text x="64" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
 <rect x="120" y="1055.0" width="10" height="10" fill="#e6a832" rx="2"/>
