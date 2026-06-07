@@ -384,12 +384,11 @@ for i, sensor_part in enumerate(sensors):
     sensor_fixed.append(FixedPosition(sensor_part.ref, grid_x[col], grid_y[row], 0.0))
     sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
 
-# AS7343 on fat strip (y=60, 8mm wide) offset from sensor at (50.5, 60)
-sensor_fixed.append(FixedPosition(spectral.ref, 50.5, 57.0, 0.0))
-sensor_fixed.append(FixedPosition(spectral_cap.ref, 53.5, 57.0, 0.0))
-
-# BPW34 photodiode in solid top border (12mm of FR4 above film window)
-sensor_fixed.append(FixedPosition(flash_pd.ref, 60.0, 5.0, 0.0))
+# AS7343 + BPW34 on fat pad (19x8mm at center of y=60 strip, x=50.5..69.5)
+# Centered between sensors at x=50.5 and x=69.5 (15mm usable gap)
+sensor_fixed.append(FixedPosition(spectral.ref, 57.0, 58.0, 0.0))
+sensor_fixed.append(FixedPosition(spectral_cap.ref, 57.0, 61.0, 0.0))
+sensor_fixed.append(FixedPosition(flash_pd.ref, 62.0, 58.0, 0.0))
 
 # Battery holder across the bottom of the board
 sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
