@@ -64,8 +64,8 @@ def power_supply(vbat, vcc, gnd):
 # ── ESP32-C6 MCU ────────────────────────────────────────────────────────────
 
 @subcircuit
-def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
-                en_net, boot_net, flash_det):
+def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, btn_left, btn_right,
+                uart_tx, uart_rx, en_net, boot_net, flash_det):
     esp = Part("RF_Module", "ESP32-C6-MINI-1", footprint=FP_ESP32)
     esp[3] += vcc      # 3V3
     esp[1] += gnd      # GND
@@ -88,9 +88,11 @@ def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
     esp[15] += sda     # IO6
     esp[16] += scl     # IO7
 
-    # Buttons on IO4/IO5
-    esp[9] += btn_up   # IO4
-    esp[10] += btn_down # IO5
+    # Buttons on IO4/IO5/IO11/IO12
+    esp[9] += btn_up    # IO4
+    esp[10] += btn_down  # IO5
+    esp[18] += btn_left  # IO11
+    esp[19] += btn_right # IO12
 
     # UART for Tag-Connect flashing
     esp[31] += uart_tx  # TXD0
@@ -115,7 +117,7 @@ def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
     esp[17] += flash_det  # IO10
 
     # NC pins
-    unused = [4, 5, 6, 7, 12, 13, 18, 19, 20, 21, 22, 24, 25, 26,
+    unused = [4, 5, 6, 7, 12, 13, 20, 21, 22, 24, 25, 26,
               27, 28, 29, 32, 33, 34, 35]
     for p in unused:
         esp[p] += Net(f"ESP_P{p}_NC")
@@ -289,9 +291,9 @@ def oled_connector(vcc, gnd, sda, scl):
 # ── User Interface: Buttons ─────────────────────────────────────────────────
 
 @subcircuit
-def user_interface(vcc, gnd, btn_up, btn_down):
+def user_interface(vcc, gnd, btn_up, btn_down, btn_left, btn_right):
     switches = []
-    for btn_net in [btn_up, btn_down]:
+    for btn_net in [btn_up, btn_down, btn_left, btn_right]:
         sw = Part("Switch", "SW_Push", footprint=FP_SW)
         sw[1] += btn_net
         sw[2] += gnd
@@ -330,6 +332,8 @@ sda = Net("I2C_SDA")
 scl = Net("I2C_SCL")
 btn_up = Net("BTN_UP")
 btn_down = Net("BTN_DOWN")
+btn_left = Net("BTN_LEFT")
+btn_right = Net("BTN_RIGHT")
 uart_tx = Net("UART_TX")
 uart_rx = Net("UART_RX")
 en_net = Net("ESP_EN")
@@ -343,14 +347,14 @@ for net in [sda, scl]:
     r[2] += net
 
 bat_holder = power_supply(vbat, vcc, gnd)
-mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
-            en_net, boot_net, flash_det)
+mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, btn_left, btn_right,
+            uart_tx, uart_rx, en_net, boot_net, flash_det)
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 spectral, spectral_cap = color_temp_sensor(vcc, gnd, sda, scl)
 flash_pd = flash_detect(vcc, gnd, flash_det)
 oled_connector(vcc, gnd, sda, scl)
-sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
+sw_up, sw_down, sw_left, sw_right = user_interface(vcc, gnd, btn_up, btn_down, btn_left, btn_right)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
 
 
@@ -393,9 +397,11 @@ sensor_fixed.append(FixedPosition(flash_pd.ref, 62.0, 58.0, 0.0))
 # Battery holder across the bottom of the board
 sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
 
-# Switches flanking the electronics cluster
-sensor_fixed.append(FixedPosition(sw_up.ref, 20.0, 155.0, 0.0))
-sensor_fixed.append(FixedPosition(sw_down.ref, 100.0, 155.0, 0.0))
+# 4 switches evenly spaced across bottom
+sensor_fixed.append(FixedPosition(sw_up.ref, 15.0, 155.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_left.ref, 45.0, 155.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_right.ref, 75.0, 155.0, 0.0))
+sensor_fixed.append(FixedPosition(sw_down.ref, 105.0, 155.0, 0.0))
 
 # Keepout: film window area (sensors + passives only, no ICs)
 # Electronics zone: y=132 to y=185 (below film window)

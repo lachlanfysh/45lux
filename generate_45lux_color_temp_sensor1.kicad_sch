@@ -6,7 +6,7 @@
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
-    (date "2026-06-07")
+    (date "2026-06-08")
     (company "")
     (comment 1 "Generated with SKiDL")
     (comment 2 "")
@@ -253,78 +253,6 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "power:GND"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -6.35 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "GND"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "GND_1_1"
-        (pin power_in line
-          (at 0 0 270)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -410,6 +338,78 @@
             (effects
               (font
                 (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "/usr/share/kicad/symbols/Sensor_Optical:AS7343xDLG")
@@ -469,12 +469,12 @@
       (uuid 9e8565b5-e705-54ea-b067-9ab0c13d17d3))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
           (reference "U21")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 147.32 120.65 0)
+    (at 148.59 120.65 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -483,31 +483,31 @@
     (fields_autoplaced yes)
     (uuid dec2917d-0236-599e-988f-5106384d4f87)
     (property "Reference" "C26"
-      (at 147.32 118.11 0)
+      (at 148.59 118.11 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 147.32 123.19000000000001 0)
+      (at 148.59 123.19000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 147.32 120.65 0)
+      (at 148.59 120.65 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 147.32 120.65 0)
+      (at 148.59 120.65 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 147.32 120.65 0)
+      (at 148.59 120.65 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -518,17 +518,9 @@
       (uuid 18885cdb-01ef-5502-ba47-a15b31cdbd73))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
           (reference "C26")
           (unit 1)))))
-  (global_label "AS7343_LDR_NC"
-    (shape bidirectional)
-    (at 162.56 90.17 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid d64b1cc8-68d7-5c5a-8668-b19f1a8beb8d))
   (global_label "AS7343_INT_NC"
     (shape bidirectional)
     (at 162.56 95.25 180)
@@ -537,14 +529,14 @@
         (size 1.27 1.27))
       (justify right))
     (uuid b663cb5c-a5df-56a7-b73b-4c6f03e6ae85))
-  (wire
-    (pts
-      (xy 153.67 91.44)
-      (xy 154.94 91.44))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid f3c955d4-c55c-583a-96f7-9966f38196c3))
+  (global_label "AS7343_LDR_NC"
+    (shape bidirectional)
+    (at 162.56 90.17 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid 1601b766-0b16-56ea-982b-67258f78f17c))
   (wire
     (pts
       (xy 154.94 90.17)
@@ -553,6 +545,14 @@
       (width 0)
       (type default))
     (uuid 57938774-51de-5722-9e7b-dc899263505d))
+  (wire
+    (pts
+      (xy 153.67 91.44)
+      (xy 154.94 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid f3c955d4-c55c-583a-96f7-9966f38196c3))
   (wire
     (pts
       (xy 154.94 91.44)
@@ -584,7 +584,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid f89f2d4b-4e53-5c60-a13f-9a05d564637d))
+    (uuid 207459ac-231f-5f96-bf0c-7b06bb3049be))
   (global_label "I2C_SCL"
     (shape bidirectional)
     (at 133.35 93.98 180)
@@ -592,7 +592,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 7448c627-8249-5763-9b76-3f57a4063427))
+    (uuid 72d1c2bf-dd57-566f-b830-4f71ccafb4cd))
   (global_label "AS7343_GPIO_NC"
     (shape bidirectional)
     (at 133.35 96.52 180)
@@ -600,7 +600,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 70e43dd4-419d-58a1-ab0f-a4a3ad9b03c7))
+    (uuid e49c38d1-f151-5945-af54-d107df488ede))
   (symbol
     (lib_id "power:VCC")
     (at 143.51 86.36 0)
@@ -723,39 +723,39 @@
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 147.32 116.84 0)
+    (at 148.59 116.84 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 050022c5-a735-57af-a3f8-4bc174056cb7)
+    (uuid c8311963-7235-536d-b4f2-75c21eb2c1fb)
     (property "Reference" "#PWR135"
-      (at 147.32 115.57000000000001 0)
+      (at 148.59 115.57000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 147.32 113.03 0)
+      (at 148.59 113.03 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 147.32 116.84 0)
+      (at 148.59 116.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 147.32 116.84 0)
+      (at 148.59 116.84 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 53d2d2fa-7502-5157-a894-6e68a12cfb31))
+      (uuid d92c0a5e-cc34-5059-9fc3-5ff481957282))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -763,39 +763,39 @@
           (unit 1)))))
   (symbol
     (lib_id "power:GND")
-    (at 147.32 124.46 0)
+    (at 148.59 124.46 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 0b2f5261-d8aa-5f9f-b7d2-91aad1558238)
+    (uuid d0b35c9f-bfab-5209-92ec-7219eebe8217)
     (property "Reference" "#PWR136"
-      (at 147.32 123.19 0)
+      (at 148.59 123.19 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 147.32 120.64999999999999 0)
+      (at 148.59 120.64999999999999 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 147.32 124.46 0)
+      (at 148.59 124.46 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 147.32 124.46 0)
+      (at 148.59 124.46 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 5572945a-8561-5a34-9988-58c22709f66e))
+      (uuid 649e90b1-ee22-5d06-b00e-4aa14ee819ff))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"

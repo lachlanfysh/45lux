@@ -6,7 +6,7 @@
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
-    (date "2026-06-07")
+    (date "2026-06-08")
     (company "")
     (comment 1 "Generated with SKiDL")
     (comment 2 "")
@@ -853,78 +853,6 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
-    (symbol "power:GND"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -6.35 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "GND"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "GND_1_1"
-        (pin power_in line
-          (at 0 0 270)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
-      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -1001,6 +929,78 @@
       (symbol "VCC_1_1"
         (pin power_in line
           (at 0 0 90)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "power:GND"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
           (length 0)
           (name "~"
             (effects
@@ -1159,12 +1159,12 @@
       (uuid 48e226e0-4c38-5b86-ad5c-faa2554e57e8))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "U2")
           (unit 1)))))
   (symbol
     (lib_id "Device:R")
-    (at 157.48 72.39 0)
+    (at 157.48 71.12 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1173,31 +1173,31 @@
     (fields_autoplaced yes)
     (uuid 42f0aa47-6e9f-523f-8030-029c1a63cd20)
     (property "Reference" "R3"
-      (at 157.48 69.85 0)
+      (at 157.48 68.58 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "10K"
-      (at 157.48 74.93 0)
+      (at 157.48 73.66000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 157.48 72.39 0)
+      (at 157.48 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 157.48 72.39 0)
+      (at 157.48 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Resistor"
-      (at 157.48 72.39 0)
+      (at 157.48 71.12 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1208,12 +1208,12 @@
       (uuid 0f662e29-a2fb-5420-a8b0-3606481366e5))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "R3")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 132.08 76.2 0)
+    (at 152.4 76.2 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1222,31 +1222,31 @@
     (fields_autoplaced yes)
     (uuid ec58d043-fe6a-5168-874d-7ce0a53a8b7a)
     (property "Reference" "C4"
-      (at 132.08 73.66 0)
+      (at 152.4 73.66 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 132.08 78.74000000000001 0)
+      (at 152.4 78.74000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 132.08 76.2 0)
+      (at 152.4 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 132.08 76.2 0)
+      (at 152.4 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 132.08 76.2 0)
+      (at 152.4 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1257,7 +1257,7 @@
       (uuid ffe066b1-74e3-579a-8fe9-682337082939))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "C4")
           (unit 1)))))
   (symbol
@@ -1306,12 +1306,12 @@
       (uuid f2984b2c-cc81-5844-b6ba-2ad473563e78))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "R4")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 139.7 73.66 0)
+    (at 132.08 72.39 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1320,31 +1320,31 @@
     (fields_autoplaced yes)
     (uuid c5849e03-721a-55cd-b75e-fd7afd78ffaf)
     (property "Reference" "C5"
-      (at 139.7 71.11999999999999 0)
+      (at 132.08 69.85 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 139.7 76.2 0)
+      (at 132.08 74.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 139.7 73.66 0)
+      (at 132.08 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 139.7 73.66 0)
+      (at 132.08 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 139.7 73.66 0)
+      (at 132.08 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1355,12 +1355,12 @@
       (uuid 3d391207-58ad-5f04-ad29-4001a0c85225))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "C5")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 146.05 73.66 0)
+    (at 139.7 72.39 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1369,31 +1369,31 @@
     (fields_autoplaced yes)
     (uuid 1b0719da-8737-5edf-ac68-5542b4aedefa)
     (property "Reference" "C6"
-      (at 146.05 71.11999999999999 0)
+      (at 139.7 69.85 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "100nF"
-      (at 146.05 76.2 0)
+      (at 139.7 74.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-      (at 146.05 73.66 0)
+      (at 139.7 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 146.05 73.66 0)
+      (at 139.7 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 146.05 73.66 0)
+      (at 139.7 72.39 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1404,12 +1404,12 @@
       (uuid 4405add1-f216-54b9-b6bd-6765837083b9))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "C6")
           (unit 1)))))
   (symbol
     (lib_id "Device:C")
-    (at 152.4 73.66 0)
+    (at 146.05 73.66 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -1418,31 +1418,31 @@
     (fields_autoplaced yes)
     (uuid 5ae02917-ad07-5d67-80db-63a7a924a49c)
     (property "Reference" "C7"
-      (at 152.4 71.11999999999999 0)
+      (at 146.05 71.11999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "10uF"
-      (at 152.4 76.2 0)
+      (at 146.05 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-      (at 152.4 73.66 0)
+      (at 146.05 73.66 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 152.4 73.66 0)
+      (at 146.05 73.66 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Unpolarized capacitor"
-      (at 152.4 73.66 0)
+      (at 146.05 73.66 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1453,7 +1453,7 @@
       (uuid 22ccf444-1cec-5a67-b6bb-00860d3a3b58))
     (instances
       (project "SKiDL-Generated"
-        (path "/46052666-6f03-4711-8c38-50145c97d550/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
+        (path "/79cf651d-61bf-45a7-8444-9e34cce275e8/5198b2fa-b871-5ca4-bc08-afbccd32ce67"
           (reference "C7")
           (unit 1)))))
   (global_label "ESP_EN"
@@ -1463,7 +1463,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 4b692dd6-9839-5546-b6c0-38ea8b2ee40a))
+    (uuid 1c765e8d-caed-5200-82a5-11ce5acbd707))
   (global_label "ESP_P12_NC"
     (shape bidirectional)
     (at 133.35 102.87 180)
@@ -1471,7 +1471,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 1fa519c7-16f2-51e0-a6a9-1248bc01aa50))
+    (uuid 703366f6-b4ec-5946-8116-db4bfa9208b1))
   (global_label "ESP_P13_NC"
     (shape bidirectional)
     (at 133.35 105.41 180)
@@ -1479,7 +1479,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid cdaa73c9-9ec9-5995-a119-294ec8ea1a76))
+    (uuid 7a69590d-7689-5f78-9955-719572b59920))
   (global_label "ESP_P5_NC"
     (shape bidirectional)
     (at 133.35 107.95 180)
@@ -1487,7 +1487,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid f2bcd65a-c41b-5797-a630-e6bb467e3af8))
+    (uuid 58710257-73be-5b17-b210-ee156f528562))
   (global_label "ESP_P6_NC"
     (shape bidirectional)
     (at 133.35 110.49 180)
@@ -1495,7 +1495,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid b916367d-2dee-568e-9159-1e40e2ad1817))
+    (uuid debd30cd-0058-5b4a-a93d-9d84e3a6e092))
   (global_label "BTN_UP"
     (shape bidirectional)
     (at 133.35 113.03 180)
@@ -1503,7 +1503,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 36d84898-b9b0-5b71-85af-f81e20534e9f))
+    (uuid 0e4f7809-8648-5844-9b68-5ef7356ada0f))
   (global_label "BTN_DOWN"
     (shape bidirectional)
     (at 133.35 115.57 180)
@@ -1511,7 +1511,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid b4d55962-de18-5581-b70e-fd6efd9cc90c))
+    (uuid 869b3b4b-d190-5fbc-9ffa-7eae06aaef7b))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 133.35 118.11 180)
@@ -1519,7 +1519,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 80564476-37e9-57e3-9e79-0f1f6cdae6df))
+    (uuid 497ccd5b-2106-57a4-9699-842d8404e43a))
   (global_label "I2C_SCL"
     (shape bidirectional)
     (at 133.35 120.65 180)
@@ -1527,7 +1527,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 26ff95f3-06ed-5e4a-94da-254fc53c7013))
+    (uuid 7fed572b-fffb-593d-8ff6-bf056317ca3c))
   (global_label "ESP_P22_NC"
     (shape bidirectional)
     (at 133.35 123.19 180)
@@ -1535,7 +1535,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 2090820a-834d-5d4c-b9c3-96b4f7932a18))
+    (uuid ecfd7069-9f68-503d-91cf-4139f0ea2123))
   (global_label "ESP_BOOT"
     (shape bidirectional)
     (at 133.35 125.73 180)
@@ -1543,7 +1543,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid dc5b3f09-aa99-557b-8d59-69aed9339fdf))
+    (uuid 976bcb73-d5b1-535d-848d-e0bbb70560f7))
   (global_label "ESP_P32_NC"
     (shape bidirectional)
     (at 135.89 130.81 180)
@@ -1559,7 +1559,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid e6ff4c5f-76b3-527b-aecc-3e6c2be4ee76))
+    (uuid c8ca251a-2d07-597b-98c4-51b655644926))
   (global_label "ESP_P34_NC"
     (shape bidirectional)
     (at 135.89 135.89 180)
@@ -1567,7 +1567,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 7759fcb8-9785-51d1-b422-a60eef408a8b))
+    (uuid a3c16981-a18c-5d23-a401-82c9f70633bc))
   (global_label "ESP_P35_NC"
     (shape bidirectional)
     (at 135.89 138.43 180)
@@ -1575,7 +1575,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 38c07c83-2ed1-51f1-99ed-e8bd9206ef47))
+    (uuid 2b60d49c-1369-5fac-81d4-b8bcd1ef79af))
   (symbol
     (lib_id "power:VCC")
     (at 148.59 92.71 0)
@@ -2503,7 +2503,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid f02ce315-1244-5888-8b1a-f7cd5797c6c1))
+    (uuid 6cea761b-a898-5462-aedf-5c57b8c2c522))
   (global_label "ESP_P7_NC"
     (shape bidirectional)
     (at 161.29 135.89 0)
@@ -2511,7 +2511,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 7da7c872-38c4-53bb-9187-c41656e5e93c))
+    (uuid edc3ceec-6943-52df-a8ff-f37efa7817d2))
   (global_label "ESP_P21_NC"
     (shape bidirectional)
     (at 161.29 138.43 0)
@@ -2519,7 +2519,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 237180e8-41a8-56ea-8a1b-48fb92a45b91))
+    (uuid 8252732b-77a9-5f73-8d43-891c5d53a7ed))
   (global_label "UART_TX"
     (shape bidirectional)
     (at 163.83 97.79 0)
@@ -2527,7 +2527,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid d5bc7308-0502-544c-b05d-e9327a541a79))
+    (uuid 3f943b7c-02fa-565c-bc74-17aec243d0af))
   (global_label "UART_RX"
     (shape bidirectional)
     (at 163.83 100.33 0)
@@ -2535,7 +2535,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 4cc93651-6c9d-5ecc-bf7a-5b3422173caa))
+    (uuid 7eaaa12d-893f-54c0-8e70-fc177d6c095c))
   (global_label "FLASH_DET"
     (shape bidirectional)
     (at 163.83 105.41 0)
@@ -2543,23 +2543,23 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 447dd785-e2b3-5336-a149-491eb049d7e5))
-  (global_label "ESP_P18_NC"
+    (uuid 6ef9068f-1a7b-5dec-8bac-26bb405e3717))
+  (global_label "BTN_LEFT"
     (shape bidirectional)
     (at 163.83 107.95 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 61c7b22e-d702-5d3c-955c-c3ea6ebaa344))
-  (global_label "ESP_P19_NC"
+    (uuid 2bd0f4ba-468f-5222-8ae4-9cc43a90c827))
+  (global_label "BTN_RIGHT"
     (shape bidirectional)
     (at 163.83 110.49 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 3d626afa-e533-5382-9a31-28d6033e3049))
+    (uuid ecedaf32-eeb1-54bd-9969-9e23ee929bcc))
   (global_label "ESP_P20_NC"
     (shape bidirectional)
     (at 163.83 113.03 0)
@@ -2567,7 +2567,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid c4d97e5c-62b0-5da0-a2cc-1eba02143625))
+    (uuid 20318b39-9382-5f02-b89b-2db2638a4b05))
   (global_label "ESP_P24_NC"
     (shape bidirectional)
     (at 163.83 118.11 0)
@@ -2575,7 +2575,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 57eeeac6-f11b-5843-a84e-78d6782ef2ba))
+    (uuid 6ed2a624-4f89-55b1-a75b-869b747edc43))
   (global_label "ESP_P25_NC"
     (shape bidirectional)
     (at 163.83 120.65 0)
@@ -2583,7 +2583,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 570a9821-0e44-54a6-94ee-8ded79c4535c))
+    (uuid 14c37b88-6dde-50ce-92d0-84d4f2c859cf))
   (global_label "ESP_P26_NC"
     (shape bidirectional)
     (at 163.83 123.19 0)
@@ -2591,7 +2591,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid b028dbcc-76b5-51f1-b16f-b51ddb840715))
+    (uuid 470fb2e4-34a4-5653-aed4-2c048cbb9b04))
   (global_label "ESP_P27_NC"
     (shape bidirectional)
     (at 163.83 125.73 0)
@@ -2599,7 +2599,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 2cd518f5-4fa2-5946-b235-2a0d8ce76035))
+    (uuid 3f8b6a61-5dba-5251-b070-77da9e13e8f7))
   (global_label "ESP_P28_NC"
     (shape bidirectional)
     (at 163.83 128.27 0)
@@ -2607,7 +2607,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 541d6249-1f60-5029-ad84-c56323f094bd))
+    (uuid f322f7e2-fb2a-5779-8264-d68dfa5b373a))
   (global_label "ESP_P29_NC"
     (shape bidirectional)
     (at 163.83 130.81 0)
@@ -2615,42 +2615,42 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 1f32fbd0-d313-5995-94f0-1d7dc5d3df80))
+    (uuid 63cd85a9-ef36-50df-b464-577146a4fafa))
   (symbol
     (lib_id "power:VCC")
-    (at 157.48 68.58 0)
+    (at 157.48 67.31 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 195a701d-2e00-5b80-98e5-ddb15a1778c4)
+    (uuid b3bdc63e-9ae3-5db2-bc07-d7f221af6a88)
     (property "Reference" "#PWR031"
-      (at 157.48 67.31 0)
+      (at 157.48 66.04 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 157.48 64.77 0)
+      (at 157.48 63.5 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 157.48 68.58 0)
+      (at 157.48 67.31 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 157.48 68.58 0)
+      (at 157.48 67.31 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 7f053ffa-ee5a-5a77-9d62-999750f8bfe9))
+      (uuid 15998b2f-6e36-5689-b97b-c8521bed447f))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -2658,55 +2658,55 @@
           (unit 1)))))
   (global_label "ESP_EN"
     (shape bidirectional)
-    (at 157.48 76.2 270)
+    (at 157.48 74.93 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 84371776-6724-5e5e-b279-458e10b2dfaa))
+    (uuid b3afdcaa-2618-5bf5-9b88-841513610222))
   (global_label "ESP_EN"
     (shape bidirectional)
-    (at 132.08 72.39 90)
+    (at 152.4 72.39 90)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid e935f527-d73a-562f-bfd6-ebd9f1938d16))
+    (uuid 06a7a971-161d-5018-b9be-77a5cd2cf634))
   (symbol
     (lib_id "power:GND")
-    (at 132.08 80.01 0)
+    (at 152.4 80.01 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid e78b8297-4f82-548d-9b0a-b65a8e689fa8)
+    (uuid 5d82a6ba-35c8-5796-b799-c04f8746c8ed)
     (property "Reference" "#PWR032"
-      (at 132.08 78.74000000000001 0)
+      (at 152.4 78.74000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 132.08 76.2 0)
+      (at 152.4 76.2 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 132.08 80.01 0)
+      (at 152.4 80.01 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 132.08 80.01 0)
+      (at 152.4 80.01 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 603d019c-0bd0-5b45-bb0f-1820c191dcbd))
+      (uuid 733bd66a-a9d7-5832-ba38-4517aded0e20))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -2759,42 +2759,42 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 7e358a9d-ec28-5418-b58c-cb7ce862ecc9))
+    (uuid 6d5f3c54-70bf-557b-8179-c3e5e3430632))
   (symbol
     (lib_id "power:VCC")
-    (at 139.7 69.85 0)
+    (at 132.08 68.58 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid f6009c15-f193-5179-8c81-6eece1edf678)
+    (uuid a9ff898b-8c18-5134-992d-00259fb1ac8d)
     (property "Reference" "#PWR034"
-      (at 139.7 68.58 0)
+      (at 132.08 67.31 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 139.7 66.03999999999999 0)
+      (at 132.08 64.77 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 139.7 69.85 0)
+      (at 132.08 68.58 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 139.7 69.85 0)
+      (at 132.08 68.58 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid a5526ba3-8ea2-5af4-bb57-896ee1ddfc81))
+      (uuid ced74ad0-0838-58bb-b0d0-2405305ffe5d))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
@@ -2802,43 +2802,123 @@
           (unit 1)))))
   (symbol
     (lib_id "power:GND")
-    (at 139.7 77.47 0)
+    (at 132.08 76.2 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid f2b6b760-d744-518d-b2c2-e5419281b962)
+    (uuid 637dd737-41d1-5dc1-b210-66af7cf37501)
     (property "Reference" "#PWR035"
-      (at 139.7 76.2 0)
+      (at 132.08 74.93 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 139.7 73.66 0)
+      (at 132.08 72.39 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 139.7 77.47 0)
+      (at 132.08 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 139.7 77.47 0)
+      (at 132.08 76.2 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid d43414a7-fcff-5509-ab64-c06f8f45a459))
+      (uuid 272f03f1-4ea5-5efd-a0bf-efdf5ee7b4eb))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
           (reference "#PWR035")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:VCC")
+    (at 139.7 68.58 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 006b59f2-fdd9-507c-8d96-cd6b33ae9e7a)
+    (property "Reference" "#PWR036"
+      (at 139.7 67.31 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "VCC"
+      (at 139.7 64.77 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 139.7 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 139.7 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid 2b51f23f-9767-5b6b-9c67-14ece76c29b2))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
+          (reference "#PWR036")
+          (unit 1)))))
+  (symbol
+    (lib_id "power:GND")
+    (at 139.7 76.2 0)
+    (unit 1)
+    (exclude_from_sim yes)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (fields_autoplaced yes)
+    (uuid 892f9ea1-7523-5c5b-93a4-93d0bbe473b5)
+    (property "Reference" "#PWR037"
+      (at 139.7 74.93 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 139.7 72.39 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 139.7 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 139.7 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid dc99501d-4c8c-5ec2-a1ef-25be595401c1))
+    (instances
+      (project "SKiDL-Generated"
+        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
+          (reference "#PWR037")
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
@@ -2849,8 +2929,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid f865a1bb-00f3-5405-967a-c69556655bd0)
-    (property "Reference" "#PWR036"
+    (uuid 29635a04-f8f7-5f6b-ab79-e7453ae02123)
+    (property "Reference" "#PWR038"
       (at 146.05 68.58 0)
       (effects
         (font
@@ -2874,11 +2954,11 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 05350dff-47ef-5473-907d-489e4050d49f))
+      (uuid 92aa1353-999a-512e-ac44-530a4bb418d3))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR036")
+          (reference "#PWR038")
           (unit 1)))))
   (symbol
     (lib_id "power:GND")
@@ -2889,8 +2969,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 8d6da574-c864-565d-988e-8cbe1d3a5ea2)
-    (property "Reference" "#PWR037"
+    (uuid 9a7fce3c-3b28-5038-9b13-3368e1c31794)
+    (property "Reference" "#PWR039"
       (at 146.05 76.2 0)
       (effects
         (font
@@ -2914,87 +2994,7 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 0dbfec14-f356-57a6-9172-07461829fb43))
-    (instances
-      (project "SKiDL-Generated"
-        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR037")
-          (unit 1)))))
-  (symbol
-    (lib_id "power:VCC")
-    (at 152.4 69.85 0)
-    (unit 1)
-    (exclude_from_sim yes)
-    (in_bom no)
-    (on_board yes)
-    (dnp no)
-    (fields_autoplaced yes)
-    (uuid ea87de13-28e3-575c-9582-ed9cab4408e6)
-    (property "Reference" "#PWR038"
-      (at 152.4 68.58 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "VCC"
-      (at 152.4 66.03999999999999 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 152.4 69.85 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 152.4 69.85 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid b1a8f922-31e9-5598-b831-6bfda45062b4))
-    (instances
-      (project "SKiDL-Generated"
-        (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR038")
-          (unit 1)))))
-  (symbol
-    (lib_id "power:GND")
-    (at 152.4 77.47 0)
-    (unit 1)
-    (exclude_from_sim yes)
-    (in_bom no)
-    (on_board yes)
-    (dnp no)
-    (fields_autoplaced yes)
-    (uuid 5f3c068f-49b9-559d-b9b4-469aa691c3ee)
-    (property "Reference" "#PWR039"
-      (at 152.4 76.2 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 152.4 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 152.4 77.47 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Datasheet" ""
-      (at 152.4 77.47 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid c5c35f1f-5caa-57a8-a084-bddb8485071b))
+      (uuid 8c420b0f-3d50-52db-aafd-be951f79a8c7))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
