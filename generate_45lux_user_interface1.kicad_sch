@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid b77d5191-aac2-5cc5-8b6a-450284aaf84a)
+  (uuid aaa6d537-c35f-55e8-9c89-3a2fec3c56ce)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -423,61 +423,61 @@
       (uuid 7592ef55-fe86-50bb-b550-edd7b15abc61))
     (instances
       (project "SKiDL-Generated"
-        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/b77d5191-aac2-5cc5-8b6a-450284aaf84a"
+        (path "/c036da00-8ed9-48e6-8bab-29183ed6ca87/aaa6d537-c35f-55e8-9c89-3a2fec3c56ce"
           (reference "SW1")
           (unit 1)))))
   (symbol
     (lib_id "Device:R")
-    (at 139.7 109.22 0)
+    (at 132.08 106.68 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 19ec0279-8cbb-57ff-a246-7ecb803a767c)
-    (property "Reference" "R6"
-      (at 139.7 106.67999999999999 0)
+    (uuid 9d55a74b-45ab-5f85-b324-b365668a7520)
+    (property "Reference" "R10"
+      (at 132.08 104.14 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "10K"
-      (at 139.7 111.76 0)
+      (at 132.08 109.22000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 139.7 109.22 0)
+      (at 132.08 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 139.7 109.22 0)
+      (at 132.08 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Resistor"
-      (at 139.7 109.22 0)
+      (at 132.08 106.68 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid c91c8d86-6735-5a88-b1c2-761d08d85fc4))
+      (uuid 3a8c2782-5989-50de-905a-e4a94c353808))
     (pin "2"
-      (uuid 95a5d6f7-a8bf-57aa-a413-f7e0a97359b1))
+      (uuid 7ea4c0cf-facc-5d44-8c71-f12b031e8b71))
     (instances
       (project "SKiDL-Generated"
-        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/b77d5191-aac2-5cc5-8b6a-450284aaf84a"
-          (reference "R6")
+        (path "/c036da00-8ed9-48e6-8bab-29183ed6ca87/aaa6d537-c35f-55e8-9c89-3a2fec3c56ce"
+          (reference "R10")
           (unit 1)))))
   (symbol
     (lib_id "Switch:SW_Push")
-    (at 153.67 96.52 0)
+    (at 154.94 96.52 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -486,31 +486,31 @@
     (fields_autoplaced yes)
     (uuid 8a0b455e-3e34-5250-b11d-f5fd7ba27d41)
     (property "Reference" "SW2"
-      (at 153.67 93.97999999999999 0)
+      (at 154.94 93.97999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "SW_Push"
-      (at 153.67 99.06 0)
+      (at 154.94 99.06 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x"
-      (at 153.67 96.52 0)
+      (at 154.94 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 153.67 96.52 0)
+      (at 154.94 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Push button switch, generic, two pins"
-      (at 153.67 96.52 0)
+      (at 154.94 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -521,57 +521,57 @@
       (uuid e5d8c6eb-4a0d-5ccf-80fe-7d5ce4447eed))
     (instances
       (project "SKiDL-Generated"
-        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/b77d5191-aac2-5cc5-8b6a-450284aaf84a"
+        (path "/c036da00-8ed9-48e6-8bab-29183ed6ca87/aaa6d537-c35f-55e8-9c89-3a2fec3c56ce"
           (reference "SW2")
           (unit 1)))))
   (symbol
     (lib_id "Device:R")
-    (at 133.35 109.22 0)
+    (at 138.43 109.22 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 212dd8da-62ad-5dc1-9ec8-ce3abcad8f94)
-    (property "Reference" "R7"
-      (at 133.35 106.67999999999999 0)
+    (uuid 263b0b30-5cdb-5b3b-a374-3081675c37fe)
+    (property "Reference" "R11"
+      (at 138.43 106.67999999999999 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "10K"
-      (at 133.35 111.76 0)
+      (at 138.43 111.76 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-      (at 133.35 109.22 0)
+      (at 138.43 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 133.35 109.22 0)
+      (at 138.43 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Resistor"
-      (at 133.35 109.22 0)
+      (at 138.43 109.22 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid cb22ca69-7fb1-5cf3-8ab9-bc1b4b5c1366))
+      (uuid 63500cf1-3db9-58d4-bb0c-4a19d44358b6))
     (pin "2"
-      (uuid a25ec8b8-601a-5c34-9c3b-40f022cf06a3))
+      (uuid 413154f0-4128-5769-8e67-e617650ea910))
     (instances
       (project "SKiDL-Generated"
-        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/b77d5191-aac2-5cc5-8b6a-450284aaf84a"
-          (reference "R7")
+        (path "/c036da00-8ed9-48e6-8bab-29183ed6ca87/aaa6d537-c35f-55e8-9c89-3a2fec3c56ce"
+          (reference "R11")
           (unit 1)))))
   (global_label "BTN_UP"
     (shape bidirectional)
@@ -590,8 +590,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 8c1482a1-0ceb-5f2e-b944-011804616a34)
-    (property "Reference" "#PWR139"
+    (uuid 213de1ba-2156-5594-944d-ce8800783733)
+    (property "Reference" "#PWR150"
       (at 156.21 87.63000000000001 0)
       (effects
         (font
@@ -615,153 +615,153 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 83e1bc8c-6e1b-51ce-89f6-c52ec615244e))
+      (uuid 951751cd-8b3d-519d-8580-d4242585d684))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR139")
+          (reference "#PWR150")
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 139.7 105.41 0)
+    (at 132.08 102.87 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 60bddc59-f56f-5077-8e86-54fcdea8f145)
-    (property "Reference" "#PWR140"
-      (at 139.7 104.14 0)
+    (uuid 6e8da1f0-ebe5-5ade-a2e2-15b5cf34f2de)
+    (property "Reference" "#PWR151"
+      (at 132.08 101.60000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 139.7 101.6 0)
+      (at 132.08 99.06 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 139.7 105.41 0)
+      (at 132.08 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 139.7 105.41 0)
+      (at 132.08 102.87 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 14bef073-2e32-5602-a324-53e48aafc2d1))
+      (uuid 98df1154-01f6-52a8-8e2d-9bcced52d46b))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR140")
+          (reference "#PWR151")
           (unit 1)))))
   (global_label "BTN_UP"
     (shape bidirectional)
-    (at 139.7 113.03 270)
+    (at 132.08 110.49 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 61cbfa70-ddb0-5b43-b0f4-47e49f37e4f1))
+    (uuid 0caeca74-64e6-5f0a-a41d-27fd014fb281))
   (global_label "BTN_DOWN"
     (shape bidirectional)
-    (at 148.59 96.52 180)
+    (at 149.86 96.52 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 17caed8c-c308-5065-bef5-54009f245d04))
+    (uuid 38524959-566b-5642-8e79-59ff08b2f7ae))
   (symbol
     (lib_id "power:GND")
-    (at 158.75 96.52 0)
+    (at 160.02 96.52 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 0c979c56-f3db-5d0c-91b0-df01e8bce8d9)
-    (property "Reference" "#PWR141"
-      (at 158.75 95.25 0)
+    (uuid 96656dc2-0d5a-5ed4-a16e-27e6a6a57410)
+    (property "Reference" "#PWR152"
+      (at 160.02 95.25 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "GND"
-      (at 158.75 92.71 0)
+      (at 160.02 92.71 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 158.75 96.52 0)
+      (at 160.02 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 158.75 96.52 0)
+      (at 160.02 96.52 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid cf501549-8bd7-5d0f-b883-f0d75c18bde4))
+      (uuid 24f15d4b-1192-5e96-a71a-8a0d3cce23d1))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR141")
+          (reference "#PWR152")
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
-    (at 133.35 105.41 0)
+    (at 138.43 105.41 0)
     (unit 1)
     (exclude_from_sim yes)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 4c8b3131-3075-57e5-8ded-01e5f3b4eea2)
-    (property "Reference" "#PWR142"
-      (at 133.35 104.14 0)
+    (uuid d68090a0-a905-52ce-920f-7c92b731093d)
+    (property "Reference" "#PWR153"
+      (at 138.43 104.14 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Value" "VCC"
-      (at 133.35 101.6 0)
+      (at 138.43 101.6 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" ""
-      (at 133.35 105.41 0)
+      (at 138.43 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 133.35 105.41 0)
+      (at 138.43 105.41 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 49aac096-8f89-5733-8c3e-798b69a22087))
+      (uuid 41c9df24-9dbf-5006-a611-d74d2f866792))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR142")
+          (reference "#PWR153")
           (unit 1)))))
   (global_label "BTN_DOWN"
     (shape bidirectional)
-    (at 133.35 113.03 270)
+    (at 138.43 113.03 270)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 1ed182a4-6d64-5418-9bcb-d2000e75bc1c)))
+    (uuid 127f8368-13bd-5a19-a091-99911d82a050)))

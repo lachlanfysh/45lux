@@ -2,7 +2,7 @@
   (version 20230409)
   (generator "skidl")
   (generator_version "2.2.3")
-  (uuid 1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd)
+  (uuid 63da636d-867d-5034-b6dd-5325b42a244c)
   (paper "A4")
   (title_block
     (title "SKiDL-Generated Schematic")
@@ -371,7 +371,7 @@
       (uuid 868205f1-b017-5196-bab0-ef7229a92cc3))
     (instances
       (project "SKiDL-Generated"
-        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/1c8a74d1-f5a9-5d4b-9bf5-0bcb1a14ffdd"
+        (path "/c036da00-8ed9-48e6-8bab-29183ed6ca87/63da636d-867d-5034-b6dd-5325b42a244c"
           (reference "J1")
           (unit 1)))))
   (symbol
@@ -383,8 +383,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid b835f767-b36d-5441-89ba-42b5b15241d3)
-    (property "Reference" "#PWR137"
+    (uuid 2f93f528-9095-56db-8c54-e905d50de4ac)
+    (property "Reference" "#PWR148"
       (at 148.59 100.33 0)
       (effects
         (font
@@ -408,11 +408,11 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid e614972f-e61b-5361-8c51-5c82ae2505cd))
+      (uuid 9b44b1f5-93ca-55b1-8d0f-d7b904612998))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR137")
+          (reference "#PWR148")
           (unit 1)))))
   (symbol
     (lib_id "power:VCC")
@@ -423,8 +423,8 @@
     (on_board yes)
     (dnp no)
     (fields_autoplaced yes)
-    (uuid 8aac6620-f655-512c-8f8a-c8ec6c5deb36)
-    (property "Reference" "#PWR138"
+    (uuid 2fd558df-d586-5720-b4a7-c280b22a384f)
+    (property "Reference" "#PWR149"
       (at 148.59 102.87 0)
       (effects
         (font
@@ -448,11 +448,11 @@
           (size 1.27 1.27))
         (hide yes)))
     (pin "1"
-      (uuid 81fac870-ae7f-5ca8-ab13-bd54ca55568f))
+      (uuid d0e135a1-a8cb-5889-aaa9-dd2e3c9b0ce9))
     (instances
       (project "SKiDL-Generated"
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
-          (reference "#PWR138")
+          (reference "#PWR149")
           (unit 1)))))
   (global_label "I2C_SCL"
     (shape bidirectional)
@@ -461,7 +461,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 38d0aa17-afa9-5105-b8ab-ff6e1d152af6))
+    (uuid 00a76800-9d16-511a-b5ae-a1a0ec71bb53))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 148.59 109.22 0)
@@ -469,4 +469,4 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid b5cd0f12-3227-5e9b-9ee5-88c84de265b8)))
+    (uuid 350510d2-d0e6-500b-9ed7-d13f0c5ce803)))

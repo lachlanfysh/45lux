@@ -3,6 +3,7 @@
 
 16x OPT3004 ambient light sensors in a 4x4 grid at the film plane,
 AS7343 14-channel spectral sensor for color temperature,
+BPW34 photodiode + LM393 comparator for flash detection,
 ESP32-C6 with BLE, SSD1327 128x128 grayscale OLED, LIS2DH IMU,
 3xAAA battery with AP2112K-3.3 LDO. Tag-Connect for flashing.
 """
@@ -28,6 +29,8 @@ FP_BAT = "Battery:BatteryHolder_Keystone_2479_3xAAA"
 FP_OLED = "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal"
 FP_TAG = "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
 FP_SPECTRAL = "Package_LGA:AMS_OLGA-8_2x3.1mm_P0.8mm"
+FP_PHOTODIODE = "OptoDevice:Osram_BPW34S-SMD"
+FP_COMPARATOR = "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 
 
 # ── 3.3V LDO + Battery Connector ───────────────────────────────────────────
@@ -62,7 +65,7 @@ def power_supply(vbat, vcc, gnd):
 
 @subcircuit
 def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
-                en_net, boot_net):
+                en_net, boot_net, flash_det):
     esp = Part("RF_Module", "ESP32-C6-MINI-1", footprint=FP_ESP32)
     esp[3] += vcc      # 3V3
     esp[1] += gnd      # GND
@@ -108,8 +111,11 @@ def mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
     c_bulk[1] += vcc
     c_bulk[2] += gnd
 
+    # Flash detect on IO10
+    esp[17] += flash_det  # IO10
+
     # NC pins
-    unused = [4, 5, 6, 7, 12, 13, 17, 18, 19, 20, 21, 22, 24, 25, 26,
+    unused = [4, 5, 6, 7, 12, 13, 18, 19, 20, 21, 22, 24, 25, 26,
               27, 28, 29, 32, 33, 34, 35]
     for p in unused:
         esp[p] += Net(f"ESP_P{p}_NC")
@@ -222,6 +228,51 @@ def color_temp_sensor(vcc, gnd, sda, scl):
     return spec, c_spec
 
 
+# ── Flash Detect: BPW34 photodiode + LM393 comparator ─────────────────────
+
+@subcircuit
+def flash_detect(vcc, gnd, flash_out):
+    """Photodiode detects flash pulse, comparator outputs digital edge."""
+    pd = Part("Sensor_Optical", "BPW34-SMD", footprint=FP_PHOTODIODE)
+    pd[1] += vcc       # K — cathode to VCC (reverse bias)
+    pd_sense = Net("FLASH_SENSE")
+    pd[2] += pd_sense  # A — anode through load resistor to GND
+
+    r_load = Part("Device", "R", value="100K", footprint=FP_R)
+    r_load[1] += pd_sense
+    r_load[2] += gnd
+
+    # Threshold voltage divider
+    thresh = Net("FLASH_THRESH")
+    r_hi = Part("Device", "R", value="1M", footprint=FP_R)
+    r_lo = Part("Device", "R", value="10K", footprint=FP_R)
+    r_hi[1] += vcc
+    r_hi[2] += thresh
+    r_lo[1] += thresh
+    r_lo[2] += gnd
+
+    comp = Part("Comparator", "LM393", footprint=FP_COMPARATOR)
+    comp[8] += vcc     # V+
+    comp[4] += gnd     # V-
+    comp[3] += pd_sense  # + (non-inverting) — photodiode signal
+    comp[2] += thresh    # - (inverting) — threshold
+
+    # Open-collector output with pull-up
+    r_pull = Part("Device", "R", value="10K", footprint=FP_R)
+    r_pull[1] += vcc
+    r_pull[2] += comp[1]  # output
+    comp[1] += flash_out
+
+    # Second comparator unused — tie inputs to known state
+    comp[5] += gnd     # + input
+    comp[6] += vcc     # - input
+    comp[7] += Net("COMP2_NC")
+
+    c_comp = Part("Device", "C", value="100nF", footprint=FP_C)
+    c_comp[1] += vcc
+    c_comp[2] += gnd
+
+
 # ── OLED Display Connector ─────────────────────────────────────────────────
 
 @subcircuit
@@ -281,6 +332,7 @@ uart_tx = Net("UART_TX")
 uart_rx = Net("UART_RX")
 en_net = Net("ESP_EN")
 boot_net = Net("ESP_BOOT")
+flash_det = Net("FLASH_DET")
 
 # I2C bus pull-ups
 for net in [sda, scl]:
@@ -290,10 +342,11 @@ for net in [sda, scl]:
 
 bat_holder = power_supply(vbat, vcc, gnd)
 mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
-            en_net, boot_net)
+            en_net, boot_net, flash_det)
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
 spectral, spectral_cap = color_temp_sensor(vcc, gnd, sda, scl)
+flash_detect(vcc, gnd, flash_det)
 oled_connector(vcc, gnd, sda, scl)
 sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
