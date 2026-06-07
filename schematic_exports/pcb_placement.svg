@@ -45,7 +45,7 @@
 <circle cx="487.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
 <rect x="483.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="290.0" y="390.0" width="20.0" height="20.0" fill="#e6a832" stroke="#3a3530" stroke-width="1" transform="rotate(45 300.0 400.0)"/>
-<text x="300.0" y="422.0" text-anchor="middle" font-size="7" fill="#3a3530" font-family="sans-serif">AS7341</text>
+<text x="300.0" y="422.0" text-anchor="middle" font-size="7" fill="#3a3530" font-family="sans-serif">AS7343</text>
 <text x="300.0" y="431.0" text-anchor="middle" font-size="6" fill="#7a6b5a" font-family="sans-serif">color temp</text>
 <rect x="70.0" y="745.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
 <text x="100.0" y="778.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
@@ -92,11 +92,11 @@
 <rect x="276.1184661190569" y="766.1726886594706" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="254.27654911609324" y="760.2585637490607" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <text x="300.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 59 parts | 0 overlaps | + AS7341 color temp</text>
+<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 59 parts | 0 overlaps | AS7343 spectral</text>
 <rect x="50" y="965.0" width="10" height="10" fill="#c44e52" rx="2"/>
 <text x="64" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
 <rect x="120" y="965.0" width="10" height="10" fill="#e6a832" rx="2"/>
-<text x="134" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">AS7341</text>
+<text x="134" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">AS7343</text>
 <rect x="190" y="965.0" width="10" height="10" fill="#4a6b5a" rx="2"/>
 <text x="204" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">ESP32-C6</text>
 <rect x="260" y="965.0" width="10" height="10" fill="#d4956a" rx="2"/>

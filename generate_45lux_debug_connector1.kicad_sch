@@ -173,6 +173,78 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no))
+    (symbol "power:GND"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "GND"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
     (symbol "power:VCC"
       (power)
       (pin_numbers
@@ -258,78 +330,6 @@
             (effects
               (font
                 (size 1.27 1.27))))))
-      (embedded_fonts no))
-    (symbol "power:GND"
-      (power)
-      (pin_numbers
-        (hide yes))
-      (pin_names
-        (offset 0)
-        (hide yes))
-      (exclude_from_sim no)
-      (in_bom yes)
-      (on_board yes)
-      (property "Reference" "#PWR"
-        (at 0 -6.35 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Value" "GND"
-        (at 0 -3.81 0)
-        (effects
-          (font
-            (size 1.27 1.27))))
-      (property "Footprint" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Datasheet" ""
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (property "ki_keywords" "global power"
-        (at 0 0 0)
-        (effects
-          (font
-            (size 1.27 1.27))
-          (hide yes)))
-      (symbol "GND_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27))
-          (stroke
-            (width 0)
-            (type default))
-          (fill
-            (type none))))
-      (symbol "GND_1_1"
-        (pin power_in line
-          (at 0 0 270)
-          (length 0)
-          (name "~"
-            (effects
-              (font
-                (size 1.27 1.27))))
-          (number "1"
-            (effects
-              (font
-                (size 1.27 1.27))))))
       (embedded_fonts no)))
   (symbol
     (lib_id "Connector_Generic:Conn_02x03_Odd_Even")
@@ -385,7 +385,7 @@
       (uuid f9ec1f8d-6051-50a5-a553-d2c69c6de842))
     (instances
       (project "SKiDL-Generated"
-        (path "/1295b31d-8364-4878-ba4d-5dcd04af8b8a/c7bc3755-68c4-5940-ac01-c5a613d70406"
+        (path "/c9eccd77-ebfe-4c70-9c77-d23aa276b6de/c7bc3755-68c4-5940-ac01-c5a613d70406"
           (reference "J2")
           (unit 1)))))
   (global_label "UART_TX"
@@ -395,7 +395,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 023708e5-1b11-5138-be11-32989bf8c843))
+    (uuid d90ebeba-9f64-5120-90de-fbc92a3a9b75))
   (global_label "UART_RX"
     (shape bidirectional)
     (at 124.46 105.41 0)
@@ -403,7 +403,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid f8472344-448a-5557-9e9a-5c79d4d0ce52))
+    (uuid c58bbbf2-c063-5db3-a7df-9f636b2c82ad))
   (wire
     (pts
       (xy 124.46 105.41)
@@ -467,7 +467,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 9121b1e3-e8eb-52bb-8d21-0e6503bfbc62))
+    (uuid 978ea9c5-165a-5dc0-8f96-70de06f98c1f))
   (symbol
     (lib_id "power:GND")
     (at 153.67 105.41 0)
@@ -515,7 +515,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 3bac682c-9f93-556d-a6c6-fb371f4156f3))
+    (uuid 82ae098a-20a7-500b-8cf5-5618933cc7d0))
   (hierarchical_label "UART_RX"
     (shape bidirectional)
     (at 5.0 10.0 180)

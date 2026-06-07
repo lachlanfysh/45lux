@@ -2,6 +2,7 @@
 """45lux: 4x5 large format camera light meter.
 
 16x OPT3004 ambient light sensors in a 4x4 grid at the film plane,
+AS7343 14-channel spectral sensor for color temperature,
 ESP32-C6 with BLE, SSD1327 128x128 grayscale OLED, LIS2DH IMU,
 3xAAA battery with AP2112K-3.3 LDO. Tag-Connect for flashing.
 """
@@ -199,19 +200,19 @@ def imu_accel(vcc, gnd, sda, scl):
     c_imu[2] += gnd
 
 
-# ── Color Temperature: AS7341 11-channel spectral sensor ───────────────────
+# ── Color Temperature: AS7343 14-channel spectral sensor ───────────────────
 
 @subcircuit
 def color_temp_sensor(vcc, gnd, sda, scl):
-    """AS7341 at fixed address 0x39, center of film plane."""
-    spec = Part("Sensor_Optical", "AS7341DLG", footprint=FP_SPECTRAL)
+    """AS7343 at fixed address 0x39, center of film plane."""
+    spec = Part("Sensor_Optical", "AS7343xDLG", footprint=FP_SPECTRAL)
     spec[1] += vcc    # VDD
     spec[2] += scl    # SCL
     spec[3] += gnd    # GND
-    spec[4] += Net("AS7341_LDR_NC")  # LDR (unused LED driver)
+    spec[4] += Net("AS7343_LDR_NC")  # LDR (unused LED driver)
     spec[5] += gnd    # PGND
-    spec[6] += Net("AS7341_GPIO_NC")  # GPIO
-    spec[7] += Net("AS7341_INT_NC")   # INT
+    spec[6] += Net("AS7343_GPIO_NC")  # GPIO
+    spec[7] += Net("AS7343_INT_NC")   # INT
     spec[8] += sda    # SDA
 
     c_spec = Part("Device", "C", value="100nF", footprint=FP_C)
@@ -332,7 +333,7 @@ for i, sensor_part in enumerate(sensors):
     if row == 3:
         sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
 
-# AS7341 spectral sensor at center of film area
+# AS7343 spectral sensor at center of film area
 sensor_fixed.append(FixedPosition(spectral.ref, 60.0, 80.0, 0.0))
 
 # Battery holder across the bottom of the board
