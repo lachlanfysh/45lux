@@ -385,7 +385,7 @@
       (uuid f9ec1f8d-6051-50a5-a553-d2c69c6de842))
     (instances
       (project "SKiDL-Generated"
-        (path "/c9eccd77-ebfe-4c70-9c77-d23aa276b6de/c7bc3755-68c4-5940-ac01-c5a613d70406"
+        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/c7bc3755-68c4-5940-ac01-c5a613d70406"
           (reference "J2")
           (unit 1)))))
   (global_label "UART_TX"
@@ -395,7 +395,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid d90ebeba-9f64-5120-90de-fbc92a3a9b75))
+    (uuid d1f657ee-6adf-55ac-b6e5-34442f9fff7b))
   (global_label "UART_RX"
     (shape bidirectional)
     (at 124.46 105.41 0)
@@ -403,23 +403,7 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid c58bbbf2-c063-5db3-a7df-9f636b2c82ad))
-  (wire
-    (pts
-      (xy 124.46 105.41)
-      (xy 140.97 105.41))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid 303d521a-f1bb-5d45-8b3e-46d353639f56))
-  (wire
-    (pts
-      (xy 153.67 102.87)
-      (xy 172.72 102.87))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid 7cfa6a04-29c4-5b4c-9095-44acd35a4e43))
+    (uuid f8472344-448a-5557-9e9a-5c79d4d0ce52))
   (symbol
     (lib_id "power:VCC")
     (at 140.97 102.87 0)
@@ -460,6 +444,14 @@
         (path "/218b5f90-a139-55d3-a988-331ecbe7ee0c"
           (reference "#PWR143")
           (unit 1)))))
+  (global_label "UART_RX"
+    (shape bidirectional)
+    (at 140.97 105.41 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid b87ed07a-2d31-534f-b2a5-42286436da99))
   (global_label "ESP_EN"
     (shape bidirectional)
     (at 140.97 107.95 180)
@@ -467,7 +459,15 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 978ea9c5-165a-5dc0-8f96-70de06f98c1f))
+    (uuid 9121b1e3-e8eb-52bb-8d21-0e6503bfbc62))
+  (global_label "UART_TX"
+    (shape bidirectional)
+    (at 153.67 102.87 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid 5b7b6aac-9d0e-5bcb-b908-adbac800e7a4))
   (symbol
     (lib_id "power:GND")
     (at 153.67 105.41 0)
@@ -515,20 +515,4 @@
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid 82ae098a-20a7-500b-8cf5-5618933cc7d0))
-  (hierarchical_label "UART_RX"
-    (shape bidirectional)
-    (at 5.0 10.0 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid 64347ef5-a48c-54af-ad7e-cbe0c36fc927))
-  (hierarchical_label "UART_TX"
-    (shape bidirectional)
-    (at 5.0 12.54 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid a636d24e-5423-5812-820a-5bb003a0f51b)))
+    (uuid 3bac682c-9f93-556d-a6c6-fb371f4156f3)))

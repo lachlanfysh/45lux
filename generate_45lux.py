@@ -219,7 +219,7 @@ def color_temp_sensor(vcc, gnd, sda, scl):
     c_spec[1] += vcc
     c_spec[2] += gnd
 
-    return spec
+    return spec, c_spec
 
 
 # ── OLED Display Connector ─────────────────────────────────────────────────
@@ -293,7 +293,7 @@ mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
             en_net, boot_net)
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
-spectral = color_temp_sensor(vcc, gnd, sda, scl)
+spectral, spectral_cap = color_temp_sensor(vcc, gnd, sda, scl)
 oled_connector(vcc, gnd, sda, scl)
 sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
@@ -327,14 +327,11 @@ sensor_fixed = []
 for i, sensor_part in enumerate(sensors):
     row, col = divmod(i, 4)
     sensor_fixed.append(FixedPosition(sensor_part.ref, grid_x[col], grid_y[row], 0.0))
-    # Bottom row caps need explicit fixing — placer pushes them to electronics
-    # zone because they're close enough to the keepout boundary for the spiral
-    # search to succeed (rows 0-2 caps stay near sensors via fallback)
-    if row == 3:
-        sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
+    sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
 
-# AS7343 spectral sensor at center of film area
+# AS7343 spectral sensor + decoupling cap at center of film area
 sensor_fixed.append(FixedPosition(spectral.ref, 60.0, 80.0, 0.0))
+sensor_fixed.append(FixedPosition(spectral_cap.ref, 60.0, 83.0, 0.0))
 
 # Battery holder across the bottom of the board
 sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
@@ -377,3 +374,143 @@ write_kicad_pcb(
 )
 
 print(f"PCB written to 45lux.kicad_pcb")
+
+
+# ── Generate placement SVG ────────────────────────────────────────────────
+
+SCALE = 5.0  # mm to SVG pixels
+MARGIN = 50
+BW = outline.width_mm * SCALE
+BH = outline.height_mm * SCALE
+SVG_W = BW + 2 * MARGIN
+SVG_H = BH + 2 * MARGIN + 60  # room for title + legend
+
+def mm2svg(x_mm, y_mm):
+    return MARGIN + x_mm * SCALE, MARGIN + 30 + y_mm * SCALE
+
+# Part type detection
+part_map = {}
+for p in ckt.parts:
+    part_map[p.ref] = p
+
+# Footprint bboxes in mm
+def get_bbox_mm(ref):
+    p = part_map.get(ref)
+    if not p: return (2.0, 1.0)
+    fp_str = str(getattr(p, "footprint", ""))
+    fp_name = fp_str.split(":")[-1] if ":" in fp_str else fp_str
+    if fp_name in fp_bboxes:
+        return fp_bboxes[fp_name]
+    return (2.0, 1.0)
+
+# Part categories
+IC_STYLES = {
+    "ESP32": ("#4a6b5a", 8),
+    "TCA9546": ("#d4956a", 6),
+    "LIS2DH": ("#6b8fa3", 6),
+    "AP2112": ("#c49452", 5),
+    "Tag-Connect": ("#8b6b4a", 5),
+    "Conn_01x04": ("#6b5a7a", 5),
+    "AS7343": ("#e6a832", 6),
+}
+
+svg_parts = []
+bx, by = mm2svg(0, 0)
+
+# Board outline
+svg_parts.append(f'<rect x="{bx}" y="{by}" width="{BW}" height="{BH}" fill="#e8e0d0" stroke="#3a3530" stroke-width="2.5" rx="2"/>')
+
+# Film area
+film_x, film_y = mm2svg(12.5, 20.0)
+svg_parts.append(f'<rect x="{film_x}" y="{film_y}" width="{95*SCALE}" height="{120*SCALE}" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="8,4"/>')
+tx, ty = mm2svg(60.0, 17.0)
+svg_parts.append(f'<text x="{tx}" y="{ty}" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>')
+
+# Electronics zone line
+lx1, ly = mm2svg(-10, 140.0)
+lx2, _ = mm2svg(130, 140.0)
+svg_parts.append(f'<line x1="{lx1}" y1="{ly}" x2="{lx2}" y2="{ly}" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>')
+tx, ty = mm2svg(60.0, 143.0)
+svg_parts.append(f'<text x="{tx}" y="{ty}" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>')
+
+# Placed parts
+placed_map = {pp.ref: pp for pp in placed}
+overlap_count = len(result.overlaps) if hasattr(result, 'overlaps') else 0
+
+for pp in placed:
+    ref = pp.ref
+    x, y = mm2svg(pp.x_mm, pp.y_mm)
+    w_mm, h_mm = get_bbox_mm(ref)
+    w, h = w_mm * SCALE, h_mm * SCALE
+    p = part_map.get(ref)
+    val = getattr(p, "value", "") if p else ""
+    fp_str = str(getattr(p, "footprint", "")) if p else ""
+
+    # Sensor OPT3004
+    if "OPT3004" in val:
+        svg_parts.append(f'<circle cx="{x}" cy="{y}" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>')
+        svg_parts.append(f'<circle cx="{x}" cy="{y}" r="2" fill="white" opacity="0.4"/>')
+        continue
+
+    # AS7343 spectral
+    if "AS7343" in fp_str or "AS7343" in str(getattr(p, 'name', '')):
+        svg_parts.append(f'<rect x="{x-10}" y="{y-10}" width="20" height="20" fill="#e6a832" stroke="#3a3530" stroke-width="1" transform="rotate(45 {x} {y})"/>')
+        svg_parts.append(f'<text x="{x}" y="{y+22}" text-anchor="middle" font-size="7" fill="#3a3530" font-family="sans-serif">AS7343</text>')
+        svg_parts.append(f'<text x="{x}" y="{y+31}" text-anchor="middle" font-size="6" fill="#7a6b5a" font-family="sans-serif">color temp</text>')
+        continue
+
+    # Battery holder (back side)
+    if "Battery" in fp_str or "Keystone" in fp_str:
+        bw_mm, bh_mm = 53.0, 38.0
+        rx, ry = x - bw_mm*SCALE/2, y - bh_mm*SCALE/2
+        svg_parts.append(f'<rect x="{rx}" y="{ry}" width="{bw_mm*SCALE}" height="{bh_mm*SCALE}" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>')
+        svg_parts.append(f'<text x="{x}" y="{y+3}" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>')
+        svg_parts.append(f'<text x="{x}" y="{y+14}" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>')
+        continue
+
+    # Switches (back side)
+    if "SW_Push" in fp_str or "SW_TH" in fp_str:
+        sw_sz = 12.0 * SCALE
+        svg_parts.append(f'<rect x="{x-sw_sz/2}" y="{y-sw_sz/2}" width="{sw_sz}" height="{sw_sz}" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>')
+        svg_parts.append(f'<text x="{x}" y="{y+3}" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>')
+        continue
+
+    # ICs and connectors
+    matched = False
+    for key, (color, font_size) in IC_STYLES.items():
+        if key in fp_str or key in val:
+            label = key.replace("TCA9546", "MUX").replace("LIS2DH", "IMU").replace("AP2112", "LDO").replace("Conn_01x04", "OLED").replace("Tag-Connect", "TC2030")
+            svg_parts.append(f'<rect x="{x-w/2}" y="{y-h/2}" width="{w}" height="{h}" fill="{color}" stroke="#3a3530" rx="{"2" if w > 40 else "1"}"/>')
+            svg_parts.append(f'<text x="{x}" y="{y+font_size/2}" text-anchor="middle" font-size="{font_size}" fill="white" font-family="sans-serif">{label}</text>')
+            matched = True
+            break
+
+    if matched:
+        continue
+
+    # Passives (caps, resistors)
+    svg_parts.append(f'<rect x="{x-w/2}" y="{y-h/2}" width="{w}" height="{h}" fill="#b0a898" stroke="none" rx="0.5"/>')
+
+# Title
+tx = SVG_W / 2
+svg_parts.insert(0, f'<text x="{tx}" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>')
+svg_parts.insert(1, f'<text x="{tx}" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | {len(placed)} parts | {overlap_count} overlaps | AS7343 spectral</text>')
+
+# Legend
+legend_items = [("OPT3004", "#c44e52"), ("AS7343", "#e6a832"), ("ESP32-C6", "#4a6b5a"),
+                ("MUX", "#d4956a"), ("IMU", "#6b8fa3"), ("TC2030", "#8b6b4a"),
+                ("OLED", "#6b5a7a"), ("LDO", "#c49452")]
+ly = SVG_H - 30
+for i, (label, color) in enumerate(legend_items):
+    lx = 50 + i * 70
+    svg_parts.append(f'<rect x="{lx}" y="{ly}" width="10" height="10" fill="{color}" rx="2"/>')
+    svg_parts.append(f'<text x="{lx+14}" y="{ly+9}" font-size="9" fill="#3a3530" font-family="sans-serif">{label}</text>')
+
+svg_content = f'<svg xmlns="http://www.w3.org/2000/svg" width="{SVG_W}" height="{SVG_H}">\n'
+svg_content += f'<rect width="{SVG_W}" height="{SVG_H}" fill="#f0ece6"/>\n'
+svg_content += "\n".join(svg_parts)
+svg_content += "\n</svg>"
+
+with open("schematic_exports/pcb_placement.svg", "w") as f:
+    f.write(svg_content)
+print("SVG written to schematic_exports/pcb_placement.svg")

@@ -1,112 +1,113 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600.0" height="995.0">
-<rect width="600.0" height="995.0" fill="#f0ece6"/>
-<rect x="50.0" y="60.0" width="500.0" height="825.0" fill="#e8e0d0" stroke="#3a3530" stroke-width="2.5" rx="2"/>
-<rect x="62.5" y="100.0" width="475.0" height="600.0" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="8,4"/>
-<text x="300.0" y="85.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
-<line x1="0" y1="700.0" x2="600.0" y2="700.0" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
-<text x="300.0" y="715.0" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>
-<rect x="167.5" y="755.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
-<text x="300.0" y="853.0" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
-<text x="300.0" y="864.0" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>
-<circle cx="112.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="112.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
-<circle cx="237.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="237.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
-<circle cx="362.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="362.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
-<circle cx="487.5" cy="150.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="487.5" cy="150.0" r="2" fill="white" opacity="0.4"/>
-<circle cx="112.5" cy="316.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="112.5" cy="316.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="237.5" cy="316.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="237.5" cy="316.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="362.5" cy="316.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="362.5" cy="316.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="487.5" cy="316.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="487.5" cy="316.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="112.5" cy="483.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="112.5" cy="483.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="237.5" cy="483.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="237.5" cy="483.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="362.5" cy="483.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="362.5" cy="483.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="487.5" cy="483.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="487.5" cy="483.5" r="2" fill="white" opacity="0.4"/>
-<circle cx="112.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="112.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="108.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<circle cx="237.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="237.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="233.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<circle cx="362.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="362.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="358.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<circle cx="487.5" cy="650.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
-<circle cx="487.5" cy="650.0" r="2" fill="white" opacity="0.4"/>
-<rect x="483.5" y="663.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="290.0" y="390.0" width="20.0" height="20.0" fill="#e6a832" stroke="#3a3530" stroke-width="1" transform="rotate(45 300.0 400.0)"/>
-<text x="300.0" y="422.0" text-anchor="middle" font-size="7" fill="#3a3530" font-family="sans-serif">AS7343</text>
-<text x="300.0" y="431.0" text-anchor="middle" font-size="6" fill="#7a6b5a" font-family="sans-serif">color temp</text>
-<rect x="70.0" y="745.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="100.0" y="778.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
-<rect x="470.0" y="745.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
-<text x="500.0" y="778.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
-<rect x="334.8168329828885" y="701.3925438123044" width="15.0" height="15.0" fill="#c49452" stroke="#3a3530" rx="1"/>
-<text x="342.3168329828885" y="710.8925438123044" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">LDO</text>
-<rect x="265.7489277563943" y="701.2471014997037" width="66.0" height="62.5" fill="#4a6b5a" stroke="#3a3530" rx="2"/>
-<text x="298.7489277563943" y="735.4971014997037" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32-C6</text>
-<rect x="231.84270272143908" y="703.639593454591" width="22.0" height="25.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
-<text x="242.84270272143908" y="718.139593454591" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">MUX</text>
-<rect x="373.79699271713923" y="703.2131530717677" width="15.0" height="12.5" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
-<text x="381.29699271713923" y="711.4631530717677" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
-<rect x="361.71828820292586" y="727.5320329018172" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="183.16280322864682" y="711.789868344312" width="44.5" height="28.5" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
-<text x="205.41280322864682" y="728.039868344312" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
-<rect x="358.19183298288846" y="706.8925438123044" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="173.38092822864684" y="724.039868344312" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="118.51344202803415" y="707.1217560481822" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="358.5" y="496.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="483.5" y="163.25" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="395.460287556976" y="707.2975554793413" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="233.5" y="329.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="108.5" y="329.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="233.5" y="163.25" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="483.5" y="329.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="358.5" y="329.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="108.5" y="163.25" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="358.5" y="163.25" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="243.88110414608792" y="735.356642899787" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="399.54123314449004" y="719.7782800640514" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="369.2135407863549" y="746.0735229309647" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="294.7489277563943" y="768.1221014997037" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="483.5" y="496.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="108.5" y="496.75" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="227.56968447756114" y="736.7825133846649" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="411.42199271713923" y="707.4631530717677" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="336.5916012431786" y="747.4361428679133" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="201.41280322864682" y="753.802118344312" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="309.7489277563943" y="768.1221014997037" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="172.25405813179037" y="706.9095025814596" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="98.48655797196585" y="708.2467560481821" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="252.5261783917755" y="747.0865912394647" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="276.1184661190569" y="766.1726886594706" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="254.27654911609324" y="760.2585637490607" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<text x="300.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="300.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 59 parts | 0 overlaps | AS7343 spectral</text>
-<rect x="50" y="965.0" width="10" height="10" fill="#c44e52" rx="2"/>
-<text x="64" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
-<rect x="120" y="965.0" width="10" height="10" fill="#e6a832" rx="2"/>
-<text x="134" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">AS7343</text>
-<rect x="190" y="965.0" width="10" height="10" fill="#4a6b5a" rx="2"/>
-<text x="204" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">ESP32-C6</text>
-<rect x="260" y="965.0" width="10" height="10" fill="#d4956a" rx="2"/>
-<text x="274" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">MUX</text>
-<rect x="330" y="965.0" width="10" height="10" fill="#6b8fa3" rx="2"/>
-<text x="344" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">IMU</text>
-<rect x="400" y="965.0" width="10" height="10" fill="#8b6b4a" rx="2"/>
-<text x="414" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">TC2030</text>
-<rect x="470" y="965.0" width="10" height="10" fill="#6b5a7a" rx="2"/>
-<text x="484" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">OLED</text>
-<rect x="540" y="965.0" width="10" height="10" fill="#c49452" rx="2"/>
-<text x="554" y="974.0" font-size="9" fill="#3a3530" font-family="sans-serif">LDO</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="700.0" height="1085.0">
+<rect width="700.0" height="1085.0" fill="#f0ece6"/>
+<text x="350.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
+<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 59 parts | 2 overlaps | AS7343 spectral</text>
+<rect x="50.0" y="80.0" width="600.0" height="925.0" fill="#e8e0d0" stroke="#3a3530" stroke-width="2.5" rx="2"/>
+<rect x="112.5" y="180.0" width="475.0" height="600.0" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="8,4"/>
+<text x="350.0" y="165.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
+<line x1="0.0" y1="780.0" x2="700.0" y2="780.0" stroke="#c44e52" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+<text x="350.0" y="795.0" text-anchor="middle" font-size="9" fill="#7a6b5a" font-family="sans-serif">— electronics zone —</text>
+<rect x="217.5" y="835.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
+<text x="350.0" y="933.0" text-anchor="middle" font-size="9" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
+<text x="350.0" y="944.0" text-anchor="middle" font-size="7" fill="#3a3530" opacity="0.4" font-family="sans-serif">53 x 38mm</text>
+<circle cx="162.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="157.5" y="242.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="287.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="282.5" y="242.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="412.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="407.5" y="242.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="537.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="532.5" y="242.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="162.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="157.5" y="409.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="287.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="282.5" y="409.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="412.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="407.5" y="409.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="537.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="532.5" y="409.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="162.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="157.5" y="576.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="287.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="282.5" y="576.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="412.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="407.5" y="576.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="537.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="532.5" y="576.0" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="162.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="157.5" y="742.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="287.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="282.5" y="742.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="412.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="407.5" y="742.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<circle cx="537.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="532.5" y="742.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="340.0" y="470.0" width="20" height="20" fill="#e6a832" stroke="#3a3530" stroke-width="1" transform="rotate(45 350.0 480.0)"/>
+<text x="350.0" y="502.0" text-anchor="middle" font-size="7" fill="#3a3530" font-family="sans-serif">AS7343</text>
+<text x="350.0" y="511.0" text-anchor="middle" font-size="6" fill="#7a6b5a" font-family="sans-serif">color temp</text>
+<rect x="345.0" y="492.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="120.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="150.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="520.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="550.0" y="858.0" text-anchor="middle" font-size="7" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW (back)</text>
+<rect x="387.3168329828885" y="786.3925438123044" width="10.0" height="5.0" fill="#c49452" stroke="#3a3530" rx="1"/>
+<text x="392.3168329828885" y="791.3925438123044" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">LDO</text>
+<rect x="343.7489277563943" y="809.9971014997037" width="10.0" height="5.0" fill="#4a6b5a" stroke="#3a3530" rx="1"/>
+<text x="348.7489277563943" y="816.4971014997037" text-anchor="middle" font-size="8" fill="white" font-family="sans-serif">ESP32</text>
+<rect x="287.8427027214391" y="793.639593454591" width="10.0" height="5.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
+<text x="292.8427027214391" y="799.139593454591" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">MUX</text>
+<rect x="426.29699271713923" y="786.9631530717677" width="10.0" height="5.0" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
+<text x="431.29699271713923" y="792.4631530717677" text-anchor="middle" font-size="6" fill="white" font-family="sans-serif">IMU</text>
+<rect x="410.71828820292586" y="807.0320329018172" width="10.0" height="5.0" fill="#6b5a7a" stroke="#3a3530" rx="1"/>
+<text x="415.71828820292586" y="812.0320329018172" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">OLED</text>
+<rect x="250.41280322864682" y="803.539868344312" width="10.0" height="5.0" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
+<text x="255.41280322864682" y="808.539868344312" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
+<rect x="407.19183298288846" y="786.3925438123044" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="157.5" y="409.25" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="360.7525" y="477.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="292.8811041460879" y="814.856642899787" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="222.38092822864684" y="803.539868344312" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="343.7489277563943" y="847.6221014997037" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="358.7489277563943" y="847.6221014997037" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="360.7525" y="477.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="385.5916012431786" y="826.9361428679133" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="277.13807243780116" y="815.9713920364153" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="221.25405813179037" y="786.4095025814596" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="326.1577194008637" y="848.3435809578822" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="157.5" y="377.625" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="287.8427027214391" y="827.139593454591" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="375.94315554826323" y="849.3771614766067" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="303.47871896418377" y="827.7943658656334" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="50" y="1055.0" width="10" height="10" fill="#c44e52" rx="2"/>
+<text x="64" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
+<rect x="120" y="1055.0" width="10" height="10" fill="#e6a832" rx="2"/>
+<text x="134" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">AS7343</text>
+<rect x="190" y="1055.0" width="10" height="10" fill="#4a6b5a" rx="2"/>
+<text x="204" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">ESP32-C6</text>
+<rect x="260" y="1055.0" width="10" height="10" fill="#d4956a" rx="2"/>
+<text x="274" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">MUX</text>
+<rect x="330" y="1055.0" width="10" height="10" fill="#6b8fa3" rx="2"/>
+<text x="344" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">IMU</text>
+<rect x="400" y="1055.0" width="10" height="10" fill="#8b6b4a" rx="2"/>
+<text x="414" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">TC2030</text>
+<rect x="470" y="1055.0" width="10" height="10" fill="#6b5a7a" rx="2"/>
+<text x="484" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">OLED</text>
+<rect x="540" y="1055.0" width="10" height="10" fill="#c49452" rx="2"/>
+<text x="554" y="1064.0" font-size="9" fill="#3a3530" font-family="sans-serif">LDO</text>
 </svg>

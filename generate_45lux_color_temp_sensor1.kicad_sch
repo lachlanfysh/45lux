@@ -469,7 +469,7 @@
       (uuid 9e8565b5-e705-54ea-b067-9ab0c13d17d3))
     (instances
       (project "SKiDL-Generated"
-        (path "/c9eccd77-ebfe-4c70-9c77-d23aa276b6de/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
+        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
           (reference "U21")
           (unit 1)))))
   (symbol
@@ -518,17 +518,9 @@
       (uuid 18885cdb-01ef-5502-ba47-a15b31cdbd73))
     (instances
       (project "SKiDL-Generated"
-        (path "/c9eccd77-ebfe-4c70-9c77-d23aa276b6de/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
+        (path "/7db42120-d5b2-4e8e-96c7-f2586b04c170/e5f31870-db65-5cc9-82f5-2dd3eeb48ac1"
           (reference "C26")
           (unit 1)))))
-  (global_label "AS7343_GPIO_NC"
-    (shape bidirectional)
-    (at 125.73 96.52 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid d6985ef6-f314-5b67-97be-b555adc8a277))
   (global_label "AS7343_INT_NC"
     (shape bidirectional)
     (at 172.72 95.25 180)
@@ -536,7 +528,7 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid f7230294-68f1-57ec-b76e-107e948d4e0f))
+    (uuid d48d7123-cd4e-5560-aba9-0b10b8fde945))
   (global_label "AS7343_LDR_NC"
     (shape bidirectional)
     (at 172.72 90.17 180)
@@ -544,7 +536,15 @@
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid 75b492c8-33ea-5c4e-8d2e-342b1deb5adf))
+    (uuid 2bb6b8c0-0c59-524a-9856-519b33476ff6))
+  (global_label "AS7343_GPIO_NC"
+    (shape bidirectional)
+    (at 125.73 96.52 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid dfac7d00-cd87-577b-8358-22ed972044bb))
   (wire
     (pts
       (xy 125.73 96.52)
@@ -579,20 +579,28 @@
     (uuid 04029eae-8e7d-59dc-82ec-51fc9aa5ed38))
   (wire
     (pts
-      (xy 163.83 95.25)
+      (xy 163.83 93.98)
+      (xy 165.1 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid 2e1bff5f-3f86-583f-b076-6de00b66c6d4))
+  (wire
+    (pts
+      (xy 165.1 95.25)
       (xy 172.72 95.25))
     (stroke
       (width 0)
       (type default))
-    (uuid 514ea067-b822-5ace-86e9-0e8b044a1787))
+    (uuid e6c12a7e-61db-5986-80ca-07ceb284c542))
   (wire
     (pts
-      (xy 163.83 95.25)
-      (xy 163.83 93.98))
+      (xy 165.1 95.25)
+      (xy 165.1 93.98))
     (stroke
       (width 0)
       (type default))
-    (uuid 532fcdf0-f0fa-5aa0-a02a-500ab002c0b8))
+    (uuid 653d5bff-59fe-5b84-b1ab-a1e6b100ffa1))
   (global_label "I2C_SDA"
     (shape bidirectional)
     (at 143.51 91.44 180)
