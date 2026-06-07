@@ -359,6 +359,18 @@ sw_up, sw_down, sw_left, sw_right = user_interface(vcc, gnd, btn_up, btn_down, b
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
 
 
+# ── Simulation Harness ─────────────────────────────────────────────────────
+
+from skidl.sim.declarations import sim_source, sim_load, sim_assert_rail
+
+sim_source(vbat, voltage=3.7, provenance="LiPo nominal")
+sim_source(vcc, voltage=3.3, provenance="AP2112K-3.3 output")
+sim_assert_rail(vcc, nominal=3.3, tolerance=0.05)
+sim_assert_rail(vbat, nominal=3.7, tolerance=0.15)
+
+sim_load(vcc, current=0.35, provenance="ESP32-C6 + sensors peak")
+
+
 # ── Generate Schematic ──────────────────────────────────────────────────────
 
 generate_schematic(
@@ -441,6 +453,34 @@ write_kicad_pcb(
 )
 
 print(f"PCB written to 45lux.kicad_pcb")
+
+
+# ── Simulation Analysis ──────────────────────────────────────────────────
+
+from skidl.sim.decoupling import analyze_decoupling
+from skidl.sim.power_tree import analyze_power_tree
+from skidl.sim.rail_sanity import analyze_rail_sanity
+from skidl.sim.unified_report import generate_unified_report
+
+placed_positions = {p.ref: (p.x_mm, p.y_mm) for p in placed}
+
+decoupling_rpt = analyze_decoupling(placed=placed_positions, fp_bboxes=fp_bboxes)
+power_tree_rpt = analyze_power_tree()
+rail_sanity_rpt = analyze_rail_sanity()
+
+unified = generate_unified_report(
+    decoupling_report=decoupling_rpt,
+    power_tree_report=power_tree_rpt,
+    rail_sanity_report=rail_sanity_rpt,
+)
+
+print(f"\n{'='*60}")
+print(f"ANALYSIS: {unified.part_count} parts, {unified.net_count} nets")
+for risk in unified.risks:
+    print(f"  [{risk.level.name}] {risk.title}")
+if not unified.risks:
+    print("  No risks found")
+print(f"{'='*60}\n")
 
 
 # ── Generate placement SVG ────────────────────────────────────────────────

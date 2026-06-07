@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="700.0" height="1085.0">
 <rect width="700.0" height="1085.0" fill="#f0ece6"/>
 <text x="350.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — PCB Layout</text>
-<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 70 parts | 8 overlaps | AS7343 spectral</text>
+<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">120 x 185mm | 70 parts | 11 overlaps | AS7343 spectral</text>
 <rect x="50.0" y="80.0" width="600.0" height="925.0" fill="#e8e0d0" stroke="#3a3530" stroke-width="2.5" rx="2"/>
 <rect x="112.5" y="180.0" width="475.0" height="600.0" fill="none" stroke="#4a6b5a" stroke-width="1.5" stroke-dasharray="8,4"/>
 <text x="350.0" y="165.0" text-anchor="middle" font-size="10" fill="#4a6b5a" font-family="sans-serif">Film Area (95x120mm)</text>
@@ -86,22 +86,22 @@
 <text x="459.99728711816385" y="763.9191559152471" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">TC2030</text>
 <rect x="401.28491942096207" y="746.4107812842263" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="345.7525" y="367.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="487.5" y="602.25" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="487.5" y="272.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="429.4654121181639" y="763.2492829341693" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="202.5" y="392.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="392.5" y="632.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="297.5" y="632.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="297.5" y="512.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="392.5" y="272.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="487.5" y="392.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="202.5" y="272.75" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="345.7525" y="367.5" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="429.390050577197" y="782.0589613761807" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="376.0885305457332" y="777.334197500632" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="483.02916211816387" y="758.9191559152471" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="289.22822553028806" y="805.9110249172069" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="486.8170922715585" y="746.2267110686417" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="487.5" y="601.125" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="357.54179321568654" y="776.0860772543015" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="376.0885305457332" y="777.334197500632" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="429.4654121181639" y="763.2492829341693" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="289.22822553028806" y="805.9110249172069" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="429.43958509505603" y="777.0389755959751" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="297.5" y="633.875" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="339.7549119960639" y="777.7087629535897" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="409.47466934966167" y="787.5633594874654" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="393.21492016370775" y="787.4055973244755" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
-<rect x="445.1739461658119" y="787.0531745831942" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
+<rect x="429.0500038324948" y="789.0908466502221" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="246.75483332560333" y="746.7697506625618" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="246.00862033376922" y="759.3702658215259" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
 <rect x="230.55446214438805" y="751.3235775563953" width="10.0" height="5.0" fill="#b0a898" stroke="none" rx="0.5"/>
