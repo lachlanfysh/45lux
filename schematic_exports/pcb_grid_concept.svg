@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700.0" height="1085.0">
+<text x="350.0" y="25" text-anchor="middle" font-size="18" fill="#3a3530" font-family="sans-serif" font-weight="bold">45lux v2 — Grid PCB Concept</text>
+<text x="350.0" y="44" text-anchor="middle" font-size="11" fill="#7a6b5a" font-family="sans-serif">2mm FR4 strips | 36 cutouts | 2mm corner fillets | clear acrylic sandwich</text>
+<rect width="700.0" height="1085.0" fill="#f0ece6"/>
+<rect x="50.0" y="80.0" width="600.0" height="925.0" fill="#2d5a3d" stroke="#3a3530" stroke-width="2.5" rx="2"/>
+<rect x="50.0" y="780.0" width="600.0" height="225.0" fill="#3a6b4a" stroke="none"/>
+<path d="M 122.5 180.0 L 147.5 180.0 Q 157.5 180.0 157.5 190.0 L 157.5 215.0 Q 157.5 225.0 147.5 225.0 L 122.5 225.0 Q 112.5 225.0 112.5 215.0 L 112.5 190.0 Q 112.5 180.0 122.5 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 122.5 235.0 L 147.5 235.0 Q 157.5 235.0 157.5 245.0 L 157.5 381.5 Q 157.5 391.5 147.5 391.5 L 122.5 391.5 Q 112.5 391.5 112.5 381.5 L 112.5 245.0 Q 112.5 235.0 122.5 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 122.5 401.5 L 147.5 401.5 Q 157.5 401.5 157.5 411.5 L 157.5 465.0 Q 157.5 475.0 147.5 475.0 L 122.5 475.0 Q 112.5 475.0 112.5 465.0 L 112.5 411.5 Q 112.5 401.5 122.5 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 122.5 485.0 L 147.5 485.0 Q 157.5 485.0 157.5 495.0 L 157.5 548.5 Q 157.5 558.5 147.5 558.5 L 122.5 558.5 Q 112.5 558.5 112.5 548.5 L 112.5 495.0 Q 112.5 485.0 122.5 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 122.5 568.5 L 147.5 568.5 Q 157.5 568.5 157.5 578.5 L 157.5 715.0 Q 157.5 725.0 147.5 725.0 L 122.5 725.0 Q 112.5 725.0 112.5 715.0 L 112.5 578.5 Q 112.5 568.5 122.5 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 122.5 735.0 L 147.5 735.0 Q 157.5 735.0 157.5 745.0 L 157.5 770.0 Q 157.5 780.0 147.5 780.0 L 122.5 780.0 Q 112.5 780.0 112.5 770.0 L 112.5 745.0 Q 112.5 735.0 122.5 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 180.0 L 272.5 180.0 Q 282.5 180.0 282.5 190.0 L 282.5 215.0 Q 282.5 225.0 272.5 225.0 L 177.5 225.0 Q 167.5 225.0 167.5 215.0 L 167.5 190.0 Q 167.5 180.0 177.5 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 235.0 L 272.5 235.0 Q 282.5 235.0 282.5 245.0 L 282.5 381.5 Q 282.5 391.5 272.5 391.5 L 177.5 391.5 Q 167.5 391.5 167.5 381.5 L 167.5 245.0 Q 167.5 235.0 177.5 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 401.5 L 272.5 401.5 Q 282.5 401.5 282.5 411.5 L 282.5 465.0 Q 282.5 475.0 272.5 475.0 L 177.5 475.0 Q 167.5 475.0 167.5 465.0 L 167.5 411.5 Q 167.5 401.5 177.5 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 485.0 L 272.5 485.0 Q 282.5 485.0 282.5 495.0 L 282.5 548.5 Q 282.5 558.5 272.5 558.5 L 177.5 558.5 Q 167.5 558.5 167.5 548.5 L 167.5 495.0 Q 167.5 485.0 177.5 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 568.5 L 272.5 568.5 Q 282.5 568.5 282.5 578.5 L 282.5 715.0 Q 282.5 725.0 272.5 725.0 L 177.5 725.0 Q 167.5 725.0 167.5 715.0 L 167.5 578.5 Q 167.5 568.5 177.5 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 177.5 735.0 L 272.5 735.0 Q 282.5 735.0 282.5 745.0 L 282.5 770.0 Q 282.5 780.0 272.5 780.0 L 177.5 780.0 Q 167.5 780.0 167.5 770.0 L 167.5 745.0 Q 167.5 735.0 177.5 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 180.0 L 335.0 180.0 Q 345.0 180.0 345.0 190.0 L 345.0 215.0 Q 345.0 225.0 335.0 225.0 L 302.5 225.0 Q 292.5 225.0 292.5 215.0 L 292.5 190.0 Q 292.5 180.0 302.5 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 235.0 L 335.0 235.0 Q 345.0 235.0 345.0 245.0 L 345.0 381.5 Q 345.0 391.5 335.0 391.5 L 302.5 391.5 Q 292.5 391.5 292.5 381.5 L 292.5 245.0 Q 292.5 235.0 302.5 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 401.5 L 335.0 401.5 Q 345.0 401.5 345.0 411.5 L 345.0 465.0 Q 345.0 475.0 335.0 475.0 L 302.5 475.0 Q 292.5 475.0 292.5 465.0 L 292.5 411.5 Q 292.5 401.5 302.5 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 485.0 L 335.0 485.0 Q 345.0 485.0 345.0 495.0 L 345.0 548.5 Q 345.0 558.5 335.0 558.5 L 302.5 558.5 Q 292.5 558.5 292.5 548.5 L 292.5 495.0 Q 292.5 485.0 302.5 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 568.5 L 335.0 568.5 Q 345.0 568.5 345.0 578.5 L 345.0 715.0 Q 345.0 725.0 335.0 725.0 L 302.5 725.0 Q 292.5 725.0 292.5 715.0 L 292.5 578.5 Q 292.5 568.5 302.5 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 302.5 735.0 L 335.0 735.0 Q 345.0 735.0 345.0 745.0 L 345.0 770.0 Q 345.0 780.0 335.0 780.0 L 302.5 780.0 Q 292.5 780.0 292.5 770.0 L 292.5 745.0 Q 292.5 735.0 302.5 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 180.0 L 397.5 180.0 Q 407.5 180.0 407.5 190.0 L 407.5 215.0 Q 407.5 225.0 397.5 225.0 L 365.0 225.0 Q 355.0 225.0 355.0 215.0 L 355.0 190.0 Q 355.0 180.0 365.0 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 235.0 L 397.5 235.0 Q 407.5 235.0 407.5 245.0 L 407.5 381.5 Q 407.5 391.5 397.5 391.5 L 365.0 391.5 Q 355.0 391.5 355.0 381.5 L 355.0 245.0 Q 355.0 235.0 365.0 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 401.5 L 397.5 401.5 Q 407.5 401.5 407.5 411.5 L 407.5 465.0 Q 407.5 475.0 397.5 475.0 L 365.0 475.0 Q 355.0 475.0 355.0 465.0 L 355.0 411.5 Q 355.0 401.5 365.0 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 485.0 L 397.5 485.0 Q 407.5 485.0 407.5 495.0 L 407.5 548.5 Q 407.5 558.5 397.5 558.5 L 365.0 558.5 Q 355.0 558.5 355.0 548.5 L 355.0 495.0 Q 355.0 485.0 365.0 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 568.5 L 397.5 568.5 Q 407.5 568.5 407.5 578.5 L 407.5 715.0 Q 407.5 725.0 397.5 725.0 L 365.0 725.0 Q 355.0 725.0 355.0 715.0 L 355.0 578.5 Q 355.0 568.5 365.0 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 365.0 735.0 L 397.5 735.0 Q 407.5 735.0 407.5 745.0 L 407.5 770.0 Q 407.5 780.0 397.5 780.0 L 365.0 780.0 Q 355.0 780.0 355.0 770.0 L 355.0 745.0 Q 355.0 735.0 365.0 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 180.0 L 522.5 180.0 Q 532.5 180.0 532.5 190.0 L 532.5 215.0 Q 532.5 225.0 522.5 225.0 L 427.5 225.0 Q 417.5 225.0 417.5 215.0 L 417.5 190.0 Q 417.5 180.0 427.5 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 235.0 L 522.5 235.0 Q 532.5 235.0 532.5 245.0 L 532.5 381.5 Q 532.5 391.5 522.5 391.5 L 427.5 391.5 Q 417.5 391.5 417.5 381.5 L 417.5 245.0 Q 417.5 235.0 427.5 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 401.5 L 522.5 401.5 Q 532.5 401.5 532.5 411.5 L 532.5 465.0 Q 532.5 475.0 522.5 475.0 L 427.5 475.0 Q 417.5 475.0 417.5 465.0 L 417.5 411.5 Q 417.5 401.5 427.5 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 485.0 L 522.5 485.0 Q 532.5 485.0 532.5 495.0 L 532.5 548.5 Q 532.5 558.5 522.5 558.5 L 427.5 558.5 Q 417.5 558.5 417.5 548.5 L 417.5 495.0 Q 417.5 485.0 427.5 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 568.5 L 522.5 568.5 Q 532.5 568.5 532.5 578.5 L 532.5 715.0 Q 532.5 725.0 522.5 725.0 L 427.5 725.0 Q 417.5 725.0 417.5 715.0 L 417.5 578.5 Q 417.5 568.5 427.5 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 427.5 735.0 L 522.5 735.0 Q 532.5 735.0 532.5 745.0 L 532.5 770.0 Q 532.5 780.0 522.5 780.0 L 427.5 780.0 Q 417.5 780.0 417.5 770.0 L 417.5 745.0 Q 417.5 735.0 427.5 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 180.0 L 577.5 180.0 Q 587.5 180.0 587.5 190.0 L 587.5 215.0 Q 587.5 225.0 577.5 225.0 L 552.5 225.0 Q 542.5 225.0 542.5 215.0 L 542.5 190.0 Q 542.5 180.0 552.5 180.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 235.0 L 577.5 235.0 Q 587.5 235.0 587.5 245.0 L 587.5 381.5 Q 587.5 391.5 577.5 391.5 L 552.5 391.5 Q 542.5 391.5 542.5 381.5 L 542.5 245.0 Q 542.5 235.0 552.5 235.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 401.5 L 577.5 401.5 Q 587.5 401.5 587.5 411.5 L 587.5 465.0 Q 587.5 475.0 577.5 475.0 L 552.5 475.0 Q 542.5 475.0 542.5 465.0 L 542.5 411.5 Q 542.5 401.5 552.5 401.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 485.0 L 577.5 485.0 Q 587.5 485.0 587.5 495.0 L 587.5 548.5 Q 587.5 558.5 577.5 558.5 L 552.5 558.5 Q 542.5 558.5 542.5 548.5 L 542.5 495.0 Q 542.5 485.0 552.5 485.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 568.5 L 577.5 568.5 Q 587.5 568.5 587.5 578.5 L 587.5 715.0 Q 587.5 725.0 577.5 725.0 L 552.5 725.0 Q 542.5 725.0 542.5 715.0 L 542.5 578.5 Q 542.5 568.5 552.5 568.5 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<path d="M 552.5 735.0 L 577.5 735.0 Q 587.5 735.0 587.5 745.0 L 587.5 770.0 Q 587.5 780.0 577.5 780.0 L 552.5 780.0 Q 542.5 780.0 542.5 770.0 L 542.5 745.0 Q 542.5 735.0 552.5 735.0 Z" fill="#d4cfc5" stroke="#8a8578" stroke-width="0.5"/>
+<circle cx="162.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="158.5" y="240.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="287.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="283.5" y="240.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="412.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="408.5" y="240.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="537.5" cy="230.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="230.0" r="2" fill="white" opacity="0.4"/>
+<rect x="533.5" y="240.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="162.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="158.5" y="406.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="287.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="283.5" y="406.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="412.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="408.5" y="406.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="537.5" cy="396.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="396.5" r="2" fill="white" opacity="0.4"/>
+<rect x="533.5" y="406.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="162.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="158.5" y="573.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="287.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="283.5" y="573.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="412.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="408.5" y="573.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="537.5" cy="563.5" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="563.5" r="2" fill="white" opacity="0.4"/>
+<rect x="533.5" y="573.5" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="162.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="162.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="158.5" y="740.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="287.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="287.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="283.5" y="740.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="412.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="412.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="408.5" y="740.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<circle cx="537.5" cy="730.0" r="5" fill="#c44e52" stroke="#3a3530" stroke-width="1"/>
+<circle cx="537.5" cy="730.0" r="2" fill="white" opacity="0.4"/>
+<rect x="533.5" y="740.0" width="8.0" height="4.0" fill="#b0a898" stroke="none" rx="1"/>
+<rect x="342.0" y="472.0" width="16" height="16" fill="#e6a832" stroke="#3a3530" stroke-width="1" transform="rotate(45 350.0 480.0)"/>
+<text x="350.0" y="498.0" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">AS7343</text>
+<rect x="217.0" y="798.75" width="66.0" height="62.5" fill="#4a6b5a" stroke="#3a3530" rx="1"/>
+<text x="250.0" y="833.5" text-anchor="middle" font-size="7" fill="white" font-family="sans-serif">ESP32-C6</text>
+<rect x="139.0" y="827.5" width="22.0" height="25.0" fill="#d4956a" stroke="#3a3530" rx="1"/>
+<text x="150.0" y="842.5" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">MUX</text>
+<rect x="342.5" y="823.75" width="15.0" height="12.5" fill="#6b8fa3" stroke="#3a3530" rx="1"/>
+<text x="350.0" y="832.5" text-anchor="middle" font-size="5" fill="white" font-family="sans-serif">IMU</text>
+<rect x="392.5" y="822.5" width="15.0" height="15.0" fill="#c49452" stroke="#3a3530" rx="1"/>
+<text x="400.0" y="832.0" text-anchor="middle" font-size="4" fill="white" font-family="sans-serif">LDO</text>
+<rect x="102.75" y="875.75" width="44.5" height="28.5" fill="#8b6b4a" stroke="#3a3530" rx="1"/>
+<text x="125.0" y="892.0" text-anchor="middle" font-size="4" fill="white" font-family="sans-serif">TC2030</text>
+<rect x="217.5" y="835.0" width="265.0" height="190.0" fill="none" stroke="#3a3530" stroke-width="1.5" stroke-dasharray="6,3" rx="2" opacity="0.4"/>
+<text x="350.0" y="933.0" text-anchor="middle" font-size="8" fill="#3a3530" opacity="0.5" font-family="sans-serif">3xAAA (back)</text>
+<rect x="95.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="125.0" y="858.0" text-anchor="middle" font-size="6" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW</text>
+<rect x="545.0" y="825.0" width="60.0" height="60.0" fill="none" stroke="#7a6b5a" stroke-width="1.5" stroke-dasharray="6,3" rx="1" opacity="0.4"/>
+<text x="575.0" y="858.0" text-anchor="middle" font-size="6" fill="#7a6b5a" opacity="0.5" font-family="sans-serif">SW</text>
+<text x="500.0" y="795.0" text-anchor="middle" font-size="9" fill="#cdc5b5" font-family="sans-serif">electronics zone</text>
+<text x="225.0" y="320.0" text-anchor="middle" font-size="8" fill="#8a8578" font-family="sans-serif">cutout</text>
+<line x1="157.5" y1="150.0" x2="167.5" y2="150.0" stroke="#7a6b5a" stroke-width="1"/>
+<text x="162.5" y="147.0" text-anchor="middle" font-size="7" fill="#7a6b5a" font-family="sans-serif">2mm</text>
+<rect x="50" y="1060.0" width="10" height="10" fill="#2d5a3d" rx="2" stroke="#3a3530" stroke-width="0.5"/>
+<text x="64" y="1069.0" font-size="9" fill="#3a3530" font-family="sans-serif">FR4 strip</text>
+<rect x="170" y="1060.0" width="10" height="10" fill="#d4cfc5" rx="2" stroke="#3a3530" stroke-width="0.5"/>
+<text x="184" y="1069.0" font-size="9" fill="#3a3530" font-family="sans-serif">Cutout</text>
+<rect x="290" y="1060.0" width="10" height="10" fill="#c44e52" rx="2" stroke="#3a3530" stroke-width="0.5"/>
+<text x="304" y="1069.0" font-size="9" fill="#3a3530" font-family="sans-serif">OPT3004</text>
+<rect x="410" y="1060.0" width="10" height="10" fill="#e6a832" rx="2" stroke="#3a3530" stroke-width="0.5"/>
+<text x="424" y="1069.0" font-size="9" fill="#3a3530" font-family="sans-serif">AS7343</text>
+</svg>
