@@ -26,6 +26,7 @@ FP_SW = "Button_Switch_THT:SW_TH_Tactile_Omron_B3F-106x"
 FP_BAT = "Battery:BatteryHolder_Keystone_2479_3xAAA"
 FP_OLED = "Connector_FFC-FPC:Molex_200528-0040_1x04-1MP_P1.00mm_Horizontal"
 FP_TAG = "Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical"
+FP_SPECTRAL = "Package_LGA:AMS_OLGA-8_2x3.1mm_P0.8mm"
 
 
 # ── 3.3V LDO + Battery Connector ───────────────────────────────────────────
@@ -198,6 +199,28 @@ def imu_accel(vcc, gnd, sda, scl):
     c_imu[2] += gnd
 
 
+# ── Color Temperature: AS7341 11-channel spectral sensor ───────────────────
+
+@subcircuit
+def color_temp_sensor(vcc, gnd, sda, scl):
+    """AS7341 at fixed address 0x39, center of film plane."""
+    spec = Part("Sensor_Optical", "AS7341DLG", footprint=FP_SPECTRAL)
+    spec[1] += vcc    # VDD
+    spec[2] += scl    # SCL
+    spec[3] += gnd    # GND
+    spec[4] += Net("AS7341_LDR_NC")  # LDR (unused LED driver)
+    spec[5] += gnd    # PGND
+    spec[6] += Net("AS7341_GPIO_NC")  # GPIO
+    spec[7] += Net("AS7341_INT_NC")   # INT
+    spec[8] += sda    # SDA
+
+    c_spec = Part("Device", "C", value="100nF", footprint=FP_C)
+    c_spec[1] += vcc
+    c_spec[2] += gnd
+
+    return spec
+
+
 # ── OLED Display Connector ─────────────────────────────────────────────────
 
 @subcircuit
@@ -269,6 +292,7 @@ mcu_esp32c6(vcc, gnd, sda, scl, btn_up, btn_down, uart_tx, uart_rx,
             en_net, boot_net)
 sensors, sensor_caps = sensor_array(vcc, gnd, sda, scl)
 imu_accel(vcc, gnd, sda, scl)
+spectral = color_temp_sensor(vcc, gnd, sda, scl)
 oled_connector(vcc, gnd, sda, scl)
 sw_up, sw_down = user_interface(vcc, gnd, btn_up, btn_down)
 debug_connector(vcc, gnd, uart_tx, uart_rx, en_net, boot_net)
@@ -307,6 +331,9 @@ for i, sensor_part in enumerate(sensors):
     # search to succeed (rows 0-2 caps stay near sensors via fallback)
     if row == 3:
         sensor_fixed.append(FixedPosition(sensor_caps[i].ref, grid_x[col], grid_y[row] + 3.0, 0.0))
+
+# AS7341 spectral sensor at center of film area
+sensor_fixed.append(FixedPosition(spectral.ref, 60.0, 80.0, 0.0))
 
 # Battery holder across the bottom of the board
 sensor_fixed.append(FixedPosition(bat_holder.ref, 60.0, 170.0, 0.0))
